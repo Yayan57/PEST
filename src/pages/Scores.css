@@ -1,0 +1,36 @@
+.score-divider {
+  height: 1px;
+  background-color: #ccc;
+  margin: 10px 0;
+}
+
+.score-image {
+  width: 50px;
+  max-height: 50px;
+}
+
+.score-item {
+  border-bottom: 1px solid #ccc;
+  height: auto;
+  min-height: 130px;
+  display: flex;
+}
+
+.score-item:last-child {
+  border-bottom: none;
+}
+
+.teamImage {
+  margin-right: 10px;
+}
+
+.teamName {
+  padding-bottom: 15px;
+  padding-top: 17px;
+}
+
+.teamScore {
+  margin-left: auto;
+  padding-bottom: 15px;
+  padding-top: 17px;
+}

@@ -1,0 +1,15 @@
+.intro-swiper {
+  height: 100vh;
+}
+.intro-slides img {
+  height: 40vh;
+  margin-bottom: 40px;
+}
+
+.intro-slides {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
