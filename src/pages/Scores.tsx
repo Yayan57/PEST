@@ -22,16 +22,17 @@ import logo2 from "../assets/images/Sangal-eSports.png";
 import "./Scores.css";
 
 const Scores: React.FC = () => {
-  const leauge = [
-    "Leuage of Legends Champions Korea",
+  const leagues = [
+    "League of Legends Champions Korea",
     "League of Legends Pro League",
     "League of Legends EMEA Championship",
     "League of Legends Championship of The Americas",
     "League of Legends Championship Pacific",
   ];
-  const match = [
+
+  const matches = [
     {
-      leauge: "ESL Pro Leauge",
+      league: "League of Legends Pro League",
       team1Name: "FAZE CLAN",
       team1Score: 3,
       team1Image: logo1,
@@ -40,6 +41,7 @@ const Scores: React.FC = () => {
       team2Image: logo2,
     },
     {
+      league: "League of Legends Pro League",
       team1Name: "T1",
       team1Score: 2,
       team1Image: logo1,
@@ -48,6 +50,7 @@ const Scores: React.FC = () => {
       team2Image: logo2,
     },
     {
+      league: "League of Legends EMEA Championship",
       team1Name: "Cloud9",
       team1Score: 3,
       team1Image: logo1,
@@ -56,6 +59,7 @@ const Scores: React.FC = () => {
       team2Image: logo2,
     },
     {
+      league: "League of Legends Championship of The Americas",
       team1Name: "G2",
       team1Score: 2,
       team1Image: logo1,
@@ -64,6 +68,51 @@ const Scores: React.FC = () => {
       team2Image: logo2,
     },
   ];
+
+  const renderLeagueCards = () => {
+    return leagues.map((league) => {
+      const leagueMatches = matches.filter((match) => match.league === league);
+
+      if (leagueMatches.length === 0) {
+        return null;
+      }
+
+      return (
+        <IonCard key={league}>
+          <IonTitle>{league}</IonTitle>
+          <div className="score-divider" />
+          <IonCardContent>
+            <IonList lines="none">
+              {leagueMatches.map((list, index) => (
+                <IonItem key={`item_${index}`} className="score-item">
+                  <div className="teamImage">
+                    <IonImg
+                      src={list.team1Image}
+                      className="score-image teamImage"
+                    />
+                    <IonImg src={list.team2Image} className="score-image" />
+                  </div>
+                  <div>
+                    <IonLabel className="teamName">{list.team1Name}</IonLabel>
+                    <IonLabel className="teamName">{list.team2Name}</IonLabel>
+                  </div>
+                  <div className="teamScore">
+                    <IonLabel slot="end" className="teamScore">
+                      {list.team1Score}
+                    </IonLabel>
+                    <IonLabel slot="end" className="teamScore">
+                      {list.team2Score}
+                    </IonLabel>
+                  </div>
+                </IonItem>
+              ))}
+            </IonList>
+          </IonCardContent>
+        </IonCard>
+      );
+    });
+  };
+
   return (
     <IonPage>
       <IonHeader>
@@ -82,41 +131,7 @@ const Scores: React.FC = () => {
           </IonButtons>
         </IonToolbar>
       </IonHeader>
-      <IonContent>
-        <IonCard>
-          <IonTitle>ESL Pro Leauge</IonTitle>
-          <div className="score-divider" />
-          <IonCardContent>
-            <IonList lines="none">
-              {match.map((list, index) => {
-                return (
-                  <IonItem key={`item_${index}`} className="score-item">
-                    <div className="teamImage">
-                      <IonImg
-                        src={list.team1Image}
-                        className="score-image teamImage"
-                      />
-                      <IonImg src={list.team2Image} className="score-image" />
-                    </div>
-                    <div>
-                      <IonLabel className="teamName">{list.team1Name}</IonLabel>
-                      <IonLabel className="teamName">{list.team2Name}</IonLabel>
-                    </div>
-                    <div className="teamScore">
-                      <IonLabel slot="end" className="teamScore">
-                        {list.team1Score}
-                      </IonLabel>
-                      <IonLabel slot="end" className="teamScore">
-                        {list.team2Score}
-                      </IonLabel>
-                    </div>
-                  </IonItem>
-                );
-              })}
-            </IonList>
-          </IonCardContent>
-        </IonCard>
-      </IonContent>
+      <IonContent>{renderLeagueCards()}</IonContent>
     </IonPage>
   );
 };
