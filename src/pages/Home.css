@@ -6,3 +6,18 @@ ion-item:hover {
 ion-item {
   --padding-start: 20px;
 }
+
+.headline-divider {
+  height: 1px;
+  background-color: #ccc;
+  margin: 10px 0;
+}
+
+.headline-link {
+  padding-left: 15px;
+  text-decoration: none;
+  color: black;
+}
+.headlines {
+  padding-bottom: 10px;
+}
