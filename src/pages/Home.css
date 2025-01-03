@@ -1,10 +1,27 @@
-ion-item:hover {
-  --background: rgb(3, 121, 38);
-  --color: var(--ion-color-light);
+:root {
+  --background-color: #fff;
+  --text-color: #000;
+  --hover-background-color: rgb(3, 121, 38);
+  --hover-text-color: var(--ion-color-light);
+}
+
+/* Define dark mode colors */
+body.dark {
+  --background-color: #000;
+  --text-color: #fff;
+  --hover-background-color: rgb(3, 121, 38);
+  --hover-text-color: var(--ion-color-light);
 }
 
 ion-item {
   --padding-start: 20px;
+  --background: var(--background-color);
+  --color: var(--text-color);
+}
+
+ion-item:hover {
+  --background: rgb(3, 121, 38);
+  --color: var(--ion-color-light);
 }
 
 .headline-divider {
@@ -16,8 +33,14 @@ ion-item {
 .headline-link {
   padding-left: 15px;
   text-decoration: none;
-  color: black;
+  color: var(--text-color);
 }
+
 .headlines {
-  padding-bottom: 10px;
+  padding-bottom: 15px;
+}
+
+.headline-text {
+  font-weight: bold;
+  color: var(--text-color);
 }

@@ -1,8 +1,4 @@
 import {
-  CreateAnimation,
-  createGesture,
-  Gesture,
-  GestureDetail,
   IonButton,
   IonButtons,
   IonContent,
@@ -12,12 +8,28 @@ import {
   IonPage,
   IonTitle,
   IonToolbar,
-  useIonViewDidEnter,
 } from "@ionic/react";
-import { logOutOutline, searchOutline, settingsOutline } from "ionicons/icons";
-import React, { useRef } from "react";
+import {
+  logOutOutline,
+  searchOutline,
+  settingsOutline,
+  sunnyOutline,
+  moonOutline,
+} from "ionicons/icons";
+import React, { useState, useEffect } from "react";
+import "./More.css";
 
 const More: React.FC = () => {
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    document.body.classList.toggle("dark", darkMode);
+  }, [darkMode]);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
     <IonPage>
       <IonHeader>
@@ -37,6 +49,10 @@ const More: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding">
+        <IonButton className="dark-mode" onClick={toggleDarkMode}>
+          <IonIcon slot="start" icon={darkMode ? moonOutline : sunnyOutline} />
+          {darkMode ? "Dark Mode" : "Light Mode"}
+        </IonButton>
         <div
           style={{
             position: "absolute",

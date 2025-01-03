@@ -1,0 +1,9 @@
+body.dark {
+  --ion-background-color: #000;
+  --ion-text-color: #fff;
+}
+
+body {
+  --ion-background-color: #fff;
+  --ion-text-color: #000;
+}
