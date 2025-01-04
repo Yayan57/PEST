@@ -30,6 +30,7 @@
 }
 
 .watch-title {
+  padding-top: 8px;
   color: var(--ion-text-color);
 }
 

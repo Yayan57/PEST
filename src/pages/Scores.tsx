@@ -82,7 +82,7 @@ const Scores: React.FC = () => {
           <IonTitle className="score-title">{league}</IonTitle>
           <div className="score-divider" />
           <IonCardContent>
-            <IonList lines="none">
+            <IonList lines="none" className="score-list">
               {leagueMatches.map((list, index) => (
                 <IonItem key={`item_${index}`} className="score-item">
                   <div className="teamImage">

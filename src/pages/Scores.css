@@ -36,9 +36,13 @@
   padding-top: 17px;
 }
 .score-title {
+  padding-top: 8px;
   color: var(--ion-text-color);
 }
 
 .score-card {
+  background-color: var(--ion-card-color);
+}
+.score-list {
   background-color: var(--ion-card-color);
 }
