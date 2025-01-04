@@ -14,6 +14,7 @@
   height: auto;
   min-height: 130px;
   display: flex;
+  --ion-background-color: var(--ion-card-color);
 }
 
 .score-item:last-child {
@@ -33,4 +34,11 @@
   margin-left: auto;
   padding-bottom: 15px;
   padding-top: 17px;
+}
+.score-title {
+  color: var(--ion-text-color);
+}
+
+.score-card {
+  background-color: var(--ion-card-color);
 }

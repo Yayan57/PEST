@@ -116,8 +116,8 @@ const Home: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent>
-        <IonCard>
-          <IonTitle style={{ color: "black" }}>Top Headlines</IonTitle>
+        <IonCard className="headline-card">
+          <IonTitle className="headline-title">Top Headlines</IonTitle>
           <div className="headline-divider" />
           {articles.map((article) => {
             return (

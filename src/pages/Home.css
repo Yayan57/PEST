@@ -1,22 +1,27 @@
+/*I know this is bad but this is the root color and dark mode color
+selectors for all 4 tabs, I tried to put it in its own file but it didnt work
+and I didnt want to spend too much time on it */
 :root {
-  --background-color: #fff;
-  --text-color: #000;
+  --ion-background-color: #fff;
+  --ion-text-color: #000;
+  --ion-card-color: #eee;
   --hover-background-color: rgb(3, 121, 38);
   --hover-text-color: var(--ion-color-light);
 }
 
-/* Define dark mode colors */
+/*  dark mode colors */
 body.dark {
-  --background-color: #000;
-  --text-color: #fff;
+  --ion-background-color: #222;
+  --ion-text-color: #fff;
+  --ion-card-color: #333;
   --hover-background-color: rgb(3, 121, 38);
   --hover-text-color: var(--ion-color-light);
 }
 
 ion-item {
   --padding-start: 20px;
-  --background: var(--background-color);
-  --color: var(--text-color);
+  --background: var(--ion-background-color);
+  --color: var(--ion-text-color);
 }
 
 ion-item:hover {
@@ -33,14 +38,21 @@ ion-item:hover {
 .headline-link {
   padding-left: 15px;
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--ion-text-color);
 }
 
 .headlines {
   padding-bottom: 15px;
 }
 
+.headline-title {
+  color: var(--ion-text-color);
+}
+
 .headline-text {
   font-weight: bold;
-  color: var(--text-color);
+  color: var(--ion-text-color);
+}
+.headline-card {
+  background-color: var(--ion-card-color);
 }

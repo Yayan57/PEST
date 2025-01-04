@@ -17,7 +17,6 @@ import {
   moonOutline,
 } from "ionicons/icons";
 import React, { useState, useEffect } from "react";
-import "./More.css";
 
 const More: React.FC = () => {
   const [darkMode, setDarkMode] = useState(false);

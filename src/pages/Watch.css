@@ -28,3 +28,11 @@
   text-align: left;
   margin-left: 10px; /* Adjust the margin as needed */
 }
+
+.watch-title {
+  color: var(--ion-text-color);
+}
+
+.alsoWatch-card {
+  background-color: var(--ion-card-color);
+}

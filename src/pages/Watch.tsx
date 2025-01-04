@@ -19,7 +19,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 //import "swiper/css";
 import LOLthumbnail from "../assets/images/lol_thumbnail.jfif";
-import CS2thumbnail from "../assets/images/cs2_thumbnail.jfif";
+import CS2thumbnail from "../assets/images/cs2_thumbnail.webp";
 import RLthumbnail from "../assets/images/rl_thumbnail.jfif";
 import "./Watch.css";
 
@@ -93,8 +93,8 @@ const Watch: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent className="content-top">
-        <IonCard>
-          <IonTitle style={{ color: "black" }}>Watch Here</IonTitle>
+        <IonCard className="alsoWatch-card">
+          <IonTitle className="watch-title">Also Watch</IonTitle>
           <Swiper
             spaceBetween={0}
             slidesPerView="auto"

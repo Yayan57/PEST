@@ -78,8 +78,8 @@ const Scores: React.FC = () => {
       }
 
       return (
-        <IonCard key={league}>
-          <IonTitle>{league}</IonTitle>
+        <IonCard key={league} className="score-card">
+          <IonTitle className="score-title">{league}</IonTitle>
           <div className="score-divider" />
           <IonCardContent>
             <IonList lines="none">
