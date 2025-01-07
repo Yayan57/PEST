@@ -57,3 +57,20 @@ ion-item:hover {
 .headline-card {
   background-color: var(--ion-card-color);
 }
+.list-icon {
+  color: var(--ion-text-color);
+}
+
+.featuredGame-teams {
+  color: white;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.featuredGame-teams .team {
+  flex: 1;
+  text-align: center;
+}

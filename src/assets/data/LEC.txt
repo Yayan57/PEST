@@ -1,0 +1,4482 @@
+[
+  {
+    "id": "113476054450558827",
+    "blockName": "Week 1",
+    "startTime": "2025-01-18T17:00:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Team Heretics",
+        "image": "http://static.lolesports.com/teams/1672933861879_Heretics-Full-Color.png",
+        "code": "TH"
+      },
+      {
+        "name": "Rogue",
+        "image": "http://static.lolesports.com/teams/1705054928404_RGE.png",
+        "code": "RGE"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558861",
+    "blockName": "Week 1",
+    "startTime": "2025-01-18T17:45:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Team Vitality",
+        "image": "http://static.lolesports.com/teams/1675865863968_Vitality_FullColor.png",
+        "code": "VIT"
+      },
+      {
+        "name": "Team BDS",
+        "image": "http://static.lolesports.com/teams/1641292031788_Team_BDSlogo_square.png",
+        "code": "BDS"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558887",
+    "blockName": "Week 1",
+    "startTime": "2025-01-18T18:30:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "GIANTX",
+        "image": "http://static.lolesports.com/teams/1704790322129_GX.png",
+        "code": "GX"
+      },
+      {
+        "name": "SK Gaming",
+        "image": "http://static.lolesports.com/teams/1643979272144_SK_Monochrome.png",
+        "code": "SK"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558905",
+    "blockName": "Week 1",
+    "startTime": "2025-01-18T19:15:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "MAD Lions KOI",
+        "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+        "code": "MKOI"
+      },
+      {
+        "name": "Fnatic",
+        "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
+        "code": "FNC"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558915",
+    "blockName": "Week 1",
+    "startTime": "2025-01-18T20:00:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Karmine Corp",
+        "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
+        "code": "KC"
+      },
+      {
+        "name": "G2 Esports",
+        "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
+        "code": "G2"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558835",
+    "blockName": "Week 1",
+    "startTime": "2025-01-19T17:00:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Team Heretics",
+        "image": "http://static.lolesports.com/teams/1672933861879_Heretics-Full-Color.png",
+        "code": "TH"
+      },
+      {
+        "name": "SK Gaming",
+        "image": "http://static.lolesports.com/teams/1643979272144_SK_Monochrome.png",
+        "code": "SK"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558849",
+    "blockName": "Week 1",
+    "startTime": "2025-01-19T17:45:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Rogue",
+        "image": "http://static.lolesports.com/teams/1705054928404_RGE.png",
+        "code": "RGE"
+      },
+      {
+        "name": "GIANTX",
+        "image": "http://static.lolesports.com/teams/1704790322129_GX.png",
+        "code": "GX"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558907",
+    "blockName": "Week 1",
+    "startTime": "2025-01-19T18:30:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "MAD Lions KOI",
+        "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+        "code": "MKOI"
+      },
+      {
+        "name": "Karmine Corp",
+        "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
+        "code": "KC"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558885",
+    "blockName": "Week 1",
+    "startTime": "2025-01-19T19:15:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "G2 Esports",
+        "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
+        "code": "G2"
+      },
+      {
+        "name": "Team BDS",
+        "image": "http://static.lolesports.com/teams/1641292031788_Team_BDSlogo_square.png",
+        "code": "BDS"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558869",
+    "blockName": "Week 1",
+    "startTime": "2025-01-19T20:00:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Fnatic",
+        "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
+        "code": "FNC"
+      },
+      {
+        "name": "Team Vitality",
+        "image": "http://static.lolesports.com/teams/1675865863968_Vitality_FullColor.png",
+        "code": "VIT"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558847",
+    "blockName": "Week 1",
+    "startTime": "2025-01-20T17:00:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Team BDS",
+        "image": "http://static.lolesports.com/teams/1641292031788_Team_BDSlogo_square.png",
+        "code": "BDS"
+      },
+      {
+        "name": "Rogue",
+        "image": "http://static.lolesports.com/teams/1705054928404_RGE.png",
+        "code": "RGE"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558839",
+    "blockName": "Week 1",
+    "startTime": "2025-01-20T17:45:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Team Heretics",
+        "image": "http://static.lolesports.com/teams/1672933861879_Heretics-Full-Color.png",
+        "code": "TH"
+      },
+      {
+        "name": "Fnatic",
+        "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
+        "code": "FNC"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558867",
+    "blockName": "Week 1",
+    "startTime": "2025-01-20T18:30:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "MAD Lions KOI",
+        "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+        "code": "MKOI"
+      },
+      {
+        "name": "Team Vitality",
+        "image": "http://static.lolesports.com/teams/1675865863968_Vitality_FullColor.png",
+        "code": "VIT"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558903",
+    "blockName": "Week 1",
+    "startTime": "2025-01-20T19:15:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "G2 Esports",
+        "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
+        "code": "G2"
+      },
+      {
+        "name": "SK Gaming",
+        "image": "http://static.lolesports.com/teams/1643979272144_SK_Monochrome.png",
+        "code": "SK"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558893",
+    "blockName": "Week 1",
+    "startTime": "2025-01-20T20:00:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "GIANTX",
+        "image": "http://static.lolesports.com/teams/1704790322129_GX.png",
+        "code": "GX"
+      },
+      {
+        "name": "Karmine Corp",
+        "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
+        "code": "KC"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558855",
+    "blockName": "Week 2",
+    "startTime": "2025-01-25T17:00:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Rogue",
+        "image": "http://static.lolesports.com/teams/1705054928404_RGE.png",
+        "code": "RGE"
+      },
+      {
+        "name": "Fnatic",
+        "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
+        "code": "FNC"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558831",
+    "blockName": "Week 2",
+    "startTime": "2025-01-25T17:45:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Team BDS",
+        "image": "http://static.lolesports.com/teams/1641292031788_Team_BDSlogo_square.png",
+        "code": "BDS"
+      },
+      {
+        "name": "Team Heretics",
+        "image": "http://static.lolesports.com/teams/1672933861879_Heretics-Full-Color.png",
+        "code": "TH"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558889",
+    "blockName": "Week 2",
+    "startTime": "2025-01-25T18:30:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "GIANTX",
+        "image": "http://static.lolesports.com/teams/1704790322129_GX.png",
+        "code": "GX"
+      },
+      {
+        "name": "MAD Lions KOI",
+        "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+        "code": "MKOI"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558873",
+    "blockName": "Week 2",
+    "startTime": "2025-01-25T19:15:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Team Vitality",
+        "image": "http://static.lolesports.com/teams/1675865863968_Vitality_FullColor.png",
+        "code": "VIT"
+      },
+      {
+        "name": "G2 Esports",
+        "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
+        "code": "G2"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558901",
+    "blockName": "Week 2",
+    "startTime": "2025-01-25T20:00:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Karmine Corp",
+        "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
+        "code": "KC"
+      },
+      {
+        "name": "SK Gaming",
+        "image": "http://static.lolesports.com/teams/1643979272144_SK_Monochrome.png",
+        "code": "SK"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558833",
+    "blockName": "Week 2",
+    "startTime": "2025-01-26T17:00:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "GIANTX",
+        "image": "http://static.lolesports.com/teams/1704790322129_GX.png",
+        "code": "GX"
+      },
+      {
+        "name": "Team Heretics",
+        "image": "http://static.lolesports.com/teams/1672933861879_Heretics-Full-Color.png",
+        "code": "TH"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558865",
+    "blockName": "Week 2",
+    "startTime": "2025-01-26T17:45:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "SK Gaming",
+        "image": "http://static.lolesports.com/teams/1643979272144_SK_Monochrome.png",
+        "code": "SK"
+      },
+      {
+        "name": "Team Vitality",
+        "image": "http://static.lolesports.com/teams/1675865863968_Vitality_FullColor.png",
+        "code": "VIT"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558913",
+    "blockName": "Week 2",
+    "startTime": "2025-01-26T18:30:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Fnatic",
+        "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
+        "code": "FNC"
+      },
+      {
+        "name": "G2 Esports",
+        "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
+        "code": "G2"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558857",
+    "blockName": "Week 2",
+    "startTime": "2025-01-26T19:15:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Karmine Corp",
+        "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
+        "code": "KC"
+      },
+      {
+        "name": "Rogue",
+        "image": "http://static.lolesports.com/teams/1705054928404_RGE.png",
+        "code": "RGE"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558879",
+    "blockName": "Week 2",
+    "startTime": "2025-01-26T20:00:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Team BDS",
+        "image": "http://static.lolesports.com/teams/1641292031788_Team_BDSlogo_square.png",
+        "code": "BDS"
+      },
+      {
+        "name": "MAD Lions KOI",
+        "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+        "code": "MKOI"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558845",
+    "blockName": "Week 2",
+    "startTime": "2025-01-27T17:00:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Team Vitality",
+        "image": "http://static.lolesports.com/teams/1675865863968_Vitality_FullColor.png",
+        "code": "VIT"
+      },
+      {
+        "name": "Rogue",
+        "image": "http://static.lolesports.com/teams/1705054928404_RGE.png",
+        "code": "RGE"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558881",
+    "blockName": "Week 2",
+    "startTime": "2025-01-27T17:45:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Fnatic",
+        "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
+        "code": "FNC"
+      },
+      {
+        "name": "Team BDS",
+        "image": "http://static.lolesports.com/teams/1641292031788_Team_BDSlogo_square.png",
+        "code": "BDS"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558895",
+    "blockName": "Week 2",
+    "startTime": "2025-01-27T18:30:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "G2 Esports",
+        "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
+        "code": "G2"
+      },
+      {
+        "name": "GIANTX",
+        "image": "http://static.lolesports.com/teams/1704790322129_GX.png",
+        "code": "GX"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558841",
+    "blockName": "Week 2",
+    "startTime": "2025-01-27T19:15:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Karmine Corp",
+        "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
+        "code": "KC"
+      },
+      {
+        "name": "Team Heretics",
+        "image": "http://static.lolesports.com/teams/1672933861879_Heretics-Full-Color.png",
+        "code": "TH"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558897",
+    "blockName": "Week 2",
+    "startTime": "2025-01-27T20:00:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "SK Gaming",
+        "image": "http://static.lolesports.com/teams/1643979272144_SK_Monochrome.png",
+        "code": "SK"
+      },
+      {
+        "name": "MAD Lions KOI",
+        "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+        "code": "MKOI"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558877",
+    "blockName": "Week 3",
+    "startTime": "2025-02-01T17:00:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "SK Gaming",
+        "image": "http://static.lolesports.com/teams/1643979272144_SK_Monochrome.png",
+        "code": "SK"
+      },
+      {
+        "name": "Team BDS",
+        "image": "http://static.lolesports.com/teams/1641292031788_Team_BDSlogo_square.png",
+        "code": "BDS"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558891",
+    "blockName": "Week 3",
+    "startTime": "2025-02-01T17:45:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "GIANTX",
+        "image": "http://static.lolesports.com/teams/1704790322129_GX.png",
+        "code": "GX"
+      },
+      {
+        "name": "Fnatic",
+        "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
+        "code": "FNC"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558859",
+    "blockName": "Week 3",
+    "startTime": "2025-02-01T18:30:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Rogue",
+        "image": "http://static.lolesports.com/teams/1705054928404_RGE.png",
+        "code": "RGE"
+      },
+      {
+        "name": "G2 Esports",
+        "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
+        "code": "G2"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558837",
+    "blockName": "Week 3",
+    "startTime": "2025-02-01T19:15:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Team Heretics",
+        "image": "http://static.lolesports.com/teams/1672933861879_Heretics-Full-Color.png",
+        "code": "TH"
+      },
+      {
+        "name": "MAD Lions KOI",
+        "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+        "code": "MKOI"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558871",
+    "blockName": "Week 3",
+    "startTime": "2025-02-01T20:00:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Team Vitality",
+        "image": "http://static.lolesports.com/teams/1675865863968_Vitality_FullColor.png",
+        "code": "VIT"
+      },
+      {
+        "name": "Karmine Corp",
+        "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
+        "code": "KC"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558851",
+    "blockName": "Week 3",
+    "startTime": "2025-02-02T17:00:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Rogue",
+        "image": "http://static.lolesports.com/teams/1705054928404_RGE.png",
+        "code": "RGE"
+      },
+      {
+        "name": "SK Gaming",
+        "image": "http://static.lolesports.com/teams/1643979272144_SK_Monochrome.png",
+        "code": "SK"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558875",
+    "blockName": "Week 3",
+    "startTime": "2025-02-02T17:45:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Team BDS",
+        "image": "http://static.lolesports.com/teams/1641292031788_Team_BDSlogo_square.png",
+        "code": "BDS"
+      },
+      {
+        "name": "GIANTX",
+        "image": "http://static.lolesports.com/teams/1704790322129_GX.png",
+        "code": "GX"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558911",
+    "blockName": "Week 3",
+    "startTime": "2025-02-02T18:30:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Fnatic",
+        "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
+        "code": "FNC"
+      },
+      {
+        "name": "Karmine Corp",
+        "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
+        "code": "KC"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558829",
+    "blockName": "Week 3",
+    "startTime": "2025-02-02T19:15:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Team Heretics",
+        "image": "http://static.lolesports.com/teams/1672933861879_Heretics-Full-Color.png",
+        "code": "TH"
+      },
+      {
+        "name": "Team Vitality",
+        "image": "http://static.lolesports.com/teams/1675865863968_Vitality_FullColor.png",
+        "code": "VIT"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558909",
+    "blockName": "Week 3",
+    "startTime": "2025-02-02T20:00:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "G2 Esports",
+        "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
+        "code": "G2"
+      },
+      {
+        "name": "MAD Lions KOI",
+        "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+        "code": "MKOI"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558827",
+    "blockName": "Week 1",
+    "startTime": "2025-01-18T17:00:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Team Heretics",
+        "image": "http://static.lolesports.com/teams/1672933861879_Heretics-Full-Color.png",
+        "code": "TH"
+      },
+      {
+        "name": "Rogue",
+        "image": "http://static.lolesports.com/teams/1705054928404_RGE.png",
+        "code": "RGE"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558861",
+    "blockName": "Week 1",
+    "startTime": "2025-01-18T17:45:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Team Vitality",
+        "image": "http://static.lolesports.com/teams/1675865863968_Vitality_FullColor.png",
+        "code": "VIT"
+      },
+      {
+        "name": "Team BDS",
+        "image": "http://static.lolesports.com/teams/1641292031788_Team_BDSlogo_square.png",
+        "code": "BDS"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558887",
+    "blockName": "Week 1",
+    "startTime": "2025-01-18T18:30:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "GIANTX",
+        "image": "http://static.lolesports.com/teams/1704790322129_GX.png",
+        "code": "GX"
+      },
+      {
+        "name": "SK Gaming",
+        "image": "http://static.lolesports.com/teams/1643979272144_SK_Monochrome.png",
+        "code": "SK"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558905",
+    "blockName": "Week 1",
+    "startTime": "2025-01-18T19:15:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "MAD Lions KOI",
+        "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+        "code": "MKOI"
+      },
+      {
+        "name": "Fnatic",
+        "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
+        "code": "FNC"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558915",
+    "blockName": "Week 1",
+    "startTime": "2025-01-18T20:00:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Karmine Corp",
+        "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
+        "code": "KC"
+      },
+      {
+        "name": "G2 Esports",
+        "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
+        "code": "G2"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558835",
+    "blockName": "Week 1",
+    "startTime": "2025-01-19T17:00:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Team Heretics",
+        "image": "http://static.lolesports.com/teams/1672933861879_Heretics-Full-Color.png",
+        "code": "TH"
+      },
+      {
+        "name": "SK Gaming",
+        "image": "http://static.lolesports.com/teams/1643979272144_SK_Monochrome.png",
+        "code": "SK"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558849",
+    "blockName": "Week 1",
+    "startTime": "2025-01-19T17:45:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Rogue",
+        "image": "http://static.lolesports.com/teams/1705054928404_RGE.png",
+        "code": "RGE"
+      },
+      {
+        "name": "GIANTX",
+        "image": "http://static.lolesports.com/teams/1704790322129_GX.png",
+        "code": "GX"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558907",
+    "blockName": "Week 1",
+    "startTime": "2025-01-19T18:30:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "MAD Lions KOI",
+        "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+        "code": "MKOI"
+      },
+      {
+        "name": "Karmine Corp",
+        "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
+        "code": "KC"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558885",
+    "blockName": "Week 1",
+    "startTime": "2025-01-19T19:15:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "G2 Esports",
+        "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
+        "code": "G2"
+      },
+      {
+        "name": "Team BDS",
+        "image": "http://static.lolesports.com/teams/1641292031788_Team_BDSlogo_square.png",
+        "code": "BDS"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558869",
+    "blockName": "Week 1",
+    "startTime": "2025-01-19T20:00:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Fnatic",
+        "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
+        "code": "FNC"
+      },
+      {
+        "name": "Team Vitality",
+        "image": "http://static.lolesports.com/teams/1675865863968_Vitality_FullColor.png",
+        "code": "VIT"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558847",
+    "blockName": "Week 1",
+    "startTime": "2025-01-20T17:00:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Team BDS",
+        "image": "http://static.lolesports.com/teams/1641292031788_Team_BDSlogo_square.png",
+        "code": "BDS"
+      },
+      {
+        "name": "Rogue",
+        "image": "http://static.lolesports.com/teams/1705054928404_RGE.png",
+        "code": "RGE"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558839",
+    "blockName": "Week 1",
+    "startTime": "2025-01-20T17:45:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Team Heretics",
+        "image": "http://static.lolesports.com/teams/1672933861879_Heretics-Full-Color.png",
+        "code": "TH"
+      },
+      {
+        "name": "Fnatic",
+        "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
+        "code": "FNC"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558867",
+    "blockName": "Week 1",
+    "startTime": "2025-01-20T18:30:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "MAD Lions KOI",
+        "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+        "code": "MKOI"
+      },
+      {
+        "name": "Team Vitality",
+        "image": "http://static.lolesports.com/teams/1675865863968_Vitality_FullColor.png",
+        "code": "VIT"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558903",
+    "blockName": "Week 1",
+    "startTime": "2025-01-20T19:15:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "G2 Esports",
+        "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
+        "code": "G2"
+      },
+      {
+        "name": "SK Gaming",
+        "image": "http://static.lolesports.com/teams/1643979272144_SK_Monochrome.png",
+        "code": "SK"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558893",
+    "blockName": "Week 1",
+    "startTime": "2025-01-20T20:00:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "GIANTX",
+        "image": "http://static.lolesports.com/teams/1704790322129_GX.png",
+        "code": "GX"
+      },
+      {
+        "name": "Karmine Corp",
+        "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
+        "code": "KC"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558855",
+    "blockName": "Week 2",
+    "startTime": "2025-01-25T17:00:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Rogue",
+        "image": "http://static.lolesports.com/teams/1705054928404_RGE.png",
+        "code": "RGE"
+      },
+      {
+        "name": "Fnatic",
+        "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
+        "code": "FNC"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558831",
+    "blockName": "Week 2",
+    "startTime": "2025-01-25T17:45:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Team BDS",
+        "image": "http://static.lolesports.com/teams/1641292031788_Team_BDSlogo_square.png",
+        "code": "BDS"
+      },
+      {
+        "name": "Team Heretics",
+        "image": "http://static.lolesports.com/teams/1672933861879_Heretics-Full-Color.png",
+        "code": "TH"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558889",
+    "blockName": "Week 2",
+    "startTime": "2025-01-25T18:30:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "GIANTX",
+        "image": "http://static.lolesports.com/teams/1704790322129_GX.png",
+        "code": "GX"
+      },
+      {
+        "name": "MAD Lions KOI",
+        "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+        "code": "MKOI"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558873",
+    "blockName": "Week 2",
+    "startTime": "2025-01-25T19:15:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Team Vitality",
+        "image": "http://static.lolesports.com/teams/1675865863968_Vitality_FullColor.png",
+        "code": "VIT"
+      },
+      {
+        "name": "G2 Esports",
+        "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
+        "code": "G2"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558901",
+    "blockName": "Week 2",
+    "startTime": "2025-01-25T20:00:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Karmine Corp",
+        "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
+        "code": "KC"
+      },
+      {
+        "name": "SK Gaming",
+        "image": "http://static.lolesports.com/teams/1643979272144_SK_Monochrome.png",
+        "code": "SK"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558833",
+    "blockName": "Week 2",
+    "startTime": "2025-01-26T17:00:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "GIANTX",
+        "image": "http://static.lolesports.com/teams/1704790322129_GX.png",
+        "code": "GX"
+      },
+      {
+        "name": "Team Heretics",
+        "image": "http://static.lolesports.com/teams/1672933861879_Heretics-Full-Color.png",
+        "code": "TH"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558865",
+    "blockName": "Week 2",
+    "startTime": "2025-01-26T17:45:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "SK Gaming",
+        "image": "http://static.lolesports.com/teams/1643979272144_SK_Monochrome.png",
+        "code": "SK"
+      },
+      {
+        "name": "Team Vitality",
+        "image": "http://static.lolesports.com/teams/1675865863968_Vitality_FullColor.png",
+        "code": "VIT"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558913",
+    "blockName": "Week 2",
+    "startTime": "2025-01-26T18:30:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Fnatic",
+        "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
+        "code": "FNC"
+      },
+      {
+        "name": "G2 Esports",
+        "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
+        "code": "G2"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558857",
+    "blockName": "Week 2",
+    "startTime": "2025-01-26T19:15:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Karmine Corp",
+        "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
+        "code": "KC"
+      },
+      {
+        "name": "Rogue",
+        "image": "http://static.lolesports.com/teams/1705054928404_RGE.png",
+        "code": "RGE"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558879",
+    "blockName": "Week 2",
+    "startTime": "2025-01-26T20:00:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Team BDS",
+        "image": "http://static.lolesports.com/teams/1641292031788_Team_BDSlogo_square.png",
+        "code": "BDS"
+      },
+      {
+        "name": "MAD Lions KOI",
+        "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+        "code": "MKOI"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558845",
+    "blockName": "Week 2",
+    "startTime": "2025-01-27T17:00:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Team Vitality",
+        "image": "http://static.lolesports.com/teams/1675865863968_Vitality_FullColor.png",
+        "code": "VIT"
+      },
+      {
+        "name": "Rogue",
+        "image": "http://static.lolesports.com/teams/1705054928404_RGE.png",
+        "code": "RGE"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558881",
+    "blockName": "Week 2",
+    "startTime": "2025-01-27T17:45:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Fnatic",
+        "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
+        "code": "FNC"
+      },
+      {
+        "name": "Team BDS",
+        "image": "http://static.lolesports.com/teams/1641292031788_Team_BDSlogo_square.png",
+        "code": "BDS"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558895",
+    "blockName": "Week 2",
+    "startTime": "2025-01-27T18:30:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "G2 Esports",
+        "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
+        "code": "G2"
+      },
+      {
+        "name": "GIANTX",
+        "image": "http://static.lolesports.com/teams/1704790322129_GX.png",
+        "code": "GX"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558841",
+    "blockName": "Week 2",
+    "startTime": "2025-01-27T19:15:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Karmine Corp",
+        "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
+        "code": "KC"
+      },
+      {
+        "name": "Team Heretics",
+        "image": "http://static.lolesports.com/teams/1672933861879_Heretics-Full-Color.png",
+        "code": "TH"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558897",
+    "blockName": "Week 2",
+    "startTime": "2025-01-27T20:00:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "SK Gaming",
+        "image": "http://static.lolesports.com/teams/1643979272144_SK_Monochrome.png",
+        "code": "SK"
+      },
+      {
+        "name": "MAD Lions KOI",
+        "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+        "code": "MKOI"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558877",
+    "blockName": "Week 3",
+    "startTime": "2025-02-01T17:00:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "SK Gaming",
+        "image": "http://static.lolesports.com/teams/1643979272144_SK_Monochrome.png",
+        "code": "SK"
+      },
+      {
+        "name": "Team BDS",
+        "image": "http://static.lolesports.com/teams/1641292031788_Team_BDSlogo_square.png",
+        "code": "BDS"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558891",
+    "blockName": "Week 3",
+    "startTime": "2025-02-01T17:45:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "GIANTX",
+        "image": "http://static.lolesports.com/teams/1704790322129_GX.png",
+        "code": "GX"
+      },
+      {
+        "name": "Fnatic",
+        "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
+        "code": "FNC"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558859",
+    "blockName": "Week 3",
+    "startTime": "2025-02-01T18:30:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Rogue",
+        "image": "http://static.lolesports.com/teams/1705054928404_RGE.png",
+        "code": "RGE"
+      },
+      {
+        "name": "G2 Esports",
+        "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
+        "code": "G2"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558837",
+    "blockName": "Week 3",
+    "startTime": "2025-02-01T19:15:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Team Heretics",
+        "image": "http://static.lolesports.com/teams/1672933861879_Heretics-Full-Color.png",
+        "code": "TH"
+      },
+      {
+        "name": "MAD Lions KOI",
+        "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+        "code": "MKOI"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558871",
+    "blockName": "Week 3",
+    "startTime": "2025-02-01T20:00:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Team Vitality",
+        "image": "http://static.lolesports.com/teams/1675865863968_Vitality_FullColor.png",
+        "code": "VIT"
+      },
+      {
+        "name": "Karmine Corp",
+        "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
+        "code": "KC"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558851",
+    "blockName": "Week 3",
+    "startTime": "2025-02-02T17:00:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Rogue",
+        "image": "http://static.lolesports.com/teams/1705054928404_RGE.png",
+        "code": "RGE"
+      },
+      {
+        "name": "SK Gaming",
+        "image": "http://static.lolesports.com/teams/1643979272144_SK_Monochrome.png",
+        "code": "SK"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558875",
+    "blockName": "Week 3",
+    "startTime": "2025-02-02T17:45:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Team BDS",
+        "image": "http://static.lolesports.com/teams/1641292031788_Team_BDSlogo_square.png",
+        "code": "BDS"
+      },
+      {
+        "name": "GIANTX",
+        "image": "http://static.lolesports.com/teams/1704790322129_GX.png",
+        "code": "GX"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558911",
+    "blockName": "Week 3",
+    "startTime": "2025-02-02T18:30:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Fnatic",
+        "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
+        "code": "FNC"
+      },
+      {
+        "name": "Karmine Corp",
+        "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
+        "code": "KC"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558829",
+    "blockName": "Week 3",
+    "startTime": "2025-02-02T19:15:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "Team Heretics",
+        "image": "http://static.lolesports.com/teams/1672933861879_Heretics-Full-Color.png",
+        "code": "TH"
+      },
+      {
+        "name": "Team Vitality",
+        "image": "http://static.lolesports.com/teams/1675865863968_Vitality_FullColor.png",
+        "code": "VIT"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "113476054450558909",
+    "blockName": "Week 3",
+    "startTime": "2025-02-02T20:00:00Z",
+    "state": "unstarted",
+    "league": {
+      "name": "LEC",
+      "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
+    },
+    "tournament": "Winter 2025",
+    "teams": [
+      {
+        "name": "G2 Esports",
+        "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
+        "code": "G2"
+      },
+      {
+        "name": "MAD Lions KOI",
+        "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+        "code": "MKOI"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924129223",
+    "blockName": "Swiss",
+    "startTime": "2024-10-03T12:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "BILIBILI GAMING DREAMSMART",
+        "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
+        "code": "BLG"
+      },
+      {
+        "name": "MAD Lions KOI",
+        "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+        "code": "MKOI"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924129225",
+    "blockName": "Swiss",
+    "startTime": "2024-10-03T13:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "TopEsports",
+        "image": "http://static.lolesports.com/teams/1592592064571_TopEsportsTES-01-FullonDark.png",
+        "code": "TES"
+      },
+      {
+        "name": "T1",
+        "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
+        "code": "T1"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924129231",
+    "blockName": "Swiss",
+    "startTime": "2024-10-03T14:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Gen.G Esports",
+        "image": "http://static.lolesports.com/teams/1655210113163_GenG_logo_200407-05.png",
+        "code": "GEN"
+      },
+      {
+        "name": "WeiboGaming Faw Audi",
+        "image": "http://static.lolesports.com/teams/1641202879910_3.png",
+        "code": "WBG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924129229",
+    "blockName": "Swiss",
+    "startTime": "2024-10-03T15:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Fnatic",
+        "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
+        "code": "FNC"
+      },
+      {
+        "name": "Dplus KIA",
+        "image": "http://static.lolesports.com/teams/1673260049703_DPlusKIALOGO11.png",
+        "code": "DK"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924129227",
+    "blockName": "Swiss",
+    "startTime": "2024-10-03T16:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Team Liquid Honda",
+        "image": "http://static.lolesports.com/teams/1631820014208_tl-2021-worlds.png",
+        "code": "TL"
+      },
+      {
+        "name": "Suzhou LNG Ninebot Esports",
+        "image": "http://static.lolesports.com/teams/1717487697003_LNGlogo.png",
+        "code": "LNG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924129217",
+    "blockName": "Swiss",
+    "startTime": "2024-10-03T17:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Hanwha Life Esports",
+        "image": "http://static.lolesports.com/teams/1631819564399_hle-2021-worlds.png",
+        "code": "HLE"
+      },
+      {
+        "name": "PSG Talon",
+        "image": "http://static.lolesports.com/teams/1734695201039_PSG_Talonlogo_profile.webp",
+        "code": "PSG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924129219",
+    "blockName": "Swiss",
+    "startTime": "2024-10-03T18:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "GAM Esports",
+        "image": "http://static.lolesports.com/teams/1643263093448_GAMyellow.png",
+        "code": "GAM"
+      },
+      {
+        "name": "FlyQuest",
+        "image": "http://static.lolesports.com/teams/flyquest-new-on-dark.png",
+        "code": "FLY"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924129221",
+    "blockName": "Swiss",
+    "startTime": "2024-10-03T19:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "G2 Esports",
+        "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
+        "code": "G2"
+      },
+      {
+        "name": "paiN Gaming",
+        "image": "http://static.lolesports.com/teams/1674657011011_pain_logo_white.png",
+        "code": "PNG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924194775",
+    "blockName": "Swiss",
+    "startTime": "2024-10-04T12:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "BILIBILI GAMING DREAMSMART",
+        "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
+        "code": "BLG"
+      },
+      {
+        "name": "Suzhou LNG Ninebot Esports",
+        "image": "http://static.lolesports.com/teams/1717487697003_LNGlogo.png",
+        "code": "LNG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924194773",
+    "blockName": "Swiss",
+    "startTime": "2024-10-04T13:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Gen.G Esports",
+        "image": "http://static.lolesports.com/teams/1655210113163_GenG_logo_200407-05.png",
+        "code": "GEN"
+      },
+      {
+        "name": "TopEsports",
+        "image": "http://static.lolesports.com/teams/1592592064571_TopEsportsTES-01-FullonDark.png",
+        "code": "TES"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924129233",
+    "blockName": "Swiss",
+    "startTime": "2024-10-04T14:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "G2 Esports",
+        "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
+        "code": "G2"
+      },
+      {
+        "name": "Hanwha Life Esports",
+        "image": "http://static.lolesports.com/teams/1631819564399_hle-2021-worlds.png",
+        "code": "HLE"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924194781",
+    "blockName": "Swiss",
+    "startTime": "2024-10-04T15:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Team Liquid Honda",
+        "image": "http://static.lolesports.com/teams/1631820014208_tl-2021-worlds.png",
+        "code": "TL"
+      },
+      {
+        "name": "WeiboGaming Faw Audi",
+        "image": "http://static.lolesports.com/teams/1641202879910_3.png",
+        "code": "WBG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924194777",
+    "blockName": "Swiss",
+    "startTime": "2024-10-04T16:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "T1",
+        "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
+        "code": "T1"
+      },
+      {
+        "name": "paiN Gaming",
+        "image": "http://static.lolesports.com/teams/1674657011011_pain_logo_white.png",
+        "code": "PNG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924194771",
+    "blockName": "Swiss",
+    "startTime": "2024-10-04T17:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Dplus KIA",
+        "image": "http://static.lolesports.com/teams/1673260049703_DPlusKIALOGO11.png",
+        "code": "DK"
+      },
+      {
+        "name": "FlyQuest",
+        "image": "http://static.lolesports.com/teams/flyquest-new-on-dark.png",
+        "code": "FLY"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924194783",
+    "blockName": "Swiss",
+    "startTime": "2024-10-04T18:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Fnatic",
+        "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
+        "code": "FNC"
+      },
+      {
+        "name": "GAM Esports",
+        "image": "http://static.lolesports.com/teams/1643263093448_GAMyellow.png",
+        "code": "GAM"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924194779",
+    "blockName": "Swiss",
+    "startTime": "2024-10-04T19:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "PSG Talon",
+        "image": "http://static.lolesports.com/teams/1734695201039_PSG_Talonlogo_profile.webp",
+        "code": "PSG"
+      },
+      {
+        "name": "MAD Lions KOI",
+        "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+        "code": "MKOI"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924194789",
+    "blockName": "Swiss",
+    "startTime": "2024-10-05T12:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Dplus KIA",
+        "image": "http://static.lolesports.com/teams/1673260049703_DPlusKIALOGO11.png",
+        "code": "DK"
+      },
+      {
+        "name": "Suzhou LNG Ninebot Esports",
+        "image": "http://static.lolesports.com/teams/1717487697003_LNGlogo.png",
+        "code": "LNG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 3
+    }
+  },
+  {
+    "id": "112966669924194785",
+    "blockName": "Swiss",
+    "startTime": "2024-10-05T15:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Hanwha Life Esports",
+        "image": "http://static.lolesports.com/teams/1631819564399_hle-2021-worlds.png",
+        "code": "HLE"
+      },
+      {
+        "name": "Gen.G Esports",
+        "image": "http://static.lolesports.com/teams/1655210113163_GenG_logo_200407-05.png",
+        "code": "GEN"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 3
+    }
+  },
+  {
+    "id": "112966669924194797",
+    "blockName": "Swiss",
+    "startTime": "2024-10-06T12:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "TopEsports",
+        "image": "http://static.lolesports.com/teams/1592592064571_TopEsportsTES-01-FullonDark.png",
+        "code": "TES"
+      },
+      {
+        "name": "Fnatic",
+        "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
+        "code": "FNC"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924194793",
+    "blockName": "Swiss",
+    "startTime": "2024-10-06T13:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "BILIBILI GAMING DREAMSMART",
+        "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
+        "code": "BLG"
+      },
+      {
+        "name": "T1",
+        "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
+        "code": "T1"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924194795",
+    "blockName": "Swiss",
+    "startTime": "2024-10-06T14:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "FlyQuest",
+        "image": "http://static.lolesports.com/teams/flyquest-new-on-dark.png",
+        "code": "FLY"
+      },
+      {
+        "name": "PSG Talon",
+        "image": "http://static.lolesports.com/teams/1734695201039_PSG_Talonlogo_profile.webp",
+        "code": "PSG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924194799",
+    "blockName": "Swiss",
+    "startTime": "2024-10-06T15:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "G2 Esports",
+        "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
+        "code": "G2"
+      },
+      {
+        "name": "WeiboGaming Faw Audi",
+        "image": "http://static.lolesports.com/teams/1641202879910_3.png",
+        "code": "WBG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924194805",
+    "blockName": "Swiss",
+    "startTime": "2024-10-07T12:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "MAD Lions KOI",
+        "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+        "code": "MKOI"
+      },
+      {
+        "name": "GAM Esports",
+        "image": "http://static.lolesports.com/teams/1643263093448_GAMyellow.png",
+        "code": "GAM"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 3
+    }
+  },
+  {
+    "id": "112966669924194801",
+    "blockName": "Swiss",
+    "startTime": "2024-10-07T15:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Team Liquid Honda",
+        "image": "http://static.lolesports.com/teams/1631820014208_tl-2021-worlds.png",
+        "code": "TL"
+      },
+      {
+        "name": "paiN Gaming",
+        "image": "http://static.lolesports.com/teams/1674657011011_pain_logo_white.png",
+        "code": "PNG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 3
+    }
+  },
+  {
+    "id": "112966669924194809",
+    "blockName": "Swiss",
+    "startTime": "2024-10-10T12:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "TopEsports",
+        "image": "http://static.lolesports.com/teams/1592592064571_TopEsportsTES-01-FullonDark.png",
+        "code": "TES"
+      },
+      {
+        "name": "Dplus KIA",
+        "image": "http://static.lolesports.com/teams/1673260049703_DPlusKIALOGO11.png",
+        "code": "DK"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 3
+    }
+  },
+  {
+    "id": "112966669924194817",
+    "blockName": "Swiss",
+    "startTime": "2024-10-10T15:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Hanwha Life Esports",
+        "image": "http://static.lolesports.com/teams/1631819564399_hle-2021-worlds.png",
+        "code": "HLE"
+      },
+      {
+        "name": "FlyQuest",
+        "image": "http://static.lolesports.com/teams/flyquest-new-on-dark.png",
+        "code": "FLY"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 3
+    }
+  },
+  {
+    "id": "112966669924194813",
+    "blockName": "Swiss",
+    "startTime": "2024-10-11T12:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "G2 Esports",
+        "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
+        "code": "G2"
+      },
+      {
+        "name": "T1",
+        "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
+        "code": "T1"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 3
+    }
+  },
+  {
+    "id": "112966669924194829",
+    "blockName": "Swiss",
+    "startTime": "2024-10-11T15:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "BILIBILI GAMING DREAMSMART",
+        "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
+        "code": "BLG"
+      },
+      {
+        "name": "PSG Talon",
+        "image": "http://static.lolesports.com/teams/1734695201039_PSG_Talonlogo_profile.webp",
+        "code": "PSG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 3
+    }
+  },
+  {
+    "id": "112966669924194825",
+    "blockName": "Swiss",
+    "startTime": "2024-10-12T12:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Fnatic",
+        "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
+        "code": "FNC"
+      },
+      {
+        "name": "WeiboGaming Faw Audi",
+        "image": "http://static.lolesports.com/teams/1641202879910_3.png",
+        "code": "WBG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 3
+    }
+  },
+  {
+    "id": "112966669924194821",
+    "blockName": "Swiss",
+    "startTime": "2024-10-12T15:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Team Liquid Honda",
+        "image": "http://static.lolesports.com/teams/1631820014208_tl-2021-worlds.png",
+        "code": "TL"
+      },
+      {
+        "name": "GAM Esports",
+        "image": "http://static.lolesports.com/teams/1643263093448_GAMyellow.png",
+        "code": "GAM"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 3
+    }
+  },
+  {
+    "id": "112966669924194833",
+    "blockName": "Swiss",
+    "startTime": "2024-10-13T12:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Dplus KIA",
+        "image": "http://static.lolesports.com/teams/1673260049703_DPlusKIALOGO11.png",
+        "code": "DK"
+      },
+      {
+        "name": "WeiboGaming Faw Audi",
+        "image": "http://static.lolesports.com/teams/1641202879910_3.png",
+        "code": "WBG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 3
+    }
+  },
+  {
+    "id": "112966669924194841",
+    "blockName": "Swiss",
+    "startTime": "2024-10-13T15:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "G2 Esports",
+        "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
+        "code": "G2"
+      },
+      {
+        "name": "BILIBILI GAMING DREAMSMART",
+        "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
+        "code": "BLG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 3
+    }
+  },
+  {
+    "id": "112966669924194837",
+    "blockName": "Swiss",
+    "startTime": "2024-10-13T18:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "FlyQuest",
+        "image": "http://static.lolesports.com/teams/flyquest-new-on-dark.png",
+        "code": "FLY"
+      },
+      {
+        "name": "Team Liquid Honda",
+        "image": "http://static.lolesports.com/teams/1631820014208_tl-2021-worlds.png",
+        "code": "TL"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 3
+    }
+  },
+  {
+    "id": "112966669924194845",
+    "blockName": "Quarterfinals",
+    "startTime": "2024-10-17T12:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "WeiboGaming Faw Audi",
+        "image": "http://static.lolesports.com/teams/1641202879910_3.png",
+        "code": "WBG"
+      },
+      {
+        "name": "Suzhou LNG Ninebot Esports",
+        "image": "http://static.lolesports.com/teams/1717487697003_LNGlogo.png",
+        "code": "LNG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 5
+    }
+  },
+  {
+    "id": "112966669924194851",
+    "blockName": "Quarterfinals",
+    "startTime": "2024-10-18T12:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Hanwha Life Esports",
+        "image": "http://static.lolesports.com/teams/1631819564399_hle-2021-worlds.png",
+        "code": "HLE"
+      },
+      {
+        "name": "BILIBILI GAMING DREAMSMART",
+        "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
+        "code": "BLG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 5
+    }
+  },
+  {
+    "id": "112966669924194857",
+    "blockName": "Quarterfinals",
+    "startTime": "2024-10-19T12:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "TopEsports",
+        "image": "http://static.lolesports.com/teams/1592592064571_TopEsportsTES-01-FullonDark.png",
+        "code": "TES"
+      },
+      {
+        "name": "T1",
+        "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
+        "code": "T1"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 5
+    }
+  },
+  {
+    "id": "112966669924194863",
+    "blockName": "Quarterfinals",
+    "startTime": "2024-10-20T12:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Gen.G Esports",
+        "image": "http://static.lolesports.com/teams/1655210113163_GenG_logo_200407-05.png",
+        "code": "GEN"
+      },
+      {
+        "name": "FlyQuest",
+        "image": "http://static.lolesports.com/teams/flyquest-new-on-dark.png",
+        "code": "FLY"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 5
+    }
+  },
+  {
+    "id": "112966669924194869",
+    "blockName": "Semifinals",
+    "startTime": "2024-10-26T12:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "WeiboGaming Faw Audi",
+        "image": "http://static.lolesports.com/teams/1641202879910_3.png",
+        "code": "WBG"
+      },
+      {
+        "name": "BILIBILI GAMING DREAMSMART",
+        "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
+        "code": "BLG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 5
+    }
+  },
+  {
+    "id": "112966669924194875",
+    "blockName": "Semifinals",
+    "startTime": "2024-10-27T13:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "T1",
+        "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
+        "code": "T1"
+      },
+      {
+        "name": "Gen.G Esports",
+        "image": "http://static.lolesports.com/teams/1655210113163_GenG_logo_200407-05.png",
+        "code": "GEN"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 5
+    }
+  },
+  {
+    "id": "112966669924194881",
+    "blockName": "Finals",
+    "startTime": "2024-11-02T14:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "T1",
+        "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
+        "code": "T1"
+      },
+      {
+        "name": "BILIBILI GAMING DREAMSMART",
+        "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
+        "code": "BLG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 5
+    }
+  },
+  {
+    "id": "112966669924129223",
+    "blockName": "Swiss",
+    "startTime": "2024-10-03T12:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "BILIBILI GAMING DREAMSMART",
+        "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
+        "code": "BLG"
+      },
+      {
+        "name": "MAD Lions KOI",
+        "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+        "code": "MKOI"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924129225",
+    "blockName": "Swiss",
+    "startTime": "2024-10-03T13:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "TopEsports",
+        "image": "http://static.lolesports.com/teams/1592592064571_TopEsportsTES-01-FullonDark.png",
+        "code": "TES"
+      },
+      {
+        "name": "T1",
+        "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
+        "code": "T1"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924129231",
+    "blockName": "Swiss",
+    "startTime": "2024-10-03T14:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Gen.G Esports",
+        "image": "http://static.lolesports.com/teams/1655210113163_GenG_logo_200407-05.png",
+        "code": "GEN"
+      },
+      {
+        "name": "WeiboGaming Faw Audi",
+        "image": "http://static.lolesports.com/teams/1641202879910_3.png",
+        "code": "WBG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924129229",
+    "blockName": "Swiss",
+    "startTime": "2024-10-03T15:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Fnatic",
+        "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
+        "code": "FNC"
+      },
+      {
+        "name": "Dplus KIA",
+        "image": "http://static.lolesports.com/teams/1673260049703_DPlusKIALOGO11.png",
+        "code": "DK"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924129227",
+    "blockName": "Swiss",
+    "startTime": "2024-10-03T16:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Team Liquid Honda",
+        "image": "http://static.lolesports.com/teams/1631820014208_tl-2021-worlds.png",
+        "code": "TL"
+      },
+      {
+        "name": "Suzhou LNG Ninebot Esports",
+        "image": "http://static.lolesports.com/teams/1717487697003_LNGlogo.png",
+        "code": "LNG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924129217",
+    "blockName": "Swiss",
+    "startTime": "2024-10-03T17:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Hanwha Life Esports",
+        "image": "http://static.lolesports.com/teams/1631819564399_hle-2021-worlds.png",
+        "code": "HLE"
+      },
+      {
+        "name": "PSG Talon",
+        "image": "http://static.lolesports.com/teams/1734695201039_PSG_Talonlogo_profile.webp",
+        "code": "PSG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924129219",
+    "blockName": "Swiss",
+    "startTime": "2024-10-03T18:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "GAM Esports",
+        "image": "http://static.lolesports.com/teams/1643263093448_GAMyellow.png",
+        "code": "GAM"
+      },
+      {
+        "name": "FlyQuest",
+        "image": "http://static.lolesports.com/teams/flyquest-new-on-dark.png",
+        "code": "FLY"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924129221",
+    "blockName": "Swiss",
+    "startTime": "2024-10-03T19:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "G2 Esports",
+        "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
+        "code": "G2"
+      },
+      {
+        "name": "paiN Gaming",
+        "image": "http://static.lolesports.com/teams/1674657011011_pain_logo_white.png",
+        "code": "PNG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924194775",
+    "blockName": "Swiss",
+    "startTime": "2024-10-04T12:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "BILIBILI GAMING DREAMSMART",
+        "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
+        "code": "BLG"
+      },
+      {
+        "name": "Suzhou LNG Ninebot Esports",
+        "image": "http://static.lolesports.com/teams/1717487697003_LNGlogo.png",
+        "code": "LNG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924194773",
+    "blockName": "Swiss",
+    "startTime": "2024-10-04T13:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Gen.G Esports",
+        "image": "http://static.lolesports.com/teams/1655210113163_GenG_logo_200407-05.png",
+        "code": "GEN"
+      },
+      {
+        "name": "TopEsports",
+        "image": "http://static.lolesports.com/teams/1592592064571_TopEsportsTES-01-FullonDark.png",
+        "code": "TES"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924129233",
+    "blockName": "Swiss",
+    "startTime": "2024-10-04T14:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "G2 Esports",
+        "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
+        "code": "G2"
+      },
+      {
+        "name": "Hanwha Life Esports",
+        "image": "http://static.lolesports.com/teams/1631819564399_hle-2021-worlds.png",
+        "code": "HLE"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924194781",
+    "blockName": "Swiss",
+    "startTime": "2024-10-04T15:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Team Liquid Honda",
+        "image": "http://static.lolesports.com/teams/1631820014208_tl-2021-worlds.png",
+        "code": "TL"
+      },
+      {
+        "name": "WeiboGaming Faw Audi",
+        "image": "http://static.lolesports.com/teams/1641202879910_3.png",
+        "code": "WBG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924194777",
+    "blockName": "Swiss",
+    "startTime": "2024-10-04T16:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "T1",
+        "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
+        "code": "T1"
+      },
+      {
+        "name": "paiN Gaming",
+        "image": "http://static.lolesports.com/teams/1674657011011_pain_logo_white.png",
+        "code": "PNG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924194771",
+    "blockName": "Swiss",
+    "startTime": "2024-10-04T17:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Dplus KIA",
+        "image": "http://static.lolesports.com/teams/1673260049703_DPlusKIALOGO11.png",
+        "code": "DK"
+      },
+      {
+        "name": "FlyQuest",
+        "image": "http://static.lolesports.com/teams/flyquest-new-on-dark.png",
+        "code": "FLY"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924194783",
+    "blockName": "Swiss",
+    "startTime": "2024-10-04T18:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Fnatic",
+        "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
+        "code": "FNC"
+      },
+      {
+        "name": "GAM Esports",
+        "image": "http://static.lolesports.com/teams/1643263093448_GAMyellow.png",
+        "code": "GAM"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924194779",
+    "blockName": "Swiss",
+    "startTime": "2024-10-04T19:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "PSG Talon",
+        "image": "http://static.lolesports.com/teams/1734695201039_PSG_Talonlogo_profile.webp",
+        "code": "PSG"
+      },
+      {
+        "name": "MAD Lions KOI",
+        "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+        "code": "MKOI"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924194789",
+    "blockName": "Swiss",
+    "startTime": "2024-10-05T12:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Dplus KIA",
+        "image": "http://static.lolesports.com/teams/1673260049703_DPlusKIALOGO11.png",
+        "code": "DK"
+      },
+      {
+        "name": "Suzhou LNG Ninebot Esports",
+        "image": "http://static.lolesports.com/teams/1717487697003_LNGlogo.png",
+        "code": "LNG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 3
+    }
+  },
+  {
+    "id": "112966669924194785",
+    "blockName": "Swiss",
+    "startTime": "2024-10-05T15:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Hanwha Life Esports",
+        "image": "http://static.lolesports.com/teams/1631819564399_hle-2021-worlds.png",
+        "code": "HLE"
+      },
+      {
+        "name": "Gen.G Esports",
+        "image": "http://static.lolesports.com/teams/1655210113163_GenG_logo_200407-05.png",
+        "code": "GEN"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 3
+    }
+  },
+  {
+    "id": "112966669924194797",
+    "blockName": "Swiss",
+    "startTime": "2024-10-06T12:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "TopEsports",
+        "image": "http://static.lolesports.com/teams/1592592064571_TopEsportsTES-01-FullonDark.png",
+        "code": "TES"
+      },
+      {
+        "name": "Fnatic",
+        "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
+        "code": "FNC"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924194793",
+    "blockName": "Swiss",
+    "startTime": "2024-10-06T13:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "BILIBILI GAMING DREAMSMART",
+        "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
+        "code": "BLG"
+      },
+      {
+        "name": "T1",
+        "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
+        "code": "T1"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924194795",
+    "blockName": "Swiss",
+    "startTime": "2024-10-06T14:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "FlyQuest",
+        "image": "http://static.lolesports.com/teams/flyquest-new-on-dark.png",
+        "code": "FLY"
+      },
+      {
+        "name": "PSG Talon",
+        "image": "http://static.lolesports.com/teams/1734695201039_PSG_Talonlogo_profile.webp",
+        "code": "PSG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924194799",
+    "blockName": "Swiss",
+    "startTime": "2024-10-06T15:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "G2 Esports",
+        "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
+        "code": "G2"
+      },
+      {
+        "name": "WeiboGaming Faw Audi",
+        "image": "http://static.lolesports.com/teams/1641202879910_3.png",
+        "code": "WBG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 1
+    }
+  },
+  {
+    "id": "112966669924194805",
+    "blockName": "Swiss",
+    "startTime": "2024-10-07T12:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "MAD Lions KOI",
+        "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
+        "code": "MKOI"
+      },
+      {
+        "name": "GAM Esports",
+        "image": "http://static.lolesports.com/teams/1643263093448_GAMyellow.png",
+        "code": "GAM"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 3
+    }
+  },
+  {
+    "id": "112966669924194801",
+    "blockName": "Swiss",
+    "startTime": "2024-10-07T15:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Team Liquid Honda",
+        "image": "http://static.lolesports.com/teams/1631820014208_tl-2021-worlds.png",
+        "code": "TL"
+      },
+      {
+        "name": "paiN Gaming",
+        "image": "http://static.lolesports.com/teams/1674657011011_pain_logo_white.png",
+        "code": "PNG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 3
+    }
+  },
+  {
+    "id": "112966669924194809",
+    "blockName": "Swiss",
+    "startTime": "2024-10-10T12:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "TopEsports",
+        "image": "http://static.lolesports.com/teams/1592592064571_TopEsportsTES-01-FullonDark.png",
+        "code": "TES"
+      },
+      {
+        "name": "Dplus KIA",
+        "image": "http://static.lolesports.com/teams/1673260049703_DPlusKIALOGO11.png",
+        "code": "DK"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 3
+    }
+  },
+  {
+    "id": "112966669924194817",
+    "blockName": "Swiss",
+    "startTime": "2024-10-10T15:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Hanwha Life Esports",
+        "image": "http://static.lolesports.com/teams/1631819564399_hle-2021-worlds.png",
+        "code": "HLE"
+      },
+      {
+        "name": "FlyQuest",
+        "image": "http://static.lolesports.com/teams/flyquest-new-on-dark.png",
+        "code": "FLY"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 3
+    }
+  },
+  {
+    "id": "112966669924194813",
+    "blockName": "Swiss",
+    "startTime": "2024-10-11T12:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "G2 Esports",
+        "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
+        "code": "G2"
+      },
+      {
+        "name": "T1",
+        "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
+        "code": "T1"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 3
+    }
+  },
+  {
+    "id": "112966669924194829",
+    "blockName": "Swiss",
+    "startTime": "2024-10-11T15:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "BILIBILI GAMING DREAMSMART",
+        "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
+        "code": "BLG"
+      },
+      {
+        "name": "PSG Talon",
+        "image": "http://static.lolesports.com/teams/1734695201039_PSG_Talonlogo_profile.webp",
+        "code": "PSG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 3
+    }
+  },
+  {
+    "id": "112966669924194825",
+    "blockName": "Swiss",
+    "startTime": "2024-10-12T12:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Fnatic",
+        "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
+        "code": "FNC"
+      },
+      {
+        "name": "WeiboGaming Faw Audi",
+        "image": "http://static.lolesports.com/teams/1641202879910_3.png",
+        "code": "WBG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 3
+    }
+  },
+  {
+    "id": "112966669924194821",
+    "blockName": "Swiss",
+    "startTime": "2024-10-12T15:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Team Liquid Honda",
+        "image": "http://static.lolesports.com/teams/1631820014208_tl-2021-worlds.png",
+        "code": "TL"
+      },
+      {
+        "name": "GAM Esports",
+        "image": "http://static.lolesports.com/teams/1643263093448_GAMyellow.png",
+        "code": "GAM"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 3
+    }
+  },
+  {
+    "id": "112966669924194833",
+    "blockName": "Swiss",
+    "startTime": "2024-10-13T12:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Dplus KIA",
+        "image": "http://static.lolesports.com/teams/1673260049703_DPlusKIALOGO11.png",
+        "code": "DK"
+      },
+      {
+        "name": "WeiboGaming Faw Audi",
+        "image": "http://static.lolesports.com/teams/1641202879910_3.png",
+        "code": "WBG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 3
+    }
+  },
+  {
+    "id": "112966669924194841",
+    "blockName": "Swiss",
+    "startTime": "2024-10-13T15:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "G2 Esports",
+        "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
+        "code": "G2"
+      },
+      {
+        "name": "BILIBILI GAMING DREAMSMART",
+        "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
+        "code": "BLG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 3
+    }
+  },
+  {
+    "id": "112966669924194837",
+    "blockName": "Swiss",
+    "startTime": "2024-10-13T18:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "FlyQuest",
+        "image": "http://static.lolesports.com/teams/flyquest-new-on-dark.png",
+        "code": "FLY"
+      },
+      {
+        "name": "Team Liquid Honda",
+        "image": "http://static.lolesports.com/teams/1631820014208_tl-2021-worlds.png",
+        "code": "TL"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 3
+    }
+  },
+  {
+    "id": "112966669924194845",
+    "blockName": "Quarterfinals",
+    "startTime": "2024-10-17T12:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "WeiboGaming Faw Audi",
+        "image": "http://static.lolesports.com/teams/1641202879910_3.png",
+        "code": "WBG"
+      },
+      {
+        "name": "Suzhou LNG Ninebot Esports",
+        "image": "http://static.lolesports.com/teams/1717487697003_LNGlogo.png",
+        "code": "LNG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 5
+    }
+  },
+  {
+    "id": "112966669924194851",
+    "blockName": "Quarterfinals",
+    "startTime": "2024-10-18T12:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Hanwha Life Esports",
+        "image": "http://static.lolesports.com/teams/1631819564399_hle-2021-worlds.png",
+        "code": "HLE"
+      },
+      {
+        "name": "BILIBILI GAMING DREAMSMART",
+        "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
+        "code": "BLG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 5
+    }
+  },
+  {
+    "id": "112966669924194857",
+    "blockName": "Quarterfinals",
+    "startTime": "2024-10-19T12:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "TopEsports",
+        "image": "http://static.lolesports.com/teams/1592592064571_TopEsportsTES-01-FullonDark.png",
+        "code": "TES"
+      },
+      {
+        "name": "T1",
+        "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
+        "code": "T1"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 5
+    }
+  },
+  {
+    "id": "112966669924194863",
+    "blockName": "Quarterfinals",
+    "startTime": "2024-10-20T12:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "Gen.G Esports",
+        "image": "http://static.lolesports.com/teams/1655210113163_GenG_logo_200407-05.png",
+        "code": "GEN"
+      },
+      {
+        "name": "FlyQuest",
+        "image": "http://static.lolesports.com/teams/flyquest-new-on-dark.png",
+        "code": "FLY"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 5
+    }
+  },
+  {
+    "id": "112966669924194869",
+    "blockName": "Semifinals",
+    "startTime": "2024-10-26T12:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "WeiboGaming Faw Audi",
+        "image": "http://static.lolesports.com/teams/1641202879910_3.png",
+        "code": "WBG"
+      },
+      {
+        "name": "BILIBILI GAMING DREAMSMART",
+        "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
+        "code": "BLG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 5
+    }
+  },
+  {
+    "id": "112966669924194875",
+    "blockName": "Semifinals",
+    "startTime": "2024-10-27T13:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "T1",
+        "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
+        "code": "T1"
+      },
+      {
+        "name": "Gen.G Esports",
+        "image": "http://static.lolesports.com/teams/1655210113163_GenG_logo_200407-05.png",
+        "code": "GEN"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 5
+    }
+  },
+  {
+    "id": "112966669924194881",
+    "blockName": "Finals",
+    "startTime": "2024-11-02T14:00:00Z",
+    "state": "completed",
+    "league": {
+      "name": "Worlds",
+      "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+    },
+    "tournament": "Worlds 2024",
+    "teams": [
+      {
+        "name": "T1",
+        "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
+        "code": "T1"
+      },
+      {
+        "name": "BILIBILI GAMING DREAMSMART",
+        "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
+        "code": "BLG"
+      }
+    ],
+    "strategy": {
+      "__typename": "MatchStrategy",
+      "type": "bestOf",
+      "count": 5
+    }
+  }
+]
