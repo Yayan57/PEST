@@ -51,16 +51,31 @@ import logo2 from "../assets/images/Sangal-eSports.png";
 import video1 from "../assets/images/cs2_thumbnail.webp";
 import video2 from "../assets/images/lol_thumbnail.jfif";
 import video3 from "../assets/images/rl_thumbnail.jfif";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const Home: React.FC = () => {
-  const swiperHeadlines = [
-    "Faker hits 3k",
-    "DRX steals baron",
-    "Teddy escapes certain death",
-    "Doran saves Keria",
+  const swiperInfo = [
+    {
+      video: video1,
+      headline: "Faker hits 3k",
+      link: "https://www.foolproofme.org/articles/395-the-dangers-of-randomly-clicking-links",
+    },
+    {
+      video: video2,
+      headline: "DRX steals baron",
+      link: "https://www.foolproofme.org/articles/395-the-dangers-of-randomly-clicking-links",
+    },
+    {
+      video: video3,
+      headline: "Teddy escapes certain death",
+      link: "https://www.foolproofme.org/articles/395-the-dangers-of-randomly-clicking-links",
+    },
+    {
+      video: video1,
+      headline: "Doran saves Keria",
+      link: "https://www.foolproofme.org/articles/395-the-dangers-of-randomly-clicking-links",
+    },
   ];
-
-  const swiperVideos = [video1, video2, video3, video1];
 
   const featuredGame = [
     {
@@ -72,8 +87,7 @@ const Home: React.FC = () => {
       team2logo: logo2,
       team1color: "red",
       team2color: "blue",
-      swiperHeadlines: swiperHeadlines,
-      swiperVideos: swiperVideos,
+      SwiperInformation: swiperInfo,
     },
   ];
   const articles = [
@@ -161,35 +175,84 @@ const Home: React.FC = () => {
                 >
                   <IonGrid>
                     <IonRow>
-                      <IonCol size="3" style={{ textAlign: "center" }}>
-                        {game.team1}
-                      </IonCol>
+                      <IonCol>{game.team1}</IonCol>
                       <IonCol size="6" />
-                      <IonCol size="3" style={{ textAlign: "center" }}>
-                        {game.team2}
-                      </IonCol>
+                      <IonCol>{game.team2}</IonCol>
                     </IonRow>
                   </IonGrid>
                 </IonTitle>
               </div>
-              <IonImg src={game.team1logo} className="score-image" />
-              <IonText>
-                {game.team1}
-                {game.team2}
-              </IonText>
-              <IonImg src={game.team2logo} className="score-image" />
-              <IonList className="swiper-container">
-                {game.swiperHeadlines.map((headline, index) => (
-                  <IonCard key={index} className="swiper-card">
-                    <IonImg src={game.swiperVideos[index]} />
-                    <IonCardHeader>
-                      <IonCardTitle>{headline}</IonCardTitle>
-                    </IonCardHeader>
-                  </IonCard>
+              <IonGrid>
+                <IonRow>
+                  <IonCol
+                    size="3"
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <IonImg src={game.team1logo} className="score-image" />
+                  </IonCol>
+                  <IonCol size="6" />
+                  <IonCol
+                    size="3"
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <IonImg src={game.team2logo} className="score-image" />
+                  </IonCol>
+                </IonRow>
+              </IonGrid>
+              <Swiper
+                spaceBetween={0}
+                slidesPerView="auto"
+                className="watch-slides"
+              >
+                {game.SwiperInformation.map((info, index) => (
+                  <SwiperSlide key={`slide_${index}`} className="watch-slide">
+                    <a
+                      href={info.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <IonCard>
+                        <IonImg src={info.video} />
+                        <IonCardHeader>
+                          <IonCardTitle>{info.headline}</IonCardTitle>
+                        </IonCardHeader>
+                      </IonCard>
+                    </a>
+                  </SwiperSlide>
                 ))}
-              </IonList>
-              <IonButton>GameCast</IonButton>
-              <IonButton>BoxScore</IonButton>
+              </Swiper>
+              <IonGrid>
+                <IonRow>
+                  <IonCol
+                    size="6"
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <IonButton>GameCast</IonButton>
+                  </IonCol>
+                  <IonCol
+                    size="6"
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <IonButton>BoxScore</IonButton>
+                  </IonCol>
+                </IonRow>
+              </IonGrid>
             </IonCard>
           );
         })}

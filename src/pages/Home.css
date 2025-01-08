@@ -74,3 +74,7 @@ ion-item:hover {
   flex: 1;
   text-align: center;
 }
+.title-text {
+  margin-left: 8px;
+  color: var(--ion-text-color);
+}
