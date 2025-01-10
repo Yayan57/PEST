@@ -93,35 +93,53 @@ const Watch: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent className="content-top">
-        <IonCard className="alsoWatch-card">
-          <IonTitle className="watch-title">Also Watch</IonTitle>
-          <Swiper
-            spaceBetween={0}
-            slidesPerView="auto"
-            className="watch-slides"
-          >
-            {data.map((card, index) => {
-              return (
-                <SwiperSlide key={`slide_${index}`} className="watch-slide">
-                  <a href={card.link} target="_blank" rel="noopener noreferrer">
-                    <IonCard color={"tertiary"}>
-                      <img src={card.image} alt="card" className="image" />
+        <Swiper spaceBetween={0} slidesPerView="auto" className="watch-slides">
+          {data.map((card, index) => {
+            return (
+              <SwiperSlide key={`slide_${index}`} className="watch-slide">
+                <a href={card.link} target="_blank" rel="noopener noreferrer">
+                  <IonCard>
+                    <img src={card.image} alt="card" className="image" />
 
-                      <IonCardContent>
-                        <IonCardTitle className="title">
-                          {card.title}
-                        </IonCardTitle>
-                        <IonNote className="subtitle" slot="">
-                          {card.subtitle}
-                        </IonNote>
-                      </IonCardContent>
-                    </IonCard>
+                    <IonCardContent>
+                      <IonCardTitle className="title">
+                        {card.subtitle}
+                      </IonCardTitle>
+                    </IonCardContent>
+                  </IonCard>
+                </a>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+        <IonTitle className="watch-title">Also Watch</IonTitle>
+        <Swiper spaceBetween={0} slidesPerView="auto" className="watch-slides">
+          {data.map((card, index) => {
+            return (
+              <SwiperSlide key={`slide_${index}`} className="alsowatch-slide">
+                <IonCard className="small-card">
+                  <a
+                    href={card.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="watch-slide-anchor"
+                  >
+                    <img src={card.image} alt="card" className="small-image" />
+
+                    <IonCardContent>
+                      <IonCardTitle className="small-title">
+                        {card.title}
+                      </IonCardTitle>
+                      <IonNote className="small-subtitle" slot="">
+                        {card.subtitle}
+                      </IonNote>
+                    </IonCardContent>
                   </a>
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
-        </IonCard>
+                </IonCard>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
       </IonContent>
     </IonPage>
   );
