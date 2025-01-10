@@ -218,6 +218,7 @@ const Home: React.FC = () => {
                       href={info.link}
                       target="_blank"
                       rel="noopener noreferrer"
+                      className="home-anchor"
                     >
                       <IonCard>
                         <IonImg src={info.video} />
@@ -271,7 +272,7 @@ const Home: React.FC = () => {
                   href={article.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="headline-link"
+                  className="home-anchor"
                 >
                   <IonText className="headline-text">
                     {article.headline}

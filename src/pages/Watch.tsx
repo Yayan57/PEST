@@ -97,7 +97,12 @@ const Watch: React.FC = () => {
           {data.map((card, index) => {
             return (
               <SwiperSlide key={`slide_${index}`} className="watch-slide">
-                <a href={card.link} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={card.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="watch-slide-anchor"
+                >
                   <IonCard>
                     <img src={card.image} alt="card" className="image" />
 

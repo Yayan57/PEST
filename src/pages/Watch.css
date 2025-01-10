@@ -41,7 +41,6 @@
 }
 
 .watch-title {
-  text-decoration: none;
   padding-top: 8px;
   color: var(--ion-text-color);
 }
@@ -66,6 +65,5 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjust the box shadow as needed */
 }
 .watch-slide-anchor {
-  display: inline;
-  width: 180px !important;
+  text-decoration: none;
 }

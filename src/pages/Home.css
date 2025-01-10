@@ -35,7 +35,7 @@ ion-item:hover {
   margin: 10px 0;
 }
 
-.headline-link {
+.home-anchor {
   padding-left: 15px;
   text-decoration: none;
   color: var(--ion-text-color);
