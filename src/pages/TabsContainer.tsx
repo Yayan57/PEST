@@ -18,6 +18,7 @@ import {
   barChartOutline,
   playCircleOutline,
   gridOutline,
+  calendarOutline,
 } from "ionicons/icons";
 import React from "react";
 import { Route, Redirect } from "react-router";
@@ -25,6 +26,7 @@ import Home from "./Home";
 import Scores from "./Scores";
 import Watch from "./Watch";
 import More from "./More";
+import Schedule from "./Schedule";
 
 const TabsContainer: React.FC = () => {
   return (
@@ -42,6 +44,10 @@ const TabsContainer: React.FC = () => {
           <IonIcon icon={playCircleOutline} />
           <IonLabel>Watch</IonLabel>
         </IonTabButton>
+        <IonTabButton tab="schedule" href="/app/tabscontainer/schedule">
+          <IonIcon icon={calendarOutline} />
+          <IonLabel>Schedule</IonLabel>
+        </IonTabButton>
         <IonTabButton tab="more" href="/app/tabscontainer/more">
           <IonIcon icon={gridOutline} />
           <IonLabel>More</IonLabel>
@@ -52,6 +58,7 @@ const TabsContainer: React.FC = () => {
         <Route path="/app/tabscontainer/scores" component={Scores} />
         <Route path="/app/tabscontainer/watch" component={Watch} />
         <Route path="/app/tabscontainer/more" component={More} />
+        <Route path="/app/tabscontainer/schedule" component={Schedule} />
 
         <Route exact path="/app/tabscontainer">
           <Redirect to="/app/tabscontainer/home" />

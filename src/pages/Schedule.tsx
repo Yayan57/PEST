@@ -12,10 +12,10 @@ const Schedule: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Page Title</IonTitle>
+          <IonTitle>Schedule</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent className="ion-padding">UI goes here...</IonContent>
+      <IonContent className="ion-padding">Schedule Page to be built</IonContent>
     </IonPage>
   );
 };
