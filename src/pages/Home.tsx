@@ -223,7 +223,9 @@ const Home: React.FC = () => {
                       <IonCard>
                         <IonImg src={info.video} />
                         <IonCardHeader>
-                          <IonCardTitle>{info.headline}</IonCardTitle>
+                          <IonCardTitle className="title-text">
+                            {info.headline}
+                          </IonCardTitle>
                         </IonCardHeader>
                       </IonCard>
                     </a>

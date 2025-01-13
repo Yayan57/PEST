@@ -2,15 +2,13 @@
   margin-top: 0;
   padding-top: 0;
   align-items: flex-start;
-  width: 100%;
 }
 .watch-slide {
-  width: 40vh;
+  width: 21rem;
   height: 100% !important;
 }
 .alsowatch-slide {
-  width: 32vh;
-  height: 100% !important;
+  width: 15rem;
 }
 
 .content-top {
@@ -28,8 +26,9 @@
 
 .small-image {
   width: 200px; /* Adjust the width as needed */
-  height: 150px; /* Adjust the height as needed */
+  height: 113px; /* Adjust the height as needed */
   padding-left: 10px; /* Adjust the padding as needed */
+  padding-bottom: 0px;
 }
 
 .title,
@@ -51,13 +50,13 @@
 
 .small-title,
 .small-subtitle {
+  padding-top: 0px !important;
   font-size: 1rem; /* Adjust the font size as needed */
-  margin-left: 5px; /* Adjust the margin as needed */
   color: var(--ion-text-color);
 }
 
 .small-card {
-  height: 230px;
+  height: 180px;
   width: 230px;
   padding: 10px; /* Adjust the padding as needed */
   margin: 10px; /* Adjust the margin as needed */
