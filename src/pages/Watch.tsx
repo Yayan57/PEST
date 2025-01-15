@@ -103,7 +103,7 @@ const Watch: React.FC = () => {
                   rel="noopener noreferrer"
                   className="watch-slide-anchor"
                 >
-                  <IonCard>
+                  <IonCard className="watch-card">
                     <img src={card.image} alt="card" className="image" />
 
                     <IonCardContent>

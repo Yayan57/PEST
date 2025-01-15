@@ -44,7 +44,7 @@
   color: var(--ion-text-color);
 }
 
-.Watch-card {
+.watch-card {
   background-color: var(--ion-card-color);
 }
 
@@ -62,6 +62,8 @@
   margin: 10px; /* Adjust the margin as needed */
   border-radius: 5px; /* Adjust the border radius as needed */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjust the box shadow as needed */
+
+  background-color: var(--ion-card-color);
 }
 .watch-slide-anchor {
   text-decoration: none;

@@ -163,7 +163,7 @@ const Home: React.FC = () => {
       <IonContent>
         {featuredGame.map((game) => {
           return (
-            <IonCard className="featuredGame-card">
+            <IonCard className="home-card">
               <div style={{ display: "flex", justifyContent: "space-between" }}>
                 <IonTitle
                   style={{
@@ -220,7 +220,7 @@ const Home: React.FC = () => {
                       rel="noopener noreferrer"
                       className="home-anchor"
                     >
-                      <IonCard>
+                      <IonCard className="home-card">
                         <IonImg src={info.video} />
                         <IonCardHeader>
                           <IonCardTitle className="title-text">
@@ -259,7 +259,7 @@ const Home: React.FC = () => {
             </IonCard>
           );
         })}
-        <IonCard className="headline-card">
+        <IonCard className="home-card">
           <IonTitle className="headline-title">Top Headlines</IonTitle>
           <div className="headline-divider" />
           {articles.map((article) => {

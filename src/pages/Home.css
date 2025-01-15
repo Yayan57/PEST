@@ -4,7 +4,7 @@ and I didnt want to spend too much time on it */
 :root {
   --ion-background-color: #fff;
   --ion-text-color: #000;
-  --ion-card-color: #eee;
+  --ion-card-color: #f0f0f0;
   --hover-background-color: rgb(3, 121, 38);
   --hover-text-color: var(--ion-color-light);
 }
@@ -54,7 +54,7 @@ ion-item:hover {
   font-weight: bold;
   color: var(--ion-text-color);
 }
-.headline-card {
+.home-card {
   background-color: var(--ion-card-color);
 }
 .list-icon {
