@@ -116,7 +116,7 @@ const Scores: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
-        <IonToolbar color={"success"}>
+        <IonToolbar color={"tertiary"}>
           <IonButtons slot="start">
             <IonMenuButton />
           </IonButtons>
