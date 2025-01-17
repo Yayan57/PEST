@@ -38,6 +38,7 @@ interface Game {
     name: string;
     image: string;
     code: string;
+    gameWins: number;
   }[];
   strategy: {
     __typename: string;
