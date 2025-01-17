@@ -16,62 +16,66 @@ import {
   IonToolbar,
 } from "@ionic/react";
 import { settingsOutline, searchOutline } from "ionicons/icons";
-import React from "react";
-import logo1 from "../assets/images/FaZe-Clan-OnDark.png";
-import logo2 from "../assets/images/Sangal-eSports.png";
+import React, { useEffect, useState } from "react";
 import "./Scores.css";
+import data from "../assets/data/LCK.json";
+
+interface Game {
+  id: string;
+  blockName: string;
+  startTime: string;
+  state: string;
+  league: {
+    name: string;
+    image: string;
+  };
+  tournament: string;
+  teams: {
+    name: string;
+    image: string;
+    code: string;
+    gameWins: number;
+  }[];
+  strategy: {
+    __typename: string;
+    type: string;
+    count: number;
+  };
+}
 
 const Scores: React.FC = () => {
+  const [completedGames, setCompletedGames] = useState<Game[]>([]);
+
+  useEffect(() => {
+    const now = new Date();
+    const filteredGames = data
+      .filter(
+        (game) => game.state === "completed" && new Date(game.startTime) < now
+      )
+      .sort(
+        (a, b) =>
+          new Date(a.startTime).getTime() - new Date(b.startTime).getTime()
+      )
+      .slice(0, 10);
+    setCompletedGames(filteredGames);
+  }, []);
+
   const leagues = [
     "League of Legends Champions Korea",
     "League of Legends Pro League",
     "League of Legends EMEA Championship",
     "League of Legends Championship of The Americas",
     "League of Legends Championship Pacific",
-  ];
-
-  const matches = [
-    {
-      league: "League of Legends Pro League",
-      team1Name: "FAZE CLAN",
-      team1Score: 3,
-      team1Image: logo1,
-      team2Name: "SANGAL 1XBET",
-      team2Score: 1,
-      team2Image: logo2,
-    },
-    {
-      league: "League of Legends Pro League",
-      team1Name: "T1",
-      team1Score: 2,
-      team1Image: logo1,
-      team2Name: "TSM",
-      team2Score: 3,
-      team2Image: logo2,
-    },
-    {
-      league: "League of Legends EMEA Championship",
-      team1Name: "Cloud9",
-      team1Score: 3,
-      team1Image: logo1,
-      team2Name: "Fnatic",
-      team2Score: 0,
-      team2Image: logo2,
-    },
-    {
-      league: "League of Legends Championship of The Americas",
-      team1Name: "G2",
-      team1Score: 2,
-      team1Image: logo1,
-      team2Name: "Vitality",
-      team2Score: 3,
-      team2Image: logo2,
-    },
+    "Worlds",
+    "LEC",
+    "LCK",
   ];
 
   const renderLeagueCards = () => {
     return leagues.map((league) => {
-      const leagueMatches = matches.filter((match) => match.league === league);
+      const leagueMatches = completedGames.filter(
+        (match) => match.league.name === league
+      );
 
       if (leagueMatches.length === 0) {
         return null;
@@ -87,21 +91,25 @@ const Scores: React.FC = () => {
                 <IonItem key={`item_${index}`} className="score-item">
                   <div className="teamImage">
                     <IonImg
-                      src={list.team1Image}
+                      src={list.teams[0].image}
                       className="score-image teamImage"
                     />
-                    <IonImg src={list.team2Image} className="score-image" />
+                    <IonImg src={list.teams[1].image} className="score-image" />
                   </div>
                   <div>
-                    <IonLabel className="teamName">{list.team1Name}</IonLabel>
-                    <IonLabel className="teamName">{list.team2Name}</IonLabel>
+                    <IonLabel className="teamName">
+                      {list.teams[0].name}
+                    </IonLabel>
+                    <IonLabel className="teamName">
+                      {list.teams[1].name}
+                    </IonLabel>
                   </div>
                   <div className="teamScore">
                     <IonLabel slot="end" className="teamScore">
-                      {list.team1Score}
+                      {list.teams[0].gameWins}
                     </IonLabel>
                     <IonLabel slot="end" className="teamScore">
-                      {list.team2Score}
+                      {list.teams[1].gameWins}
                     </IonLabel>
                   </div>
                 </IonItem>
