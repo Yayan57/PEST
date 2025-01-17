@@ -13,12 +13,14 @@
       {
         "name": "BILIBILI GAMING DREAMSMART",
         "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
-        "code": "BLG"
+        "code": "BLG",
+        "gameWins": 1
       },
       {
         "name": "MAD Lions KOI",
         "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
-        "code": "MKOI"
+        "code": "MKOI",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -41,12 +43,14 @@
       {
         "name": "TopEsports",
         "image": "http://static.lolesports.com/teams/1592592064571_TopEsportsTES-01-FullonDark.png",
-        "code": "TES"
+        "code": "TES",
+        "gameWins": 1
       },
       {
         "name": "T1",
         "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
-        "code": "T1"
+        "code": "T1",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -69,12 +73,14 @@
       {
         "name": "Gen.G Esports",
         "image": "http://static.lolesports.com/teams/1655210113163_GenG_logo_200407-05.png",
-        "code": "GEN"
+        "code": "GEN",
+        "gameWins": 1
       },
       {
         "name": "WeiboGaming Faw Audi",
         "image": "http://static.lolesports.com/teams/1641202879910_3.png",
-        "code": "WBG"
+        "code": "WBG",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -97,12 +103,14 @@
       {
         "name": "Fnatic",
         "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
-        "code": "FNC"
+        "code": "FNC",
+        "gameWins": 0
       },
       {
         "name": "Dplus KIA",
         "image": "http://static.lolesports.com/teams/1673260049703_DPlusKIALOGO11.png",
-        "code": "DK"
+        "code": "DK",
+        "gameWins": 1
       }
     ],
     "strategy": {
@@ -125,12 +133,14 @@
       {
         "name": "Team Liquid Honda",
         "image": "http://static.lolesports.com/teams/1631820014208_tl-2021-worlds.png",
-        "code": "TL"
+        "code": "TL",
+        "gameWins": 0
       },
       {
         "name": "Suzhou LNG Ninebot Esports",
         "image": "http://static.lolesports.com/teams/1717487697003_LNGlogo.png",
-        "code": "LNG"
+        "code": "LNG",
+        "gameWins": 1
       }
     ],
     "strategy": {
@@ -153,12 +163,14 @@
       {
         "name": "Hanwha Life Esports",
         "image": "http://static.lolesports.com/teams/1631819564399_hle-2021-worlds.png",
-        "code": "HLE"
+        "code": "HLE",
+        "gameWins": 1
       },
       {
         "name": "Talon Esports",
         "image": "http://static.lolesports.com/teams/1736161478996_Talon_BirdLogomark.png",
-        "code": "TLN"
+        "code": "TLN",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -181,12 +193,14 @@
       {
         "name": "GAM Esports",
         "image": "http://static.lolesports.com/teams/1643263093448_GAMyellow.png",
-        "code": "GAM"
+        "code": "GAM",
+        "gameWins": 0
       },
       {
         "name": "FlyQuest",
         "image": "http://static.lolesports.com/teams/flyquest-new-on-dark.png",
-        "code": "FLY"
+        "code": "FLY",
+        "gameWins": 1
       }
     ],
     "strategy": {
@@ -209,12 +223,14 @@
       {
         "name": "G2 Esports",
         "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
-        "code": "G2"
+        "code": "G2",
+        "gameWins": 1
       },
       {
         "name": "paiN Gaming",
         "image": "http://static.lolesports.com/teams/1674657011011_pain_logo_white.png",
-        "code": "PNG"
+        "code": "PNG",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -237,12 +253,14 @@
       {
         "name": "BILIBILI GAMING DREAMSMART",
         "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
-        "code": "BLG"
+        "code": "BLG",
+        "gameWins": 0
       },
       {
         "name": "Suzhou LNG Ninebot Esports",
         "image": "http://static.lolesports.com/teams/1717487697003_LNGlogo.png",
-        "code": "LNG"
+        "code": "LNG",
+        "gameWins": 1
       }
     ],
     "strategy": {
@@ -265,12 +283,14 @@
       {
         "name": "Gen.G Esports",
         "image": "http://static.lolesports.com/teams/1655210113163_GenG_logo_200407-05.png",
-        "code": "GEN"
+        "code": "GEN",
+        "gameWins": 1
       },
       {
         "name": "TopEsports",
         "image": "http://static.lolesports.com/teams/1592592064571_TopEsportsTES-01-FullonDark.png",
-        "code": "TES"
+        "code": "TES",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -293,12 +313,14 @@
       {
         "name": "G2 Esports",
         "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
-        "code": "G2"
+        "code": "G2",
+        "gameWins": 0
       },
       {
         "name": "Hanwha Life Esports",
         "image": "http://static.lolesports.com/teams/1631819564399_hle-2021-worlds.png",
-        "code": "HLE"
+        "code": "HLE",
+        "gameWins": 1
       }
     ],
     "strategy": {
@@ -321,12 +343,14 @@
       {
         "name": "Team Liquid Honda",
         "image": "http://static.lolesports.com/teams/1631820014208_tl-2021-worlds.png",
-        "code": "TL"
+        "code": "TL",
+        "gameWins": 0
       },
       {
         "name": "WeiboGaming Faw Audi",
         "image": "http://static.lolesports.com/teams/1641202879910_3.png",
-        "code": "WBG"
+        "code": "WBG",
+        "gameWins": 1
       }
     ],
     "strategy": {
@@ -349,12 +373,14 @@
       {
         "name": "T1",
         "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
-        "code": "T1"
+        "code": "T1",
+        "gameWins": 1
       },
       {
         "name": "paiN Gaming",
         "image": "http://static.lolesports.com/teams/1674657011011_pain_logo_white.png",
-        "code": "PNG"
+        "code": "PNG",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -377,12 +403,14 @@
       {
         "name": "Dplus KIA",
         "image": "http://static.lolesports.com/teams/1673260049703_DPlusKIALOGO11.png",
-        "code": "DK"
+        "code": "DK",
+        "gameWins": 1
       },
       {
         "name": "FlyQuest",
         "image": "http://static.lolesports.com/teams/flyquest-new-on-dark.png",
-        "code": "FLY"
+        "code": "FLY",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -405,12 +433,14 @@
       {
         "name": "Fnatic",
         "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
-        "code": "FNC"
+        "code": "FNC",
+        "gameWins": 1
       },
       {
         "name": "GAM Esports",
         "image": "http://static.lolesports.com/teams/1643263093448_GAMyellow.png",
-        "code": "GAM"
+        "code": "GAM",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -433,12 +463,14 @@
       {
         "name": "Talon Esports",
         "image": "http://static.lolesports.com/teams/1736161478996_Talon_BirdLogomark.png",
-        "code": "TLN"
+        "code": "TLN",
+        "gameWins": 1
       },
       {
         "name": "MAD Lions KOI",
         "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
-        "code": "MKOI"
+        "code": "MKOI",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -461,12 +493,14 @@
       {
         "name": "Dplus KIA",
         "image": "http://static.lolesports.com/teams/1673260049703_DPlusKIALOGO11.png",
-        "code": "DK"
+        "code": "DK",
+        "gameWins": 0
       },
       {
         "name": "Suzhou LNG Ninebot Esports",
         "image": "http://static.lolesports.com/teams/1717487697003_LNGlogo.png",
-        "code": "LNG"
+        "code": "LNG",
+        "gameWins": 2
       }
     ],
     "strategy": {
@@ -489,12 +523,14 @@
       {
         "name": "Hanwha Life Esports",
         "image": "http://static.lolesports.com/teams/1631819564399_hle-2021-worlds.png",
-        "code": "HLE"
+        "code": "HLE",
+        "gameWins": 1
       },
       {
         "name": "Gen.G Esports",
         "image": "http://static.lolesports.com/teams/1655210113163_GenG_logo_200407-05.png",
-        "code": "GEN"
+        "code": "GEN",
+        "gameWins": 2
       }
     ],
     "strategy": {
@@ -517,12 +553,14 @@
       {
         "name": "TopEsports",
         "image": "http://static.lolesports.com/teams/1592592064571_TopEsportsTES-01-FullonDark.png",
-        "code": "TES"
+        "code": "TES",
+        "gameWins": 1
       },
       {
         "name": "Fnatic",
         "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
-        "code": "FNC"
+        "code": "FNC",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -545,12 +583,14 @@
       {
         "name": "BILIBILI GAMING DREAMSMART",
         "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
-        "code": "BLG"
+        "code": "BLG",
+        "gameWins": 0
       },
       {
         "name": "T1",
         "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
-        "code": "T1"
+        "code": "T1",
+        "gameWins": 1
       }
     ],
     "strategy": {
@@ -573,12 +613,14 @@
       {
         "name": "FlyQuest",
         "image": "http://static.lolesports.com/teams/flyquest-new-on-dark.png",
-        "code": "FLY"
+        "code": "FLY",
+        "gameWins": 1
       },
       {
         "name": "Talon Esports",
         "image": "http://static.lolesports.com/teams/1736161478996_Talon_BirdLogomark.png",
-        "code": "TLN"
+        "code": "TLN",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -601,12 +643,14 @@
       {
         "name": "G2 Esports",
         "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
-        "code": "G2"
+        "code": "G2",
+        "gameWins": 1
       },
       {
         "name": "WeiboGaming Faw Audi",
         "image": "http://static.lolesports.com/teams/1641202879910_3.png",
-        "code": "WBG"
+        "code": "WBG",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -629,12 +673,14 @@
       {
         "name": "MAD Lions KOI",
         "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
-        "code": "MKOI"
+        "code": "MKOI",
+        "gameWins": 1
       },
       {
         "name": "GAM Esports",
         "image": "http://static.lolesports.com/teams/1643263093448_GAMyellow.png",
-        "code": "GAM"
+        "code": "GAM",
+        "gameWins": 2
       }
     ],
     "strategy": {
@@ -657,12 +703,14 @@
       {
         "name": "Team Liquid Honda",
         "image": "http://static.lolesports.com/teams/1631820014208_tl-2021-worlds.png",
-        "code": "TL"
+        "code": "TL",
+        "gameWins": 2
       },
       {
         "name": "paiN Gaming",
         "image": "http://static.lolesports.com/teams/1674657011011_pain_logo_white.png",
-        "code": "PNG"
+        "code": "PNG",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -685,12 +733,14 @@
       {
         "name": "TopEsports",
         "image": "http://static.lolesports.com/teams/1592592064571_TopEsportsTES-01-FullonDark.png",
-        "code": "TES"
+        "code": "TES",
+        "gameWins": 2
       },
       {
         "name": "Dplus KIA",
         "image": "http://static.lolesports.com/teams/1673260049703_DPlusKIALOGO11.png",
-        "code": "DK"
+        "code": "DK",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -713,12 +763,14 @@
       {
         "name": "Hanwha Life Esports",
         "image": "http://static.lolesports.com/teams/1631819564399_hle-2021-worlds.png",
-        "code": "HLE"
+        "code": "HLE",
+        "gameWins": 2
       },
       {
         "name": "FlyQuest",
         "image": "http://static.lolesports.com/teams/flyquest-new-on-dark.png",
-        "code": "FLY"
+        "code": "FLY",
+        "gameWins": 1
       }
     ],
     "strategy": {
@@ -741,12 +793,14 @@
       {
         "name": "G2 Esports",
         "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
-        "code": "G2"
+        "code": "G2",
+        "gameWins": 0
       },
       {
         "name": "T1",
         "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
-        "code": "T1"
+        "code": "T1",
+        "gameWins": 2
       }
     ],
     "strategy": {
@@ -769,12 +823,14 @@
       {
         "name": "BILIBILI GAMING DREAMSMART",
         "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
-        "code": "BLG"
+        "code": "BLG",
+        "gameWins": 2
       },
       {
         "name": "Talon Esports",
         "image": "http://static.lolesports.com/teams/1736161478996_Talon_BirdLogomark.png",
-        "code": "TLN"
+        "code": "TLN",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -797,12 +853,14 @@
       {
         "name": "Fnatic",
         "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
-        "code": "FNC"
+        "code": "FNC",
+        "gameWins": 1
       },
       {
         "name": "WeiboGaming Faw Audi",
         "image": "http://static.lolesports.com/teams/1641202879910_3.png",
-        "code": "WBG"
+        "code": "WBG",
+        "gameWins": 2
       }
     ],
     "strategy": {
@@ -825,12 +883,14 @@
       {
         "name": "Team Liquid Honda",
         "image": "http://static.lolesports.com/teams/1631820014208_tl-2021-worlds.png",
-        "code": "TL"
+        "code": "TL",
+        "gameWins": 2
       },
       {
         "name": "GAM Esports",
         "image": "http://static.lolesports.com/teams/1643263093448_GAMyellow.png",
-        "code": "GAM"
+        "code": "GAM",
+        "gameWins": 1
       }
     ],
     "strategy": {
@@ -853,12 +913,14 @@
       {
         "name": "Dplus KIA",
         "image": "http://static.lolesports.com/teams/1673260049703_DPlusKIALOGO11.png",
-        "code": "DK"
+        "code": "DK",
+        "gameWins": 1
       },
       {
         "name": "WeiboGaming Faw Audi",
         "image": "http://static.lolesports.com/teams/1641202879910_3.png",
-        "code": "WBG"
+        "code": "WBG",
+        "gameWins": 2
       }
     ],
     "strategy": {
@@ -881,12 +943,14 @@
       {
         "name": "G2 Esports",
         "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
-        "code": "G2"
+        "code": "G2",
+        "gameWins": 1
       },
       {
         "name": "BILIBILI GAMING DREAMSMART",
         "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
-        "code": "BLG"
+        "code": "BLG",
+        "gameWins": 2
       }
     ],
     "strategy": {
@@ -909,12 +973,14 @@
       {
         "name": "FlyQuest",
         "image": "http://static.lolesports.com/teams/flyquest-new-on-dark.png",
-        "code": "FLY"
+        "code": "FLY",
+        "gameWins": 2
       },
       {
         "name": "Team Liquid Honda",
         "image": "http://static.lolesports.com/teams/1631820014208_tl-2021-worlds.png",
-        "code": "TL"
+        "code": "TL",
+        "gameWins": 1
       }
     ],
     "strategy": {
@@ -937,12 +1003,14 @@
       {
         "name": "WeiboGaming Faw Audi",
         "image": "http://static.lolesports.com/teams/1641202879910_3.png",
-        "code": "WBG"
+        "code": "WBG",
+        "gameWins": 3
       },
       {
         "name": "Suzhou LNG Ninebot Esports",
         "image": "http://static.lolesports.com/teams/1717487697003_LNGlogo.png",
-        "code": "LNG"
+        "code": "LNG",
+        "gameWins": 1
       }
     ],
     "strategy": {
@@ -965,12 +1033,14 @@
       {
         "name": "Hanwha Life Esports",
         "image": "http://static.lolesports.com/teams/1631819564399_hle-2021-worlds.png",
-        "code": "HLE"
+        "code": "HLE",
+        "gameWins": 1
       },
       {
         "name": "BILIBILI GAMING DREAMSMART",
         "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
-        "code": "BLG"
+        "code": "BLG",
+        "gameWins": 3
       }
     ],
     "strategy": {
@@ -993,12 +1063,14 @@
       {
         "name": "TopEsports",
         "image": "http://static.lolesports.com/teams/1592592064571_TopEsportsTES-01-FullonDark.png",
-        "code": "TES"
+        "code": "TES",
+        "gameWins": 0
       },
       {
         "name": "T1",
         "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
-        "code": "T1"
+        "code": "T1",
+        "gameWins": 3
       }
     ],
     "strategy": {
@@ -1021,12 +1093,14 @@
       {
         "name": "Gen.G Esports",
         "image": "http://static.lolesports.com/teams/1655210113163_GenG_logo_200407-05.png",
-        "code": "GEN"
+        "code": "GEN",
+        "gameWins": 3
       },
       {
         "name": "FlyQuest",
         "image": "http://static.lolesports.com/teams/flyquest-new-on-dark.png",
-        "code": "FLY"
+        "code": "FLY",
+        "gameWins": 2
       }
     ],
     "strategy": {
@@ -1049,12 +1123,14 @@
       {
         "name": "WeiboGaming Faw Audi",
         "image": "http://static.lolesports.com/teams/1641202879910_3.png",
-        "code": "WBG"
+        "code": "WBG",
+        "gameWins": 0
       },
       {
         "name": "BILIBILI GAMING DREAMSMART",
         "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
-        "code": "BLG"
+        "code": "BLG",
+        "gameWins": 3
       }
     ],
     "strategy": {
@@ -1077,12 +1153,14 @@
       {
         "name": "T1",
         "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
-        "code": "T1"
+        "code": "T1",
+        "gameWins": 3
       },
       {
         "name": "Gen.G Esports",
         "image": "http://static.lolesports.com/teams/1655210113163_GenG_logo_200407-05.png",
-        "code": "GEN"
+        "code": "GEN",
+        "gameWins": 1
       }
     ],
     "strategy": {
@@ -1105,12 +1183,14 @@
       {
         "name": "T1",
         "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
-        "code": "T1"
+        "code": "T1",
+        "gameWins": 3
       },
       {
         "name": "BILIBILI GAMING DREAMSMART",
         "image": "http://static.lolesports.com/teams/1682322954525_Bilibili_Gaming_logo_20211.png",
-        "code": "BLG"
+        "code": "BLG",
+        "gameWins": 2
       }
     ],
     "strategy": {
@@ -1133,12 +1213,14 @@
       {
         "name": "OKSavingsBank BRION",
         "image": "http://static.lolesports.com/teams/1716454325887_Nowyprojekt.png",
-        "code": "BRO"
+        "code": "BRO",
+        "gameWins": 0
       },
       {
         "name": "DRX",
         "image": "http://static.lolesports.com/teams/1672910733664_01.Basic_W.png",
-        "code": "DRX"
+        "code": "DRX",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -1161,12 +1243,14 @@
       {
         "name": "DN FREECS",
         "image": "http://static.lolesports.com/teams/1735904500256_DN_Freecslogo_profile.webp",
-        "code": "DNF"
+        "code": "DNF",
+        "gameWins": 0
       },
       {
         "name": "NONGSHIM RED FORCE",
         "image": "http://static.lolesports.com/teams/NSFullonDark.png",
-        "code": "NS"
+        "code": "NS",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -1189,12 +1273,14 @@
       {
         "name": "BNK FEARX",
         "image": "http://static.lolesports.com/teams/1734691810721_BFXfullcolorfordarkbg.png",
-        "code": "BFX"
+        "code": "BFX",
+        "gameWins": 0
       },
       {
         "name": "kt Rolster",
         "image": "http://static.lolesports.com/teams/kt_darkbackground.png",
-        "code": "KT"
+        "code": "KT",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -1217,12 +1303,14 @@
       {
         "name": "Dplus KIA",
         "image": "http://static.lolesports.com/teams/1673260049703_DPlusKIALOGO11.png",
-        "code": "DK"
+        "code": "DK",
+        "gameWins": 0
       },
       {
         "name": "T1",
         "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
-        "code": "T1"
+        "code": "T1",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -1245,12 +1333,14 @@
       {
         "name": "Gen.G Esports",
         "image": "http://static.lolesports.com/teams/1655210113163_GenG_logo_200407-05.png",
-        "code": "GEN"
+        "code": "GEN",
+        "gameWins": 0
       },
       {
         "name": "Hanwha Life Esports",
         "image": "http://static.lolesports.com/teams/1631819564399_hle-2021-worlds.png",
-        "code": "HLE"
+        "code": "HLE",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -1273,12 +1363,14 @@
       {
         "name": "NONGSHIM RED FORCE",
         "image": "http://static.lolesports.com/teams/NSFullonDark.png",
-        "code": "NS"
+        "code": "NS",
+        "gameWins": 0
       },
       {
         "name": "OKSavingsBank BRION",
         "image": "http://static.lolesports.com/teams/1716454325887_Nowyprojekt.png",
-        "code": "BRO"
+        "code": "BRO",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -1301,12 +1393,14 @@
       {
         "name": "Dplus KIA",
         "image": "http://static.lolesports.com/teams/1673260049703_DPlusKIALOGO11.png",
-        "code": "DK"
+        "code": "DK",
+        "gameWins": 0
       },
       {
         "name": "DN FREECS",
         "image": "http://static.lolesports.com/teams/1735904500256_DN_Freecslogo_profile.webp",
-        "code": "DNF"
+        "code": "DNF",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -1329,12 +1423,14 @@
       {
         "name": "DRX",
         "image": "http://static.lolesports.com/teams/1672910733664_01.Basic_W.png",
-        "code": "DRX"
+        "code": "DRX",
+        "gameWins": 0
       },
       {
         "name": "T1",
         "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
-        "code": "T1"
+        "code": "T1",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -1357,12 +1453,14 @@
       {
         "name": "Team Heretics",
         "image": "http://static.lolesports.com/teams/1672933861879_Heretics-Full-Color.png",
-        "code": "TH"
+        "code": "TH",
+        "gameWins": 0
       },
       {
         "name": "Rogue",
         "image": "http://static.lolesports.com/teams/1705054928404_RGE.png",
-        "code": "RGE"
+        "code": "RGE",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -1385,12 +1483,14 @@
       {
         "name": "Team Vitality",
         "image": "http://static.lolesports.com/teams/1675865863968_Vitality_FullColor.png",
-        "code": "VIT"
+        "code": "VIT",
+        "gameWins": 0
       },
       {
         "name": "Team BDS",
         "image": "http://static.lolesports.com/teams/1641292031788_Team_BDSlogo_square.png",
-        "code": "BDS"
+        "code": "BDS",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -1413,12 +1513,14 @@
       {
         "name": "GIANTX",
         "image": "http://static.lolesports.com/teams/1704790322129_GX.png",
-        "code": "GX"
+        "code": "GX",
+        "gameWins": 0
       },
       {
         "name": "SK Gaming",
         "image": "http://static.lolesports.com/teams/1643979272144_SK_Monochrome.png",
-        "code": "SK"
+        "code": "SK",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -1441,12 +1543,14 @@
       {
         "name": "MAD Lions KOI",
         "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
-        "code": "MKOI"
+        "code": "MKOI",
+        "gameWins": 0
       },
       {
         "name": "Fnatic",
         "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
-        "code": "FNC"
+        "code": "FNC",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -1469,12 +1573,14 @@
       {
         "name": "Karmine Corp",
         "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
-        "code": "KC"
+        "code": "KC",
+        "gameWins": 0
       },
       {
         "name": "G2 Esports",
         "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
-        "code": "G2"
+        "code": "G2",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -1497,12 +1603,14 @@
       {
         "name": "kt Rolster",
         "image": "http://static.lolesports.com/teams/kt_darkbackground.png",
-        "code": "KT"
+        "code": "KT",
+        "gameWins": 0
       },
       {
         "name": "Hanwha Life Esports",
         "image": "http://static.lolesports.com/teams/1631819564399_hle-2021-worlds.png",
-        "code": "HLE"
+        "code": "HLE",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -1525,12 +1633,14 @@
       {
         "name": "BNK FEARX",
         "image": "http://static.lolesports.com/teams/1734691810721_BFXfullcolorfordarkbg.png",
-        "code": "BFX"
+        "code": "BFX",
+        "gameWins": 0
       },
       {
         "name": "Gen.G Esports",
         "image": "http://static.lolesports.com/teams/1655210113163_GenG_logo_200407-05.png",
-        "code": "GEN"
+        "code": "GEN",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -1553,12 +1663,14 @@
       {
         "name": "Team Heretics",
         "image": "http://static.lolesports.com/teams/1672933861879_Heretics-Full-Color.png",
-        "code": "TH"
+        "code": "TH",
+        "gameWins": 0
       },
       {
         "name": "SK Gaming",
         "image": "http://static.lolesports.com/teams/1643979272144_SK_Monochrome.png",
-        "code": "SK"
+        "code": "SK",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -1581,12 +1693,14 @@
       {
         "name": "Rogue",
         "image": "http://static.lolesports.com/teams/1705054928404_RGE.png",
-        "code": "RGE"
+        "code": "RGE",
+        "gameWins": 0
       },
       {
         "name": "GIANTX",
         "image": "http://static.lolesports.com/teams/1704790322129_GX.png",
-        "code": "GX"
+        "code": "GX",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -1609,12 +1723,14 @@
       {
         "name": "MAD Lions KOI",
         "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
-        "code": "MKOI"
+        "code": "MKOI",
+        "gameWins": 0
       },
       {
         "name": "Karmine Corp",
         "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
-        "code": "KC"
+        "code": "KC",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -1637,12 +1753,14 @@
       {
         "name": "G2 Esports",
         "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
-        "code": "G2"
+        "code": "G2",
+        "gameWins": 0
       },
       {
         "name": "Team BDS",
         "image": "http://static.lolesports.com/teams/1641292031788_Team_BDSlogo_square.png",
-        "code": "BDS"
+        "code": "BDS",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -1665,12 +1783,14 @@
       {
         "name": "Fnatic",
         "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
-        "code": "FNC"
+        "code": "FNC",
+        "gameWins": 0
       },
       {
         "name": "Team Vitality",
         "image": "http://static.lolesports.com/teams/1675865863968_Vitality_FullColor.png",
-        "code": "VIT"
+        "code": "VIT",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -1693,12 +1813,14 @@
       {
         "name": "Team BDS",
         "image": "http://static.lolesports.com/teams/1641292031788_Team_BDSlogo_square.png",
-        "code": "BDS"
+        "code": "BDS",
+        "gameWins": 0
       },
       {
         "name": "Rogue",
         "image": "http://static.lolesports.com/teams/1705054928404_RGE.png",
-        "code": "RGE"
+        "code": "RGE",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -1721,12 +1843,14 @@
       {
         "name": "Team Heretics",
         "image": "http://static.lolesports.com/teams/1672933861879_Heretics-Full-Color.png",
-        "code": "TH"
+        "code": "TH",
+        "gameWins": 0
       },
       {
         "name": "Fnatic",
         "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
-        "code": "FNC"
+        "code": "FNC",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -1749,12 +1873,14 @@
       {
         "name": "MAD Lions KOI",
         "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
-        "code": "MKOI"
+        "code": "MKOI",
+        "gameWins": 0
       },
       {
         "name": "Team Vitality",
         "image": "http://static.lolesports.com/teams/1675865863968_Vitality_FullColor.png",
-        "code": "VIT"
+        "code": "VIT",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -1777,12 +1903,14 @@
       {
         "name": "G2 Esports",
         "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
-        "code": "G2"
+        "code": "G2",
+        "gameWins": 0
       },
       {
         "name": "SK Gaming",
         "image": "http://static.lolesports.com/teams/1643979272144_SK_Monochrome.png",
-        "code": "SK"
+        "code": "SK",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -1805,12 +1933,14 @@
       {
         "name": "GIANTX",
         "image": "http://static.lolesports.com/teams/1704790322129_GX.png",
-        "code": "GX"
+        "code": "GX",
+        "gameWins": 0
       },
       {
         "name": "Karmine Corp",
         "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
-        "code": "KC"
+        "code": "KC",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -1833,12 +1963,14 @@
       {
         "name": "Dplus KIA",
         "image": "http://static.lolesports.com/teams/1673260049703_DPlusKIALOGO11.png",
-        "code": "DK"
+        "code": "DK",
+        "gameWins": 0
       },
       {
         "name": "BNK FEARX",
         "image": "http://static.lolesports.com/teams/1734691810721_BFXfullcolorfordarkbg.png",
-        "code": "BFX"
+        "code": "BFX",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -1861,12 +1993,14 @@
       {
         "name": "DN FREECS",
         "image": "http://static.lolesports.com/teams/1735904500256_DN_Freecslogo_profile.webp",
-        "code": "DNF"
+        "code": "DNF",
+        "gameWins": 0
       },
       {
         "name": "DRX",
         "image": "http://static.lolesports.com/teams/1672910733664_01.Basic_W.png",
-        "code": "DRX"
+        "code": "DRX",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -1889,12 +2023,14 @@
       {
         "name": "OKSavingsBank BRION",
         "image": "http://static.lolesports.com/teams/1716454325887_Nowyprojekt.png",
-        "code": "BRO"
+        "code": "BRO",
+        "gameWins": 0
       },
       {
         "name": "Gen.G Esports",
         "image": "http://static.lolesports.com/teams/1655210113163_GenG_logo_200407-05.png",
-        "code": "GEN"
+        "code": "GEN",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -1917,12 +2053,14 @@
       {
         "name": "Hanwha Life Esports",
         "image": "http://static.lolesports.com/teams/1631819564399_hle-2021-worlds.png",
-        "code": "HLE"
+        "code": "HLE",
+        "gameWins": 0
       },
       {
         "name": "NONGSHIM RED FORCE",
         "image": "http://static.lolesports.com/teams/NSFullonDark.png",
-        "code": "NS"
+        "code": "NS",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -1945,12 +2083,14 @@
       {
         "name": "DRX",
         "image": "http://static.lolesports.com/teams/1672910733664_01.Basic_W.png",
-        "code": "DRX"
+        "code": "DRX",
+        "gameWins": 0
       },
       {
         "name": "BNK FEARX",
         "image": "http://static.lolesports.com/teams/1734691810721_BFXfullcolorfordarkbg.png",
-        "code": "BFX"
+        "code": "BFX",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -1973,12 +2113,14 @@
       {
         "name": "T1",
         "image": "http://static.lolesports.com/teams/1726801573959_539px-T1_2019_full_allmode.png",
-        "code": "T1"
+        "code": "T1",
+        "gameWins": 0
       },
       {
         "name": "kt Rolster",
         "image": "http://static.lolesports.com/teams/kt_darkbackground.png",
-        "code": "KT"
+        "code": "KT",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -2001,12 +2143,14 @@
       {
         "name": "Hanwha Life Esports",
         "image": "http://static.lolesports.com/teams/1631819564399_hle-2021-worlds.png",
-        "code": "HLE"
+        "code": "HLE",
+        "gameWins": 0
       },
       {
         "name": "Dplus KIA",
         "image": "http://static.lolesports.com/teams/1673260049703_DPlusKIALOGO11.png",
-        "code": "DK"
+        "code": "DK",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -2029,12 +2173,14 @@
       {
         "name": "Gen.G Esports",
         "image": "http://static.lolesports.com/teams/1655210113163_GenG_logo_200407-05.png",
-        "code": "GEN"
+        "code": "GEN",
+        "gameWins": 0
       },
       {
         "name": "DN FREECS",
         "image": "http://static.lolesports.com/teams/1735904500256_DN_Freecslogo_profile.webp",
-        "code": "DNF"
+        "code": "DNF",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -2057,12 +2203,14 @@
       {
         "name": "TBD",
         "image": "https://static.lolesports.com/teams/team-tbd.png",
-        "code": "TBD"
+        "code": "TBD",
+        "gameWins": 0
       },
       {
         "name": "TBD",
         "image": "https://static.lolesports.com/teams/team-tbd.png",
-        "code": "TBD"
+        "code": "TBD",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -2085,12 +2233,14 @@
       {
         "name": "Rogue",
         "image": "http://static.lolesports.com/teams/1705054928404_RGE.png",
-        "code": "RGE"
+        "code": "RGE",
+        "gameWins": 0
       },
       {
         "name": "Fnatic",
         "image": "http://static.lolesports.com/teams/1631819669150_fnc-2021-worlds.png",
-        "code": "FNC"
+        "code": "FNC",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -2113,12 +2263,14 @@
       {
         "name": "Team BDS",
         "image": "http://static.lolesports.com/teams/1641292031788_Team_BDSlogo_square.png",
-        "code": "BDS"
+        "code": "BDS",
+        "gameWins": 0
       },
       {
         "name": "Team Heretics",
         "image": "http://static.lolesports.com/teams/1672933861879_Heretics-Full-Color.png",
-        "code": "TH"
+        "code": "TH",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -2141,12 +2293,14 @@
       {
         "name": "GIANTX",
         "image": "http://static.lolesports.com/teams/1704790322129_GX.png",
-        "code": "GX"
+        "code": "GX",
+        "gameWins": 0
       },
       {
         "name": "MAD Lions KOI",
         "image": "http://static.lolesports.com/teams/1734012609283_MKOI_FullColor_Blue.png",
-        "code": "MKOI"
+        "code": "MKOI",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -2169,12 +2323,14 @@
       {
         "name": "TBD",
         "image": "https://static.lolesports.com/teams/team-tbd.png",
-        "code": "TBD"
+        "code": "TBD",
+        "gameWins": 0
       },
       {
         "name": "TBD",
         "image": "https://static.lolesports.com/teams/team-tbd.png",
-        "code": "TBD"
+        "code": "TBD",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -2197,12 +2353,14 @@
       {
         "name": "Team Vitality",
         "image": "http://static.lolesports.com/teams/1675865863968_Vitality_FullColor.png",
-        "code": "VIT"
+        "code": "VIT",
+        "gameWins": 0
       },
       {
         "name": "G2 Esports",
         "image": "http://static.lolesports.com/teams/G2-FullonDark.png",
-        "code": "G2"
+        "code": "G2",
+        "gameWins": 0
       }
     ],
     "strategy": {
@@ -2225,12 +2383,14 @@
       {
         "name": "Karmine Corp",
         "image": "http://static.lolesports.com/teams/1704714951336_KC.png",
-        "code": "KC"
+        "code": "KC",
+        "gameWins": 0
       },
       {
         "name": "SK Gaming",
         "image": "http://static.lolesports.com/teams/1643979272144_SK_Monochrome.png",
-        "code": "SK"
+        "code": "SK",
+        "gameWins": 0
       }
     ],
     "strategy": {
