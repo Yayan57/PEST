@@ -15,16 +15,54 @@ import {
   IonToolbar,
 } from "@ionic/react";
 import { settingsOutline, searchOutline } from "ionicons/icons";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-//import "swiper/css";
+import data from "../assets/data/LCK.json";
 import LOLthumbnail from "../assets/images/lol_thumbnail.jfif";
 import CS2thumbnail from "../assets/images/cs2_thumbnail.webp";
 import RLthumbnail from "../assets/images/rl_thumbnail.jfif";
 import "./Watch.css";
 
+interface Game {
+  id: string;
+  blockName: string;
+  startTime: string;
+  state: string;
+  league: {
+    name: string;
+    image: string;
+  };
+  tournament: string;
+  teams: {
+    name: string;
+    image: string;
+    code: string;
+    gameWins: number;
+  }[];
+  strategy: {
+    __typename: string;
+    type: string;
+    count: number;
+  };
+}
+
 const Watch: React.FC = () => {
-  const data = [
+  const [watchGames, setWatchGames] = useState<Game[]>([]);
+
+  useEffect(() => {
+    const now = new Date();
+    const filteredGames = data
+      .filter(
+        (game) => game.state === "unstarted" && new Date(game.startTime) > now
+      )
+      .sort(
+        (a, b) =>
+          new Date(a.startTime).getTime() - new Date(b.startTime).getTime()
+      )
+      .slice(0, 10);
+    setWatchGames(filteredGames);
+  }, []);
+  const games = [
     {
       title: "leauge of legends",
       subtitle: "LCK",
