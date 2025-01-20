@@ -21,8 +21,12 @@ import data from "../assets/data/LCK.json";
 import LOLthumbnail from "../assets/images/lol_thumbnail.jfif";
 import CS2thumbnail from "../assets/images/cs2_thumbnail.webp";
 import RLthumbnail from "../assets/images/rl_thumbnail.jfif";
+import LECthumbnail from "../assets/images/LEC.jpeg";
+import LCKthumbnail from "../assets/images/LCK.webp";
 import "./Watch.css";
-
+//TODO: connect thumbnail to leauge channel link
+//TODO: link leauge name in game interface to the thumbnail
+//TODO: create watch cards for games that are currently on, if no games are on put nothing to watch right now
 interface Game {
   id: string;
   blockName: string;
@@ -46,6 +50,8 @@ interface Game {
   };
 }
 
+const leauges = ["LEC", "LCK", "CS2", "Rocket League", "League of Legends"];
+
 const Watch: React.FC = () => {
   const [watchGames, setWatchGames] = useState<Game[]>([]);
 
@@ -62,56 +68,122 @@ const Watch: React.FC = () => {
       .slice(0, 10);
     setWatchGames(filteredGames);
   }, []);
-  const games = [
-    {
-      title: "leauge of legends",
-      subtitle: "LCK",
-      image: LOLthumbnail,
-      link: "https://www.twitch.tv/yugioh_official",
-    },
-    {
-      title: "CS2",
-      subtitle: "ESL",
-      image: CS2thumbnail,
-      link: "https://www.twitch.tv/yugioh_official",
-    },
-    {
-      title: "Rocket Leauge",
-      subtitle: "RSL",
-      image: RLthumbnail,
-      link: "https://www.twitch.tv/yugioh_official",
-    },
-    {
-      title: "leauge of legends",
-      subtitle: "LTA North",
-      image: LOLthumbnail,
-      link: "https://www.twitch.tv/yugioh_official",
-    },
-    {
-      title: "leauge of legends",
-      subtitle: "LTA South",
-      image: RLthumbnail,
-      link: "https://www.twitch.tv/yugioh_official",
-    },
-    {
-      title: "Apex",
-      subtitle: "ALGS",
-      image: RLthumbnail,
-      link: "https://www.twitch.tv/yugioh_official",
-    },
-    {
-      title: "leauge of legends",
-      subtitle: "Worlds",
-      image: LOLthumbnail,
-      link: "https://www.twitch.tv/yugioh_official",
-    },
-    {
-      title: "Rocket Leauge",
-      subtitle: "RSL",
-      image: RLthumbnail,
-      link: "https://www.twitch.tv/yugioh_official",
-    },
-  ];
+  const getThumbnailAndLink = (leagueName: string) => {
+    switch (leagueName) {
+      case "LTANorth":
+        return {
+          thumbnail: LECthumbnail,
+          link: "https://www.twitch.tv/ltanorth",
+        };
+      case "LEC":
+        return { thumbnail: LECthumbnail, link: "https://www.twitch.tv/lec" };
+      case "LCK":
+        return { thumbnail: LCKthumbnail, link: "https://www.twitch.tv/lck" };
+      case "LPL":
+        return { thumbnail: LECthumbnail, link: "https://www.twitch.tv/lpl" };
+      case "League of Legends":
+        return {
+          thumbnail: LOLthumbnail,
+          link: "https://www.twitch.tv/riotgames",
+        };
+      case "CS2":
+        return { thumbnail: CS2thumbnail, link: "https://www.twitch.tv/eslcs" };
+      case "Rocket League":
+        return {
+          thumbnail: RLthumbnail,
+          link: "https://www.twitch.tv/rocketleague",
+        };
+      default:
+        return { thumbnail: LOLthumbnail, link: "https://www.twitch.tv" }; // Default thumbnail and link if no match is found
+    }
+  };
+
+  const renderWatchCards = (leauge: string) => {
+    const leaugeMatch = watchGames.filter(
+      (match) => match.league.name === leauge
+    );
+
+    if (leaugeMatch.length === 0) {
+      return null;
+    }
+
+    const { thumbnail, link } = getThumbnailAndLink(leauge);
+
+    return (
+      <Swiper
+        spaceBetween={0}
+        slidesPerView="auto"
+        className="watch-slides"
+        key={leauge}
+      >
+        {leaugeMatch.map((match) => {
+          return (
+            <SwiperSlide key={match.id} className="watch-slide">
+              <a
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="watch-slide-anchor"
+              >
+                <IonCard className="watch-card">
+                  <img src={thumbnail} alt="card" className="image" />
+
+                  <IonCardContent>
+                    <IonCardTitle className="title">
+                      {match.league.name}
+                    </IonCardTitle>
+                  </IonCardContent>
+                </IonCard>
+              </a>
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
+    );
+  };
+
+  const renderAlsoWatchCards = (leauge: string) => {
+    const leaugeMatch = watchGames.filter(
+      (match) => match.league.name === leauge
+    );
+
+    if (leaugeMatch.length === 0) {
+      return null;
+    }
+
+    const { thumbnail, link } = getThumbnailAndLink(leauge);
+
+    return (
+      <Swiper spaceBetween={0} slidesPerView="auto" className="watch-slides">
+        {leaugeMatch.map((match) => {
+          return (
+            <SwiperSlide key={leauge} className="alsowatch-slide">
+              <IonCard className="small-card">
+                <a
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="watch-slide-anchor"
+                >
+                  <img src={thumbnail} alt="card" className="small-image" />
+
+                  <IonCardContent>
+                    <IonCardTitle className="small-title">
+                      {match.league.name}
+                    </IonCardTitle>
+                    <IonNote className="small-subtitle" slot="">
+                      {match.league.name}
+                    </IonNote>
+                  </IonCardContent>
+                </a>
+              </IonCard>
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
+    );
+  };
+
   return (
     <IonPage>
       <IonHeader>
@@ -132,57 +204,9 @@ const Watch: React.FC = () => {
       </IonHeader>
       <IonContent className="content-top">
         <Swiper spaceBetween={0} slidesPerView="auto" className="watch-slides">
-          {data.map((card, index) => {
-            return (
-              <SwiperSlide key={`slide_${index}`} className="watch-slide">
-                <a
-                  href={card.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="watch-slide-anchor"
-                >
-                  <IonCard className="watch-card">
-                    <img src={card.image} alt="card" className="image" />
-
-                    <IonCardContent>
-                      <IonCardTitle className="title">
-                        {card.subtitle}
-                      </IonCardTitle>
-                    </IonCardContent>
-                  </IonCard>
-                </a>
-              </SwiperSlide>
-            );
-          })}
+          {leauges.map((leauge) => renderWatchCards(leauge))};
         </Swiper>
         <IonTitle className="watch-title">Also Watch</IonTitle>
-        <Swiper spaceBetween={0} slidesPerView="auto" className="watch-slides">
-          {data.map((card, index) => {
-            return (
-              <SwiperSlide key={`slide_${index}`} className="alsowatch-slide">
-                <IonCard className="small-card">
-                  <a
-                    href={card.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="watch-slide-anchor"
-                  >
-                    <img src={card.image} alt="card" className="small-image" />
-
-                    <IonCardContent>
-                      <IonCardTitle className="small-title">
-                        {card.title}
-                      </IonCardTitle>
-                      <IonNote className="small-subtitle" slot="">
-                        {card.subtitle}
-                      </IonNote>
-                    </IonCardContent>
-                  </a>
-                </IonCard>
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
       </IonContent>
     </IonPage>
   );
