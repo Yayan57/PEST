@@ -130,7 +130,7 @@ const Watch: React.FC = () => {
 
                   <IonCardContent>
                     <IonCardTitle className="title">
-                      {match.league.name}
+                      {match.teams[0].name} vs {match.teams[1].name}
                     </IonCardTitle>
                   </IonCardContent>
                 </IonCard>
