@@ -78,16 +78,19 @@ const Watch: React.FC = () => {
         key={leauge}
       >
         {leaugeData.data.map((match) => {
+          const thumbnailUrl = match.thumbnail_url
+            .replace("{width}", "440")
+            .replace("{height}", "280");
           return (
             <SwiperSlide key={match.id} className="watch-slide">
               <a
-                href={"twitch://stream/" + match.user_name}
+                href={"https://www.twitch.tv/" + match.user_name}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="watch-slide-anchor"
               >
                 <IonCard className="watch-card">
-                  <img src={match.thumbnail_url} alt="card" className="image" />
+                  <img src={thumbnailUrl} alt="card" className="image" />
 
                   <IonCardContent>
                     <IonCardTitle className="title">{match.title}</IonCardTitle>
