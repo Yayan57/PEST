@@ -19,9 +19,6 @@ import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import data from "../assets/data/watch.json";
 import "./Watch.css";
-//TODO: connect thumbnail to leauge channel link
-//TODO: link leauge name in game interface to the thumbnail
-//TODO: create watch cards for games that are currently on, if no games are on put nothing to watch right now
 export interface RootInterface {
   Fortnite: Video_Game;
   "Rocket League": Video_Game;
@@ -61,6 +58,138 @@ const Watch: React.FC = () => {
   const [watchGames, setWatchGames] = useState<RootInterface | null>(null);
 
   useEffect(() => {
+    //TODO: put twitch api call here to send to watch.json file
+    require("dotenv").config();
+    const request = require("request");
+    const fs = require("fs");
+
+    const getToken = (callback: {
+      (accessToken: any): void;
+      (arg0: any): void;
+    }) => {
+      const options = {
+        url: "https://id.twitch.tv/oauth2/token",
+        json: true,
+        form: {
+          client_id: process.env.CLIENT_ID,
+          client_secret: process.env.CLIENT_SECRET,
+          grant_type: "client_credentials",
+        },
+      };
+
+      request.post(
+        options,
+        (err: any, res: { statusCode: any }, body: { access_token: any }) => {
+          if (err) {
+            return console.log(err);
+          }
+          console.log(`Status: ${res.statusCode}`);
+          console.log(body);
+
+          callback(body.access_token);
+        }
+      );
+    };
+
+    const getGameID = (
+      accessToken: any,
+      gameName: string | number | boolean,
+      callback: { (gameID: any): void; (arg0: any): void }
+    ) => {
+      const gameOptions = {
+        url: `https://api.twitch.tv/helix/games?name=${encodeURIComponent(
+          gameName
+        )}`,
+        method: "GET",
+        headers: {
+          "Client-ID": process.env.CLIENT_ID,
+          Authorization: `Bearer ${accessToken}`,
+        },
+      };
+
+      request.get(gameOptions, (err: any, res: any, body: string) => {
+        if (err) {
+          return console.log(err);
+        }
+        const data = JSON.parse(body);
+        if (data.data && data.data.length > 0) {
+          callback(data.data[0].id);
+        } else {
+          console.log(`Game not found: ${gameName}`);
+        }
+      });
+    };
+
+    const getTopStreams = (
+      accessToken: any,
+      gameID: any,
+      gameName: string,
+      callback: {
+        (gameName: any, streams: any): void;
+        (arg0: any, arg1: any): void;
+      }
+    ) => {
+      const streamOptions = {
+        url: `https://api.twitch.tv/helix/streams?game_id=${gameID}&first=10`,
+        method: "GET",
+        headers: {
+          "Client-ID": process.env.CLIENT_ID,
+          Authorization: `Bearer ${accessToken}`,
+        },
+      };
+
+      request.get(streamOptions, (err: any, res: any, body: string) => {
+        if (err) {
+          return console.log(err);
+        }
+        console.log(`Top 10 streams for ${gameName}:`);
+        const streams = JSON.parse(body);
+        console.log(streams);
+        callback(gameName, streams);
+      });
+    };
+
+    const writeToFile = (data: Record<string, RootInterface[]>) => {
+      fs.writeFile(
+        "../assets/data/watch.json",
+        JSON.stringify(data, null, 2),
+        (err: any) => {
+          if (err) {
+            return console.log(err);
+          }
+          console.log("Data written to watch.json");
+        }
+      );
+    };
+
+    getToken((accessToken) => {
+      const gameNames = [
+        "League of Legends",
+        "Rocket League",
+        "Counter-Strike",
+        "Marvel Rivals",
+        "Fortnite",
+      ];
+      const allStreams: Record<string, RootInterface[]> = {};
+
+      let processedGames = 0;
+      gameNames.forEach((gameName) => {
+        getGameID(accessToken, gameName, (gameID: any) => {
+          getTopStreams(
+            accessToken,
+            gameID,
+            gameName,
+            (gameName: string | number, streams: any) => {
+              allStreams[gameName] = streams;
+              processedGames++;
+              if (processedGames === gameNames.length) {
+                writeToFile(allStreams);
+              }
+            }
+          );
+        });
+      });
+    });
     setWatchGames(data);
   }, []);
 
