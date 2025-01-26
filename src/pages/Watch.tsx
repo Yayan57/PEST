@@ -8,35 +8,15 @@ import {
   IonHeader,
   IonIcon,
   IonMenuButton,
-  IonNote,
   IonPage,
-  IonText,
   IonTitle,
   IonToolbar,
 } from "@ionic/react";
 import { settingsOutline, searchOutline } from "ionicons/icons";
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import data from "../assets/data/watch.json";
 import "./Watch.css";
-export interface RootInterface {
-  Fortnite: Video_Game;
-  "Rocket League": Video_Game;
-  "League of Legends": Video_Game;
-  "Marvel Rivals": Video_Game;
-  "Counter-Strike": Video_Game;
-}
-
-export interface Video_Game {
-  data: Datum[];
-  pagination: Pagination;
-}
-
-export interface Pagination {
-  cursor: string;
-}
-
-export interface Datum {
+interface Stream {
   id: string;
   user_id: string;
   user_login: string;
@@ -54,16 +34,104 @@ export interface Datum {
   is_mature: boolean;
 }
 
+interface RootInterface {
+  "League of Legends": Stream[];
+  "Rocket League": Stream[];
+  "Counter-Strike": Stream[];
+  "Marvel Rivals": Stream[];
+  Fortnite: Stream[];
+}
+
 const Watch: React.FC = () => {
   const [watchGames, setWatchGames] = useState<RootInterface | null>(null);
 
   useEffect(() => {
     //TODO: put twitch api call here to send to watch.json file
-    require("dotenv").config();
-    const request = require("request");
-    const fs = require("fs");
 
-    const getToken = (callback: {
+    const getToken = async () => {
+      const response = await fetch("https://id.twitch.tv/oauth2/token", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-ww-for-urlencoded",
+        },
+        body: new URLSearchParams({
+          client_id: process.env.REACT_APP_CLIENT_ID!,
+          client_secret: process.env.REACT_APP_CLIENT_SECRET!,
+          grant_type: "client_credentials",
+        }),
+      });
+      const data = await response.json();
+      return data.access_token;
+    };
+
+    const getGameID = async (accessToken: string, gameName: string) => {
+      const response = await fetch(
+        `https://api.twitch.tv/helix/games?name=${encodeURIComponent(
+          gameName
+        )}`,
+        {
+          method: "GET",
+          headers: {
+            "Client-ID": process.env.REACT_APP_CLIENT_ID!,
+            Authorization: `Bearer ${accessToken}`,
+          },
+        }
+      );
+      const data = await response.json();
+      if (data.data && data.data.length > 0) {
+        return data.data[0].id;
+      } else {
+        console.log(`Game not found: ${gameName}`);
+        return null;
+      }
+    };
+
+    const getTopStreams = async (
+      accessToken: string,
+      gameID: string,
+      gameName: string
+    ) => {
+      const response = await fetch(
+        `https://api.twitch.tv/helix/streams?game_id=${gameID}&first=10`,
+        {
+          method: "GET",
+          headers: {
+            "Client-ID": process.env.REACT_APP_CLIENT_ID!,
+            Authorization: `Bearer ${accessToken}`,
+          },
+        }
+      );
+      const data = await response.json();
+      console.log(`Top 10 streams for ${gameName}:`, data);
+      return data.data;
+    };
+
+    const fetchStreams = async () => {
+      const accessToken = await getToken();
+      const gameNames = [
+        "League of Legends",
+        "Rocket League",
+        "Counter-Strike",
+        "Marvel Rivals",
+        "Fortnite",
+      ];
+      const allStreams: Partial<RootInterface> = {};
+
+      gameNames.forEach(async (gameName) => {
+        const gameID = await getGameID(accessToken, gameName);
+        if (gameID) {
+          const streams = await getTopStreams(accessToken, gameID, gameName);
+          allStreams[gameName as keyof RootInterface] = streams;
+        }
+      });
+      setWatchGames(allStreams as RootInterface);
+    };
+
+    fetchStreams();
+  }, []);
+
+  /*
+    const getoken = (callback: {
       (accessToken: any): void;
       (arg0: any): void;
     }) => {
@@ -91,7 +159,7 @@ const Watch: React.FC = () => {
       );
     };
 
-    const getGameID = (
+    const getGameD = (
       accessToken: any,
       gameName: string | number | boolean,
       callback: { (gameID: any): void; (arg0: any): void }
@@ -120,7 +188,7 @@ const Watch: React.FC = () => {
       });
     };
 
-    const getTopStreams = (
+    const getToptreams = (
       accessToken: any,
       gameID: any,
       gameName: string,
@@ -149,19 +217,6 @@ const Watch: React.FC = () => {
       });
     };
 
-    const writeToFile = (data: Record<string, RootInterface[]>) => {
-      fs.writeFile(
-        "../assets/data/watch.json",
-        JSON.stringify(data, null, 2),
-        (err: any) => {
-          if (err) {
-            return console.log(err);
-          }
-          console.log("Data written to watch.json");
-        }
-      );
-    };
-
     getToken((accessToken) => {
       const gameNames = [
         "League of Legends",
@@ -170,7 +225,7 @@ const Watch: React.FC = () => {
         "Marvel Rivals",
         "Fortnite",
       ];
-      const allStreams: Record<string, RootInterface[]> = {};
+      const allStreams: Partial<RootInterface> = {};
 
       let processedGames = 0;
       gameNames.forEach((gameName) => {
@@ -180,33 +235,32 @@ const Watch: React.FC = () => {
             gameID,
             gameName,
             (gameName: string | number, streams: any) => {
-              allStreams[gameName] = streams;
+              allStreams[gameName as keyof RootInterface] = streams;
               processedGames++;
               if (processedGames === gameNames.length) {
-                writeToFile(allStreams);
+                setWatchGames(allStreams as RootInterface);
               }
             }
           );
         });
       });
     });
-    setWatchGames(data);
-  }, []);
+  }, []);*/
 
-  const renderWatchCards = (leauge: string) => {
+  const renderWatchCards = (league: string) => {
     if (!watchGames) return null;
 
-    const leaugeData = watchGames[leauge as keyof RootInterface];
-    if (!leaugeData) return null;
+    const leagueData = watchGames[league as keyof RootInterface];
+    if (!leagueData) return null;
 
     return (
       <Swiper
         spaceBetween={0}
         slidesPerView="auto"
         className="watch-slides"
-        key={leauge}
+        key={league}
       >
-        {leaugeData.data.map((match) => {
+        {leagueData.map((match) => {
           const thumbnailUrl = match.thumbnail_url
             .replace("{width}", "440")
             .replace("{height}", "280");
