@@ -109,8 +109,6 @@ const Watch: React.FC = () => {
   };
 
   useEffect(() => {
-    //TODO: add limit to char count in cards
-    //TODO: make cards smaller to show like 3 a page
     //TODO: stop calling the api each time you renderwatchcards, only call once and save data in obj
     const gameNames = [
       "League of Legends",
@@ -164,6 +162,7 @@ const Watch: React.FC = () => {
             </SwiperSlide>
           );
         })}
+        <div className="score-divider" />
       </Swiper>
     );
   };
