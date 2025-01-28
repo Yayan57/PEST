@@ -16,6 +16,7 @@ import {
   IonTabBar,
   IonTabButton,
   IonTabs,
+  IonText,
   IonTitle,
   IonToolbar,
 } from "@ionic/react";
@@ -64,25 +65,9 @@ const Schedule: React.FC = () => {
     setUpcomingGames(filteredGames);
   }, []);
 
-  return (
-    <IonPage>
-      <IonHeader>
-        <IonToolbar color={"tertiary"}>
-          <IonButtons slot="start">
-            <IonMenuButton />
-          </IonButtons>
-          <IonTitle>Schedule </IonTitle>
-          <IonButtons slot="end">
-            <IonButton routerLink="../settings">
-              <IonIcon slot="icon-only" icon={settingsOutline} color="light" />
-            </IonButton>
-            <IonButton slot="primary" routerLink="../search">
-              <IonIcon slot="icon-only" icon={searchOutline} color="light" />
-            </IonButton>
-          </IonButtons>
-        </IonToolbar>
-      </IonHeader>
-      <IonContent className="ion-padding">
+  const checkSchedule = () => {
+    if (upcomingGames.length > 0) {
+      return (
         <IonList>
           {upcomingGames.map((game) => (
             <IonCard key={game.id} className="schedule-card">
@@ -102,7 +87,39 @@ const Schedule: React.FC = () => {
             </IonCard>
           ))}
         </IonList>
-      </IonContent>
+      );
+    } else {
+      return (
+        <IonContent>
+          <IonLabel>There are no upcoming games!</IonLabel>
+          <IonText>
+            <br />
+            Check back later!
+          </IonText>
+        </IonContent>
+      );
+    }
+  };
+
+  return (
+    <IonPage>
+      <IonHeader>
+        <IonToolbar color={"tertiary"}>
+          <IonButtons slot="start">
+            <IonMenuButton />
+          </IonButtons>
+          <IonTitle>Schedule </IonTitle>
+          <IonButtons slot="end">
+            <IonButton routerLink="../settings">
+              <IonIcon slot="icon-only" icon={settingsOutline} color="light" />
+            </IonButton>
+            <IonButton slot="primary" routerLink="../search">
+              <IonIcon slot="icon-only" icon={searchOutline} color="light" />
+            </IonButton>
+          </IonButtons>
+        </IonToolbar>
+      </IonHeader>
+      <IonContent className="ion-padding">{checkSchedule()}</IonContent>
     </IonPage>
   );
 };
