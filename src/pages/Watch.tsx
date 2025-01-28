@@ -33,7 +33,7 @@ interface Stream {
   tags: string[];
   is_mature: boolean;
 }
-
+let counter = 0;
 interface RootInterface {
   "League of Legends": Stream[];
   "Rocket League": Stream[];
@@ -94,6 +94,8 @@ const Watch: React.FC = () => {
       }
     );
     const data = await response.json();
+    counter++;
+    console.log("Have called twitch api ", counter, " times.");
     return data.data;
   };
 
@@ -107,7 +109,9 @@ const Watch: React.FC = () => {
   };
 
   useEffect(() => {
-    //TODO: add limit to char count in cards, make cards smaller to show like 3 a page
+    //TODO: add limit to char count in cards
+    //TODO: make cards smaller to show like 3 a page
+    //TODO: stop calling the api each time you renderwatchcards, only call once and save data in obj
     const gameNames = [
       "League of Legends",
       "Rocket League",
@@ -135,8 +139,8 @@ const Watch: React.FC = () => {
       >
         {leagueData.map((match) => {
           const thumbnailUrl = match.thumbnail_url
-            .replace("{width}", "300")
-            .replace("{height}", "169");
+            .replace("{width}", "100")
+            .replace("{height}", "56");
           return (
             <SwiperSlide key={match.id} className="watch-slide">
               <a
@@ -149,7 +153,11 @@ const Watch: React.FC = () => {
                   <img src={thumbnailUrl} alt="card" className="image" />
 
                   <IonCardContent>
-                    <IonCardTitle className="title">{match.title}</IonCardTitle>
+                    <IonCardTitle className="title">
+                      {match.title.length > 50
+                        ? match.title.substring(0, 50) + "..."
+                        : match.title}
+                    </IonCardTitle>
                   </IonCardContent>
                 </IonCard>
               </a>
