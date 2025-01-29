@@ -33,7 +33,6 @@ interface Stream {
   tags: string[];
   is_mature: boolean;
 }
-let counter = 0;
 interface RootInterface {
   "League of Legends": Stream[];
   "Rocket League": Stream[];
@@ -73,7 +72,6 @@ const Watch: React.FC = () => {
     if (data.data && data.data.length > 0) {
       return data.data[0].id;
     } else {
-      console.log(`Game not found: ${gameName}`);
       return null;
     }
   };
@@ -94,8 +92,6 @@ const Watch: React.FC = () => {
       }
     );
     const data = await response.json();
-    counter++;
-    console.log("Have called twitch api ", counter, " times.");
     return data.data;
   };
 
