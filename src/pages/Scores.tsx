@@ -127,6 +127,7 @@ const Scores: React.FC = () => {
   };
 
   //static version of scores page
+  //TODO: make these interact with rendercards function to reload page
   return (
     <IonPage>
       <IonHeader>
@@ -135,6 +136,21 @@ const Scores: React.FC = () => {
             <IonMenuButton />
           </IonButtons>
           <IonTitle>Scores</IonTitle>
+          <IonSelect
+            aria-label="Choose a game"
+            interface="popover"
+            placeholder="All"
+            slot="end"
+          >
+            <IonSelectOption value="All">All</IonSelectOption>
+            <IonSelectOption value="Leauge of legends">
+              Leauge of legends
+            </IonSelectOption>
+            <IonSelectOption value="CS2">CS2</IonSelectOption>
+            <IonSelectOption value="Call of duty">Call of duty</IonSelectOption>
+            <IonSelectOption value="Fortnite">Fortnite</IonSelectOption>
+            <IonSelectOption value="Overwatch">Overwatch</IonSelectOption>
+          </IonSelect>
           <IonButtons slot="end">
             <IonButton routerLink="../settings">
               <IonIcon slot="icon-only" icon={settingsOutline} color="light" />
