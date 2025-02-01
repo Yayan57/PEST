@@ -44,6 +44,7 @@ interface RootInterface {
 const Watch: React.FC = () => {
   const [watchGames, setWatchGames] = useState<Partial<RootInterface>>({});
 
+  // next 4 functions are the twitch api code
   const getToken = async () => {
     const response = await fetch("https://id.twitch.tv/oauth2/token", {
       method: "POST",
@@ -105,7 +106,7 @@ const Watch: React.FC = () => {
   };
 
   useEffect(() => {
-    //TODO: stop calling the api each time you renderwatchcards, only call once and save data in obj
+    //TODO: find way to call twitch api less or faster
     const gameNames = [
       "League of Legends",
       "Rocket League",
@@ -118,6 +119,7 @@ const Watch: React.FC = () => {
     });
   }, []);
 
+  // function that takes a game as an argument and then returns cards showing twitch api data
   const renderWatchCards = (league: string) => {
     if (!watchGames) return null;
 
@@ -163,6 +165,8 @@ const Watch: React.FC = () => {
     );
   };
 
+  //Static version of page
+  //TODO: loading versions of cards
   return (
     <IonPage>
       <IonHeader>

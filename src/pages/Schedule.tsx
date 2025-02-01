@@ -12,6 +12,8 @@ import {
   IonList,
   IonMenuButton,
   IonPage,
+  IonSelect,
+  IonSelectOption,
   IonTab,
   IonTabBar,
   IonTabButton,
@@ -48,9 +50,11 @@ interface Game {
   };
 }
 
+//TODO: integrate with database
 const Schedule: React.FC = () => {
   const [upcomingGames, setUpcomingGames] = useState<Game[]>([]);
 
+  //sorts games to find those that havent started yet
   useEffect(() => {
     const now = new Date();
     const filteredGames = data
@@ -65,6 +69,7 @@ const Schedule: React.FC = () => {
     setUpcomingGames(filteredGames);
   }, []);
 
+  // creates unstarted game cards
   const checkSchedule = () => {
     if (upcomingGames.length > 0) {
       return (
@@ -101,6 +106,8 @@ const Schedule: React.FC = () => {
     }
   };
 
+  //static version of site
+  //TODO add loading cards
   return (
     <IonPage>
       <IonHeader>

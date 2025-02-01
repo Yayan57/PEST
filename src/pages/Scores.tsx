@@ -12,6 +12,8 @@ import {
   IonList,
   IonMenuButton,
   IonPage,
+  IonSelect,
+  IonSelectOption,
   IonTitle,
   IonToolbar,
 } from "@ionic/react";
@@ -42,10 +44,11 @@ interface Game {
     count: number;
   };
 }
-
+//TODO: integrate with database
 const Scores: React.FC = () => {
   const [completedGames, setCompletedGames] = useState<Game[]>([]);
 
+  //takes score data from json file and filters to present to user
   useEffect(() => {
     const now = new Date();
     const filteredGames = data
@@ -71,6 +74,8 @@ const Scores: React.FC = () => {
     "LCK",
   ];
 
+  //function that takes available scores and makes a list of cards for them
+  //TODO: add date's to cards and loading before data is presented
   const renderLeagueCards = () => {
     return leagues.map((league) => {
       const leagueMatches = completedGames.filter(
@@ -121,6 +126,7 @@ const Scores: React.FC = () => {
     });
   };
 
+  //static version of scores page
   return (
     <IonPage>
       <IonHeader>
