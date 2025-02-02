@@ -46,3 +46,23 @@
 .score-list {
   background-color: var(--ion-card-color);
 }
+.loading-title {
+  width: 7rem;
+  height: 1rem;
+  margin-left: 1rem;
+}
+.loading-img {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1rem;
+}
+.loading-team {
+  position: relative;
+  top: -2rem;
+  width: 10rem;
+  height: 2rem;
+}
+.loading-score {
+  width: 2rem;
+  height: 2rem;
+}

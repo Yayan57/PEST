@@ -14,6 +14,8 @@ import {
   IonPage,
   IonSelect,
   IonSelectOption,
+  IonSkeletonText,
+  IonThumbnail,
   IonTitle,
   IonToolbar,
 } from "@ionic/react";
@@ -59,7 +61,7 @@ const Scores: React.FC = () => {
         (a, b) =>
           new Date(a.startTime).getTime() - new Date(b.startTime).getTime()
       )
-      .slice(0, 10);
+      .slice(0, 3);
     setCompletedGames(filteredGames);
   }, []);
 
@@ -87,41 +89,92 @@ const Scores: React.FC = () => {
       }
 
       return (
-        <IonCard key={league} className="score-card">
-          <IonTitle className="score-title">{league}</IonTitle>
-          <div className="score-divider" />
-          <IonCardContent>
-            <IonList lines="none" className="score-list">
-              {leagueMatches.map((list, index) => (
-                <IonItem key={`item_${index}`} className="score-item">
-                  <div className="teamImage">
-                    <IonImg
-                      src={list.teams[0].image}
-                      className="score-image teamImage"
-                    />
-                    <IonImg src={list.teams[1].image} className="score-image" />
-                  </div>
-                  <div>
-                    <IonLabel className="teamName">
-                      {list.teams[0].name}
-                    </IonLabel>
-                    <IonLabel className="teamName">
-                      {list.teams[1].name}
-                    </IonLabel>
-                  </div>
-                  <div className="teamScore">
-                    <IonLabel slot="end" className="teamScore">
-                      {list.teams[0].gameWins}
-                    </IonLabel>
-                    <IonLabel slot="end" className="teamScore">
-                      {list.teams[1].gameWins}
-                    </IonLabel>
-                  </div>
-                </IonItem>
-              ))}
-            </IonList>
-          </IonCardContent>
-        </IonCard>
+        <>
+          {true && (
+            <IonCard key={league} className="score-card">
+              <IonTitle className="score-title">{league}</IonTitle>
+              <div className="score-divider" />
+              <IonCardContent>
+                <IonList lines="none" className="score-list">
+                  {leagueMatches.map((list, index) => (
+                    <IonItem key={`item_${index}`} className="score-item">
+                      <div className="teamImage">
+                        <IonImg
+                          src={list.teams[0].image}
+                          className="score-image teamImage"
+                        />
+                        <IonImg
+                          src={list.teams[1].image}
+                          className="score-image"
+                        />
+                      </div>
+                      <div>
+                        <IonLabel className="teamName">
+                          {list.teams[0].name}
+                        </IonLabel>
+                        <IonLabel className="teamName">
+                          {list.teams[1].name}
+                        </IonLabel>
+                      </div>
+                      <div className="teamScore">
+                        <IonLabel slot="end" className="teamScore">
+                          {list.teams[0].gameWins}
+                        </IonLabel>
+                        <IonLabel slot="end" className="teamScore">
+                          {list.teams[1].gameWins}
+                        </IonLabel>
+                      </div>
+                    </IonItem>
+                  ))}
+                </IonList>
+              </IonCardContent>
+            </IonCard>
+          )}
+          {true && (
+            <IonCard key={league} className="score-card">
+              <IonSkeletonText className="loading-title" animated={true} />
+              <div className="score-divider" />
+              <IonCardContent>
+                <IonList lines="none" className="score-list">
+                  <IonItem className="score-item">
+                    <div className="teamImage">
+                      <IonThumbnail className="loading-img">
+                        <IonSkeletonText></IonSkeletonText>
+                      </IonThumbnail>
+                      <IonThumbnail className="loading-img">
+                        <IonSkeletonText></IonSkeletonText>
+                      </IonThumbnail>
+                    </div>
+                    <div>
+                      <IonSkeletonText
+                        className="loading-team"
+                        animated={true}
+                      />
+                      <div style={{ gap: "20px" }}></div>
+                      <IonSkeletonText
+                        className="loading-team"
+                        animated={true}
+                      />
+                    </div>
+                    <div className="teamScore">
+                      <IonSkeletonText
+                        slot="end"
+                        className="loading-score"
+                        animated={true}
+                      />
+                      <IonSkeletonText
+                        slot="end"
+                        className="loading-score"
+                        animated={true}
+                      />
+                    </div>
+                  </IonItem>
+                  ))
+                </IonList>
+              </IonCardContent>
+            </IonCard>
+          )}
+        </>
       );
     });
   };
