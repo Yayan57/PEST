@@ -107,7 +107,7 @@ const Schedule: React.FC = () => {
           {Object.keys(groupedGames).map((date) => (
             <div key={date}>
               <IonLabel className="date-label">
-                {format(date, "MMMM do, yyyy")}
+                {format(date, "MMM do")}
               </IonLabel>
               {groupedGames[date].map((game) => (
                 <IonCard key={game.id} className="schedule-card">
