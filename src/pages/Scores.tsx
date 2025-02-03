@@ -139,20 +139,19 @@ const Scores: React.FC = () => {
                   <IonItem className="score-item">
                     <div className="teamImage">
                       <IonThumbnail className="loading-img">
-                        <IonSkeletonText></IonSkeletonText>
+                        <IonSkeletonText animated={true}></IonSkeletonText>
                       </IonThumbnail>
                       <IonThumbnail className="loading-img">
-                        <IonSkeletonText></IonSkeletonText>
+                        <IonSkeletonText animated={true}></IonSkeletonText>
                       </IonThumbnail>
                     </div>
                     <div>
                       <IonSkeletonText
-                        className="loading-team"
+                        className="loading-team-top"
                         animated={true}
                       />
-                      <div style={{ gap: "20px" }}></div>
                       <IonSkeletonText
-                        className="loading-team"
+                        className="loading-team-bottom"
                         animated={true}
                       />
                     </div>

@@ -48,21 +48,29 @@
 }
 .loading-title {
   width: 7rem;
-  height: 1rem;
+  height: 1.5rem;
   margin-left: 1rem;
+  margin-top: 10px;
 }
 .loading-img {
   width: 3rem;
   height: 3rem;
   margin-bottom: 1rem;
 }
-.loading-team {
+.loading-team-top {
   position: relative;
   top: -2rem;
+  width: 10rem;
+  height: 2rem;
+}
+.loading-team-bottom {
+  position: relative;
+  bottom: 0rem;
   width: 10rem;
   height: 2rem;
 }
 .loading-score {
   width: 2rem;
   height: 2rem;
+  margin-bottom: 2.4rem;
 }
