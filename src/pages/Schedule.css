@@ -28,3 +28,8 @@
 .schedule-card {
   background-color: var(--ion-card-color);
 }
+.date-label {
+  font-size: x-large;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
