@@ -26,6 +26,7 @@ import { settingsOutline, searchOutline } from "ionicons/icons";
 import React, { useState, useEffect } from "react";
 import "./Schedule.css";
 import data from "../assets/data/LOL.json";
+import { format } from "date-fns";
 
 interface Game {
   id: string;
@@ -85,27 +86,53 @@ const Schedule: React.FC = () => {
     setUpcomingGames(filteredGames);
   }, []);
 
+  //Groups games by date
+  const groupGamesByDate = (games: Game[]) => {
+    return games.reduce((groups, game) => {
+      const date = new Date(game.startTime).toLocaleDateString();
+      if (!groups[date]) {
+        groups[date] = [];
+      }
+      groups[date].push(game);
+      return groups;
+    }, {} as { [key: string]: Game[] });
+  };
+
   // creates unstarted game cards
   const checkSchedule = () => {
     if (upcomingGames.length > 0) {
+      const groupedGames = groupGamesByDate(upcomingGames);
       return (
         <IonList>
-          {upcomingGames.map((game) => (
-            <IonCard key={game.id} className="schedule-card">
-              <IonCardContent>
-                <div className="game-info">
-                  <IonImg src={game.teams[0].image} className="team-image" />
-                  <IonLabel className="team-name">
-                    {game.teams[0].name}
-                  </IonLabel>
-                  <IonLabel className="vs">vs.</IonLabel>
-                  <IonLabel className="team-name">
-                    {game.teams[1].name}
-                  </IonLabel>
-                  <IonImg src={game.teams[1].image} className="team-image" />
-                </div>
-              </IonCardContent>
-            </IonCard>
+          {Object.keys(groupedGames).map((date) => (
+            <div key={date}>
+              <IonLabel className="date-label">
+                {format(date, "MMMM do, yyyy")}
+              </IonLabel>
+              {groupedGames[date].map((game) => (
+                <IonCard key={game.id} className="schedule-card">
+                  <IonCardContent>
+                    <div className="game-info">
+                      <IonImg
+                        src={game.teams[0].image}
+                        className="team-image"
+                      />
+                      <IonLabel className="team-name">
+                        {game.teams[0].name}
+                      </IonLabel>
+                      <IonLabel className="vs">vs.</IonLabel>
+                      <IonLabel className="team-name">
+                        {game.teams[1].name}
+                      </IonLabel>
+                      <IonImg
+                        src={game.teams[1].image}
+                        className="team-image"
+                      />
+                    </div>
+                  </IonCardContent>
+                </IonCard>
+              ))}
+            </div>
           ))}
         </IonList>
       );
@@ -158,7 +185,9 @@ const Schedule: React.FC = () => {
           </IonButtons>
         </IonToolbar>
       </IonHeader>
-      <IonContent className="ion-padding">{checkSchedule()}</IonContent>
+      <IonContent className="ion-padding">
+        <IonList>{checkSchedule()}</IonList>
+      </IonContent>
     </IonPage>
   );
 };
