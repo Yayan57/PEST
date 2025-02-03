@@ -17,7 +17,7 @@ import {
   useIonRouter,
 } from "@ionic/react";
 import React, { useEffect, useState } from "react";
-import { logInOutline, personCircleOutline, play } from "ionicons/icons";
+import { logInOutline, personCircleOutline, play, text } from "ionicons/icons";
 import PEST_logo from "../assets/PEST_logo.svg";
 import Intro from "../components/Intro";
 import { Preferences } from "@capacitor/preferences";
@@ -65,14 +65,15 @@ const Login: React.FC = () => {
       ) : (
         <IonPage>
           <IonHeader>
-            <IonToolbar color={"success"}>
-              <IonTitle>PEST</IonTitle>
+            <IonToolbar color={"tertiary"}>
+              <IonTitle></IonTitle>
             </IonToolbar>
           </IonHeader>
           <IonContent scrollY={false} className="ion-padding">
             <IonGrid fixed>
               <IonRow class="ion-justify-content-center">
                 <IonCol size="12" sizeMd="8" sizeLg="6" sizeXl="4">
+                  <IonTitle className="login-title">PEST</IonTitle>
                   <div className="ion-text-center ion-padding">
                     <img src={PEST_logo} alt="PEST Logo" width={"50%"} />
                   </div>
