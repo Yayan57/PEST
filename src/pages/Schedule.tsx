@@ -25,7 +25,7 @@ import {
 import { settingsOutline, searchOutline } from "ionicons/icons";
 import React, { useState, useEffect } from "react";
 import "./Schedule.css";
-import data from "../assets/data/LCK.json";
+import data from "../assets/data/LOL.json";
 
 interface Game {
   id: string;
@@ -57,10 +57,26 @@ const Schedule: React.FC = () => {
   //sorts games to find those that havent started yet
   useEffect(() => {
     const now = new Date();
+    const uniqueGameIds = new Set<string>();
     const filteredGames = data
       .filter(
         (game) => game.state === "unstarted" && new Date(game.startTime) > now
       )
+      .filter((game) => {
+        if (uniqueGameIds.has(game.id)) {
+          return false;
+        } else {
+          uniqueGameIds.add(game.id);
+          return true;
+        }
+      })
+      .filter((game) => {
+        if (game.teams[0].name === "TBD" && game.teams[1].name === "TBD") {
+          return false;
+        } else {
+          return true;
+        }
+      })
       .sort(
         (a, b) =>
           new Date(a.startTime).getTime() - new Date(b.startTime).getTime()
