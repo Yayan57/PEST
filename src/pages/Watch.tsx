@@ -45,7 +45,7 @@ interface RootInterface {
 
 const Watch: React.FC = () => {
   const [watchGames, setWatchGames] = useState<Partial<RootInterface>>({});
-  const [loading, setLoading] = useState(true);
+  const [loadingWatch, setLoadingWatch] = useState(true);
 
   // next 4 functions are the twitch api code
   const getToken = async () => {
@@ -105,7 +105,7 @@ const Watch: React.FC = () => {
     if (gameID) {
       const streams = await getTopStreams(accessToken, gameID, gameName);
       setWatchGames((prev) => ({ ...prev, [gameName]: streams }));
-      setLoading(false);
+      setLoadingWatch(false);
     }
   };
 
@@ -209,17 +209,23 @@ const Watch: React.FC = () => {
       </IonHeader>
       <IonContent className="content-top">
         <IonTitle className="watch-title">League of Legends</IonTitle>
-        {loading
+        {loadingWatch
           ? renderSkeletonCards()
           : renderWatchCards("League of Legends")}
         <IonTitle className="watch-title">Rocket League</IonTitle>
-        {loading ? renderSkeletonCards() : renderWatchCards("Rocket League")}
+        {loadingWatch
+          ? renderSkeletonCards()
+          : renderWatchCards("Rocket League")}
         <IonTitle className="watch-title">Marvel Rivals</IonTitle>
-        {loading ? renderSkeletonCards() : renderWatchCards("Marvel Rivals")}
+        {loadingWatch
+          ? renderSkeletonCards()
+          : renderWatchCards("Marvel Rivals")}
         <IonTitle className="watch-title">Counter-Strike</IonTitle>
-        {loading ? renderSkeletonCards() : renderWatchCards("Counter-Strike")}
+        {loadingWatch
+          ? renderSkeletonCards()
+          : renderWatchCards("Counter-Strike")}
         <IonTitle className="watch-title">Fortnite</IonTitle>
-        {loading ? renderSkeletonCards() : renderWatchCards("Fortnite")}
+        {loadingWatch ? renderSkeletonCards() : renderWatchCards("Fortnite")}
       </IonContent>
     </IonPage>
   );
