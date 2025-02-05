@@ -33,3 +33,7 @@
   font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+.loading-team {
+  width: 80%;
+  margin: auto;
+}

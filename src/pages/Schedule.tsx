@@ -14,11 +14,13 @@ import {
   IonPage,
   IonSelect,
   IonSelectOption,
+  IonSkeletonText,
   IonTab,
   IonTabBar,
   IonTabButton,
   IonTabs,
   IonText,
+  IonThumbnail,
   IonTitle,
   IonToolbar,
 } from "@ionic/react";
@@ -27,6 +29,7 @@ import React, { useState, useEffect } from "react";
 import "./Schedule.css";
 import data from "../assets/data/LOL.json";
 import { format } from "date-fns";
+import { render } from "@testing-library/react";
 
 interface Game {
   id: string;
@@ -54,6 +57,7 @@ interface Game {
 //TODO: integrate with database
 const Schedule: React.FC = () => {
   const [upcomingGames, setUpcomingGames] = useState<Game[]>([]);
+  const [loadingSchedule, setLoadingSchedule] = useState(true);
 
   //sorts games to find those that havent started yet
   useEffect(() => {
@@ -84,6 +88,7 @@ const Schedule: React.FC = () => {
       )
       .slice(0, 10);
     setUpcomingGames(filteredGames);
+    setLoadingSchedule(false);
   }, []);
 
   //Groups games by date
@@ -99,6 +104,7 @@ const Schedule: React.FC = () => {
   };
 
   // creates unstarted game cards
+  //TODO: add times and leauge name to indicate when and what leauge is playing
   const checkSchedule = () => {
     if (upcomingGames.length > 0) {
       const groupedGames = groupGamesByDate(upcomingGames);
@@ -149,6 +155,50 @@ const Schedule: React.FC = () => {
     }
   };
 
+  const renderSkeletonScheduleCards = () => {
+    return (
+      <IonList>
+        {[...Array(3)].map(() => (
+          <div>
+            <IonLabel className="date-label">
+              <IonSkeletonText
+                animated={true}
+                style={{ width: "7rem", height: "2rem" }}
+              ></IonSkeletonText>
+            </IonLabel>
+            {[...Array(2)].map(() => (
+              <IonCard className="schedule-card">
+                <IonCardContent>
+                  <div className="game-info">
+                    <IonThumbnail>
+                      <IonSkeletonText animated={true}></IonSkeletonText>
+                    </IonThumbnail>
+                    <IonLabel className="team-name">
+                      <IonSkeletonText
+                        animated={true}
+                        className="loading-team"
+                      ></IonSkeletonText>
+                    </IonLabel>
+                    <IonLabel className="vs">vs.</IonLabel>
+                    <IonLabel className="team-name">
+                      <IonSkeletonText
+                        animated={true}
+                        className="loading-team"
+                      ></IonSkeletonText>
+                    </IonLabel>
+                    <IonThumbnail>
+                      <IonSkeletonText animated={true}></IonSkeletonText>
+                    </IonThumbnail>
+                  </div>
+                </IonCardContent>
+              </IonCard>
+            ))}
+          </div>
+        ))}
+      </IonList>
+    );
+  };
+
   //static version of site
   //TODO add loading cards
   //TODO: make these interact with rendercards function to reload page
@@ -186,7 +236,9 @@ const Schedule: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding">
-        <IonList>{checkSchedule()}</IonList>
+        <IonList>
+          {loadingSchedule ? renderSkeletonScheduleCards() : checkSchedule()}
+        </IonList>
       </IonContent>
     </IonPage>
   );
