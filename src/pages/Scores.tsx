@@ -22,7 +22,7 @@ import {
 import { settingsOutline, searchOutline } from "ionicons/icons";
 import React, { useEffect, useState } from "react";
 import "./Scores.css";
-import data from "../assets/data/LCK.json";
+import data from "../assets/data/LOL.json";
 
 interface Game {
   id: string;
@@ -53,10 +53,19 @@ const Scores: React.FC = () => {
   //takes score data from json file and filters to present to user
   useEffect(() => {
     const now = new Date();
+    const uniqueGameIds = new Set<string>();
     const filteredGames = data
       .filter(
         (game) => game.state === "completed" && new Date(game.startTime) < now
       )
+      .filter((game) => {
+        if (uniqueGameIds.has(game.id)) {
+          return false;
+        } else {
+          uniqueGameIds.add(game.id);
+          return true;
+        }
+      })
       .sort(
         (a, b) =>
           new Date(a.startTime).getTime() - new Date(b.startTime).getTime()
@@ -69,8 +78,8 @@ const Scores: React.FC = () => {
     "League of Legends Champions Korea",
     "League of Legends Pro League",
     "League of Legends EMEA Championship",
-    "League of Legends Championship of The Americas",
-    "League of Legends Championship Pacific",
+    "LTA North",
+    "LPL",
     "Worlds",
     "LEC",
     "LCK",
