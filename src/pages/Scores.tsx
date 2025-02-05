@@ -46,9 +46,11 @@ interface Game {
     count: number;
   };
 }
+
 //TODO: integrate with database
 const Scores: React.FC = () => {
   const [completedGames, setCompletedGames] = useState<Game[]>([]);
+  const [loadingScores, setLoadingScores] = useState(true);
 
   //takes score data from json file and filters to present to user
   useEffect(() => {
@@ -72,6 +74,7 @@ const Scores: React.FC = () => {
       )
       .slice(0, 3);
     setCompletedGames(filteredGames);
+    setLoadingScores(false);
   }, []);
 
   const leagues = [
@@ -87,7 +90,7 @@ const Scores: React.FC = () => {
 
   //function that takes available scores and makes a list of cards for them
   //TODO: add date's to cards and loading before data is presented
-  const renderLeagueCards = () => {
+  const renderScoreCards = () => {
     return leagues.map((league) => {
       const leagueMatches = completedGames.filter(
         (match) => match.league.name === league
@@ -98,93 +101,84 @@ const Scores: React.FC = () => {
       }
 
       return (
-        <>
-          {true && (
-            <IonCard key={league} className="score-card">
-              <IonTitle className="score-title">{league}</IonTitle>
-              <div className="score-divider" />
-              <IonCardContent>
-                <IonList lines="none" className="score-list">
-                  {leagueMatches.map((list, index) => (
-                    <IonItem key={`item_${index}`} className="score-item">
-                      <div className="teamImage">
-                        <IonImg
-                          src={list.teams[0].image}
-                          className="score-image teamImage"
-                        />
-                        <IonImg
-                          src={list.teams[1].image}
-                          className="score-image"
-                        />
-                      </div>
-                      <div>
-                        <IonLabel className="teamName">
-                          {list.teams[0].name}
-                        </IonLabel>
-                        <IonLabel className="teamName">
-                          {list.teams[1].name}
-                        </IonLabel>
-                      </div>
-                      <div className="teamScore">
-                        <IonLabel slot="end" className="teamScore">
-                          {list.teams[0].gameWins}
-                        </IonLabel>
-                        <IonLabel slot="end" className="teamScore">
-                          {list.teams[1].gameWins}
-                        </IonLabel>
-                      </div>
-                    </IonItem>
-                  ))}
-                </IonList>
-              </IonCardContent>
-            </IonCard>
-          )}
-          {true && (
-            <IonCard key={league} className="score-card">
-              <IonSkeletonText className="loading-title" animated={true} />
-              <div className="score-divider" />
-              <IonCardContent>
-                <IonList lines="none" className="score-list">
-                  <IonItem className="score-item">
-                    <div className="teamImage">
-                      <IonThumbnail className="loading-img">
-                        <IonSkeletonText animated={true}></IonSkeletonText>
-                      </IonThumbnail>
-                      <IonThumbnail className="loading-img">
-                        <IonSkeletonText animated={true}></IonSkeletonText>
-                      </IonThumbnail>
-                    </div>
-                    <div>
-                      <IonSkeletonText
-                        className="loading-team-top"
-                        animated={true}
-                      />
-                      <IonSkeletonText
-                        className="loading-team-bottom"
-                        animated={true}
-                      />
-                    </div>
-                    <div className="teamScore">
-                      <IonSkeletonText
-                        slot="end"
-                        className="loading-score"
-                        animated={true}
-                      />
-                      <IonSkeletonText
-                        slot="end"
-                        className="loading-score"
-                        animated={true}
-                      />
-                    </div>
-                  </IonItem>
-                  ))
-                </IonList>
-              </IonCardContent>
-            </IonCard>
-          )}
-        </>
+        <IonCard key={league} className="score-card">
+          <IonTitle className="score-title">{league}</IonTitle>
+          <div className="score-divider" />
+          <IonCardContent>
+            <IonList lines="none" className="score-list">
+              {leagueMatches.map((list, index) => (
+                <IonItem key={`item_${index}`} className="score-item">
+                  <div className="teamImage">
+                    <IonImg
+                      src={list.teams[0].image}
+                      className="score-image teamImage"
+                    />
+                    <IonImg src={list.teams[1].image} className="score-image" />
+                  </div>
+                  <div>
+                    <IonLabel className="teamName">
+                      {list.teams[0].name}
+                    </IonLabel>
+                    <IonLabel className="teamName">
+                      {list.teams[1].name}
+                    </IonLabel>
+                  </div>
+                  <div className="teamScore">
+                    <IonLabel slot="end" className="teamScore">
+                      {list.teams[0].gameWins}
+                    </IonLabel>
+                    <IonLabel slot="end" className="teamScore">
+                      {list.teams[1].gameWins}
+                    </IonLabel>
+                  </div>
+                </IonItem>
+              ))}
+            </IonList>
+          </IonCardContent>
+        </IonCard>
       );
     });
+  };
+  const renderSkeletonScoreCards = () => {
+    return (
+      <IonCard className="score-card">
+        <IonSkeletonText className="loading-title" animated={true} />
+        <div className="score-divider" />
+        <IonCardContent>
+          <IonList lines="none" className="score-list">
+            <IonItem className="score-item">
+              <div className="teamImage">
+                <IonThumbnail className="loading-img">
+                  <IonSkeletonText animated={true}></IonSkeletonText>
+                </IonThumbnail>
+                <IonThumbnail className="loading-img">
+                  <IonSkeletonText animated={true}></IonSkeletonText>
+                </IonThumbnail>
+              </div>
+              <div>
+                <IonSkeletonText className="loading-team-top" animated={true} />
+                <IonSkeletonText
+                  className="loading-team-bottom"
+                  animated={true}
+                />
+              </div>
+              <div className="teamScore">
+                <IonSkeletonText
+                  slot="end"
+                  className="loading-score"
+                  animated={true}
+                />
+                <IonSkeletonText
+                  slot="end"
+                  className="loading-score"
+                  animated={true}
+                />
+              </div>
+            </IonItem>
+          </IonList>
+        </IonCardContent>
+      </IonCard>
+    );
   };
 
   //static version of scores page
@@ -222,7 +216,9 @@ const Scores: React.FC = () => {
           </IonButtons>
         </IonToolbar>
       </IonHeader>
-      <IonContent>{renderLeagueCards()}</IonContent>
+      <IonContent>
+        {loadingScores ? renderSkeletonScoreCards() : renderScoreCards()}
+      </IonContent>
     </IonPage>
   );
 };
