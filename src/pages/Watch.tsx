@@ -9,10 +9,12 @@ import {
   IonIcon,
   IonMenuButton,
   IonPage,
+  IonSkeletonText,
+  IonThumbnail,
   IonTitle,
   IonToolbar,
 } from "@ionic/react";
-import { settingsOutline, searchOutline } from "ionicons/icons";
+import { settingsOutline, searchOutline, watch } from "ionicons/icons";
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./Watch.css";
@@ -43,6 +45,7 @@ interface RootInterface {
 
 const Watch: React.FC = () => {
   const [watchGames, setWatchGames] = useState<Partial<RootInterface>>({});
+  const [loading, setLoading] = useState(true);
 
   // next 4 functions are the twitch api code
   const getToken = async () => {
@@ -102,6 +105,7 @@ const Watch: React.FC = () => {
     if (gameID) {
       const streams = await getTopStreams(accessToken, gameID, gameName);
       setWatchGames((prev) => ({ ...prev, [gameName]: streams }));
+      setLoading(false);
     }
   };
 
@@ -121,8 +125,6 @@ const Watch: React.FC = () => {
 
   // function that takes a game as an argument and then returns cards showing twitch api data
   const renderWatchCards = (league: string) => {
-    if (!watchGames) return null;
-
     const leagueData = watchGames[league as keyof RootInterface];
     if (!leagueData) return null;
 
@@ -135,8 +137,8 @@ const Watch: React.FC = () => {
       >
         {leagueData.map((match) => {
           const thumbnailUrl = match.thumbnail_url
-            .replace("{width}", "100")
-            .replace("{height}", "56");
+            .replace("{width}", "1920")
+            .replace("{height}", "1080");
           return (
             <SwiperSlide key={match.id} className="watch-slide">
               <a
@@ -164,6 +166,26 @@ const Watch: React.FC = () => {
       </Swiper>
     );
   };
+  const renderSkeletonCards = () => {
+    return (
+      <Swiper spaceBetween={0} slidesPerView="auto" className="watch-slides">
+        {[...Array(10)].map((_, index) => (
+          <SwiperSlide key={index} className="watch-slide">
+            <IonCard className="watch-card">
+              <IonThumbnail style={{ height: "10rem", width: "100%" }}>
+                <IonSkeletonText animated={true}></IonSkeletonText>
+              </IonThumbnail>
+              <IonCardContent>
+                <IonCardTitle className="title">
+                  <IonSkeletonText animated={true}></IonSkeletonText>
+                </IonCardTitle>
+              </IonCardContent>
+            </IonCard>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    );
+  };
 
   //Static version of page
   //TODO: loading versions of cards
@@ -187,15 +209,17 @@ const Watch: React.FC = () => {
       </IonHeader>
       <IonContent className="content-top">
         <IonTitle className="watch-title">League of Legends</IonTitle>
-        {renderWatchCards("League of Legends")}
+        {loading
+          ? renderSkeletonCards()
+          : renderWatchCards("League of Legends")}
         <IonTitle className="watch-title">Rocket League</IonTitle>
-        {renderWatchCards("Rocket League")}
+        {loading ? renderSkeletonCards() : renderWatchCards("Rocket League")}
         <IonTitle className="watch-title">Marvel Rivals</IonTitle>
-        {renderWatchCards("Marvel Rivals")}
+        {loading ? renderSkeletonCards() : renderWatchCards("Marvel Rivals")}
         <IonTitle className="watch-title">Counter-Strike</IonTitle>
-        {renderWatchCards("Counter-Strike")}
+        {loading ? renderSkeletonCards() : renderWatchCards("Counter-Strike")}
         <IonTitle className="watch-title">Fortnite</IonTitle>
-        {renderWatchCards("Fortnite")}
+        {loading ? renderSkeletonCards() : renderWatchCards("Fortnite")}
       </IonContent>
     </IonPage>
   );
