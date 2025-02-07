@@ -48,10 +48,6 @@ const More: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding">
-        <IonButton className="dark-mode" onClick={toggleDarkMode}>
-          <IonIcon slot="start" icon={darkMode ? moonOutline : sunnyOutline} />
-          {darkMode ? "Dark Mode" : "Light Mode"}
-        </IonButton>
         <div
           style={{
             position: "absolute",
