@@ -2,15 +2,6 @@
 selectors for all 4 tabs, I tried to put it in its own file but it didnt work
 and I didnt want to spend too much time on it */
 :root {
-  --ion-background-color: #fff;
-  --ion-text-color: #000;
-  --ion-card-color: #f0f0f0;
-  --hover-background-color: rgb(3, 121, 38);
-  --hover-text-color: var(--ion-color-light);
-}
-
-/*  dark mode colors */
-body.dark {
   --ion-background-color: #222;
   --ion-text-color: #fff;
   --ion-card-color: #333;
