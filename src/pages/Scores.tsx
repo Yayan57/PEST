@@ -70,9 +70,8 @@ const Scores: React.FC = () => {
       })
       .sort(
         (a, b) =>
-          new Date(a.startTime).getTime() - new Date(b.startTime).getTime()
-      )
-      .slice(0, 3);
+          new Date(b.startTime).getTime() - new Date(a.startTime).getTime()
+      );
     setCompletedGames(filteredGames);
     setLoadingScores(false);
   }, []);
@@ -92,9 +91,9 @@ const Scores: React.FC = () => {
   //TODO: add date's to cards and loading before data is presented
   const renderScoreCards = () => {
     return leagues.map((league) => {
-      const leagueMatches = completedGames.filter(
-        (match) => match.league.name === league
-      );
+      const leagueMatches = completedGames
+        .filter((match) => match.league.name === league)
+        .slice(0, 3);
 
       if (leagueMatches.length === 0) {
         return null;
