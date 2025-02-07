@@ -32,10 +32,24 @@ import {
   useIonViewDidEnter,
   useIonViewWillEnter,
 } from "@ionic/react";
-import { addOutline, trashBinOutline } from "ionicons/icons";
+import {
+  addOutline,
+  moonOutline,
+  sunnyOutline,
+  trashBinOutline,
+} from "ionicons/icons";
 import React, { useEffect, useRef, useState } from "react";
 
 const GoodToKnow: React.FC = () => {
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    document.body.classList.toggle("dark", darkMode);
+  }, [darkMode]);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
   //for the modal cards and the list
   const [loading, setLoading] = useState<boolean>(true);
   const [users, setUsers] = useState<any[]>([]);
@@ -145,6 +159,13 @@ const GoodToKnow: React.FC = () => {
           <IonRefresher slot="fixed" onIonRefresh={(ev) => doRefresh(ev)}>
             <IonRefresherContent></IonRefresherContent>
           </IonRefresher>
+          <IonButton className="dark-mode" onClick={toggleDarkMode}>
+            <IonIcon
+              slot="start"
+              icon={darkMode ? moonOutline : sunnyOutline}
+            />
+            {darkMode ? "Dark Mode" : "Light Mode"}
+          </IonButton>
 
           {loading &&
             [...Array(10)].map((_, index) => (
