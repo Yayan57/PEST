@@ -19,16 +19,6 @@ import {
 import React, { useState, useEffect } from "react";
 
 const More: React.FC = () => {
-  const [darkMode, setDarkMode] = useState(false);
-
-  useEffect(() => {
-    document.body.classList.toggle("dark", darkMode);
-  }, [darkMode]);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
-
   return (
     <IonPage>
       <IonHeader>
