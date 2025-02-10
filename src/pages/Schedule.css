@@ -19,6 +19,10 @@
   margin: 0 10px;
   color: var(--ion-text-color);
 }
+.schedule-card:hover {
+  background-color: var(--hover-background-color);
+  background-size: contain;
+}
 
 .start-time {
   display: block;
