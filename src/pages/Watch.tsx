@@ -149,7 +149,9 @@ const Watch: React.FC = () => {
               >
                 <IonCard className="watch-card">
                   <img src={thumbnailUrl} alt="card" className="image" />
-
+                  <IonCardTitle className="username-overlay">
+                    {match.user_name}
+                  </IonCardTitle>
                   <IonCardContent>
                     <IonCardTitle className="title">
                       {match.title.length > 50
@@ -188,7 +190,6 @@ const Watch: React.FC = () => {
   };
 
   //Static version of page
-  //TODO: loading versions of cards
   return (
     <IonPage>
       <IonHeader>

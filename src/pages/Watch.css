@@ -43,7 +43,17 @@
   padding-top: 8px;
   color: var(--ion-text-color);
 }
-
+.username-overlay {
+  width: auto;
+  height: 10px;
+  position: absolute;
+  z-index: 99;
+  left: 10px;
+  top: 2%;
+  opacity: 1;
+  background-color: black;
+  color: #fff;
+}
 .watch-card {
   background-color: var(--ion-card-color);
 }
