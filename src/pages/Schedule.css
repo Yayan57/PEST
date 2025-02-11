@@ -48,3 +48,8 @@
   text-align: end;
   width: 3rem;
 }
+.schedule-subtitle {
+  font-size: 0.8rem;
+  text-align: center;
+  color: var(--ion-text-color);
+}

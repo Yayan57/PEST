@@ -115,7 +115,7 @@ const Schedule: React.FC = () => {
   };
   // creates unstarted game cards
   //TODO: add times and leauge name to indicate when and what leauge is playing
-  const checkSchedule = () => {
+  const renderScheduleCards = () => {
     if (upcomingGames.length > 0) {
       const groupedGames = groupGamesByDate(upcomingGames);
       return (
@@ -144,6 +144,11 @@ const Schedule: React.FC = () => {
                         src={game.teams[1].image}
                         className="team-image"
                       />
+                    </div>
+                    <div>
+                      <IonTitle className="schedule-subtitle">
+                        LoL &middot; {game.league.name}
+                      </IonTitle>
                     </div>
                   </IonCardContent>
                 </IonCard>
@@ -255,7 +260,9 @@ const Schedule: React.FC = () => {
           </IonCol>
         </IonGrid>
         <IonList>
-          {loadingSchedule ? renderSkeletonScheduleCards() : checkSchedule()}
+          {loadingSchedule
+            ? renderSkeletonScheduleCards()
+            : renderScheduleCards()}
         </IonList>
       </IonContent>
     </IonPage>
