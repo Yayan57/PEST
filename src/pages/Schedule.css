@@ -41,3 +41,10 @@
   width: 80%;
   margin: auto;
 }
+.schedule-title {
+  text-align: left;
+}
+.game-select-schedule {
+  text-align: end;
+  width: 3rem;
+}

@@ -3,7 +3,9 @@ import {
   IonButtons,
   IonCard,
   IonCardContent,
+  IonCol,
   IonContent,
+  IonGrid,
   IonHeader,
   IonIcon,
   IonImg,
@@ -12,6 +14,7 @@ import {
   IonList,
   IonMenuButton,
   IonPage,
+  IonRow,
   IonSelect,
   IonSelectOption,
   IonSkeletonText,
@@ -190,21 +193,6 @@ const Scores: React.FC = () => {
             <IonMenuButton />
           </IonButtons>
           <IonTitle>Scores</IonTitle>
-          <IonSelect
-            aria-label="Choose a game"
-            interface="popover"
-            placeholder="All"
-            slot="end"
-          >
-            <IonSelectOption value="All">All</IonSelectOption>
-            <IonSelectOption value="Leauge of legends">
-              Leauge of legends
-            </IonSelectOption>
-            <IonSelectOption value="CS2">CS2</IonSelectOption>
-            <IonSelectOption value="Call of duty">Call of duty</IonSelectOption>
-            <IonSelectOption value="Fortnite">Fortnite</IonSelectOption>
-            <IonSelectOption value="Overwatch">Overwatch</IonSelectOption>
-          </IonSelect>
           <IonButtons slot="end">
             <IonButton routerLink="../settings">
               <IonIcon slot="icon-only" icon={settingsOutline} color="light" />
@@ -216,7 +204,31 @@ const Scores: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent>
-        {loadingScores ? renderSkeletonScoreCards() : renderScoreCards()}
+        <IonGrid>
+          <IonCol>
+            <IonRow>
+              <IonTitle>Leauge of Legends</IonTitle>
+              <IonSelect
+                aria-label="Choose a game"
+                interface="popover"
+                placeholder="All"
+                className="game-select-score"
+              >
+                <IonSelectOption value="All">All</IonSelectOption>
+                <IonSelectOption value="Leauge of legends">
+                  Leauge of legends
+                </IonSelectOption>
+                <IonSelectOption value="CS2">CS2</IonSelectOption>
+                <IonSelectOption value="Call of duty">
+                  Call of duty
+                </IonSelectOption>
+                <IonSelectOption value="Fortnite">Fortnite</IonSelectOption>
+                <IonSelectOption value="Overwatch">Overwatch</IonSelectOption>
+              </IonSelect>
+            </IonRow>
+            {loadingScores ? renderSkeletonScoreCards() : renderScoreCards()}
+          </IonCol>
+        </IonGrid>
       </IonContent>
     </IonPage>
   );

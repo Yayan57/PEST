@@ -3,7 +3,9 @@ import {
   IonButtons,
   IonCard,
   IonCardContent,
+  IonCol,
   IonContent,
+  IonGrid,
   IonHeader,
   IonIcon,
   IonImg,
@@ -12,6 +14,7 @@ import {
   IonList,
   IonMenuButton,
   IonPage,
+  IonRow,
   IonSelect,
   IonSelectOption,
   IonSkeletonText,
@@ -102,7 +105,14 @@ const Schedule: React.FC = () => {
       return groups;
     }, {} as { [key: string]: Game[] });
   };
-
+  const leaugeLinks: { [key: string]: string } = {
+    LEC: "https://www.twitch.tv/lec",
+    LPL: "https://www.twitch.tv/lpl",
+    "LTA North": "https://www.twitch.tv/ltanorth",
+    "LTA South": "https://www.twitch.tv/ltasouth",
+    LCK: "https://www.twitch.tv/lck",
+    LCP: "https://www.twitch.tv/lolesportstw",
+  };
   // creates unstarted game cards
   //TODO: add times and leauge name to indicate when and what leauge is playing
   const checkSchedule = () => {
@@ -200,7 +210,6 @@ const Schedule: React.FC = () => {
   };
 
   //static version of site
-  //TODO add loading cards
   //TODO: make these interact with rendercards function to reload page
   return (
     <IonPage>
@@ -210,21 +219,6 @@ const Schedule: React.FC = () => {
             <IonMenuButton />
           </IonButtons>
           <IonTitle>Schedule </IonTitle>
-          <IonSelect
-            aria-label="Choose a game"
-            interface="popover"
-            placeholder="All"
-            slot="end"
-          >
-            <IonSelectOption value="All">All</IonSelectOption>
-            <IonSelectOption value="Leauge of legends">
-              Leauge of legends
-            </IonSelectOption>
-            <IonSelectOption value="CS2">CS2</IonSelectOption>
-            <IonSelectOption value="Call of duty">Call of duty</IonSelectOption>
-            <IonSelectOption value="Fortnite">Fortnite</IonSelectOption>
-            <IonSelectOption value="Overwatch">Overwatch</IonSelectOption>
-          </IonSelect>
           <IonButtons slot="end">
             <IonButton routerLink="../settings">
               <IonIcon slot="icon-only" icon={settingsOutline} color="light" />
@@ -235,7 +229,31 @@ const Schedule: React.FC = () => {
           </IonButtons>
         </IonToolbar>
       </IonHeader>
-      <IonContent className="ion-padding">
+      <IonContent>
+        <IonGrid>
+          <IonCol>
+            <IonRow>
+              <IonTitle className="schedule-title">Leauge of Legends</IonTitle>
+              <IonSelect
+                aria-label="Choose a game"
+                interface="popover"
+                placeholder="All"
+                className="game-select-schedule"
+              >
+                <IonSelectOption value="All">All</IonSelectOption>
+                <IonSelectOption value="Leauge of legends">
+                  Leauge of legends
+                </IonSelectOption>
+                <IonSelectOption value="CS2">CS2</IonSelectOption>
+                <IonSelectOption value="Call of duty">
+                  Call of duty
+                </IonSelectOption>
+                <IonSelectOption value="Fortnite">Fortnite</IonSelectOption>
+                <IonSelectOption value="Overwatch">Overwatch</IonSelectOption>
+              </IonSelect>
+            </IonRow>
+          </IonCol>
+        </IonGrid>
         <IonList>
           {loadingSchedule ? renderSkeletonScheduleCards() : checkSchedule()}
         </IonList>
