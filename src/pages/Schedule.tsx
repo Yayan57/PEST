@@ -139,7 +139,8 @@ const Schedule: React.FC = () => {
                     </div>
                     <div>
                       <IonTitle className="schedule-subtitle">
-                        LoL &middot; {game.league.name}
+                        {format(date, "h:mm a ")} &middot; LoL &middot;{" "}
+                        {game.league.name}
                       </IonTitle>
                     </div>
                   </IonCardContent>
