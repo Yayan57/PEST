@@ -105,14 +105,6 @@ const Schedule: React.FC = () => {
       return groups;
     }, {} as { [key: string]: Game[] });
   };
-  const leaugeLinks: { [key: string]: string } = {
-    LEC: "https://www.twitch.tv/lec",
-    LPL: "https://www.twitch.tv/lpl",
-    "LTA North": "https://www.twitch.tv/ltanorth",
-    "LTA South": "https://www.twitch.tv/ltasouth",
-    LCK: "https://www.twitch.tv/lck",
-    LCP: "https://www.twitch.tv/lolesportstw",
-  };
   // creates unstarted game cards
   //TODO: add times and leauge name to indicate when and what leauge is playing
   const renderScheduleCards = () => {
