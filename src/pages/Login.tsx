@@ -21,6 +21,7 @@ import { logInOutline, personCircleOutline, play, text } from "ionicons/icons";
 import PEST_logo from "../assets/PEST_logo.svg";
 import Intro from "../components/Intro";
 import { Preferences } from "@capacitor/preferences";
+import pb from "../lib/pocketbase";
 
 const INTRO_KEY = "intro-seen";
 
@@ -66,7 +67,7 @@ const Login: React.FC = () => {
         <IonPage>
           <IonHeader>
             <IonToolbar color={"tertiary"}>
-              <IonTitle></IonTitle>
+              <IonTitle>Logged In: {pb.authStore.isValid.toString()}</IonTitle>
             </IonToolbar>
           </IonHeader>
           <IonContent scrollY={false} className="ion-padding">
