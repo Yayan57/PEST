@@ -22,13 +22,29 @@ import PEST_logo from "../assets/PEST_logo.svg";
 import Intro from "../components/Intro";
 import { Preferences } from "@capacitor/preferences";
 import pb from "../lib/pocketbase";
+import { useForm } from "react-hook-form";
 
 const INTRO_KEY = "intro-seen";
 
 const Login: React.FC = () => {
+  const { register, handleSubmit } = useForm();
+  const [isLoading, setLoading] = useState(false);
+  const isLoggedIn = pb.authStore.isValid;
   const router = useIonRouter();
   const [introSeen, setIntroSeen] = useState(true);
   const [present, dismiss] = useIonLoading();
+
+  async function login(data: any) {
+    try {
+      const authData = await pb
+        .collection("users")
+        .authWithPassword(data.email, data.password);
+    } catch (e) {
+      alert(e);
+    }
+
+    setLoading(false);
+  }
 
   useEffect(() => {
     const checkStorage = async () => {
@@ -61,13 +77,16 @@ const Login: React.FC = () => {
   };
   return (
     <>
+      {isLoading && <p>Loading...</p>}
       {!introSeen ? (
         <Intro onFinish={finishIntro} />
       ) : (
         <IonPage>
           <IonHeader>
             <IonToolbar color={"tertiary"}>
-              <IonTitle>Logged In: {pb.authStore.isValid.toString()}</IonTitle>
+              <IonTitle>
+                Logged In: {isLoggedIn && pb.authStore.record?.collectionName}
+              </IonTitle>
             </IonToolbar>
           </IonHeader>
           <IonContent scrollY={false} className="ion-padding">
@@ -85,13 +104,14 @@ const Login: React.FC = () => {
                 <IonCol size="12" sizeMd="8" sizeLg="6" sizeXl="4">
                   <IonCard>
                     <IonCardContent>
-                      <form onSubmit={doLogin}>
+                      <form onSubmit={handleSubmit(login)}>
                         <IonInput
                           fill="outline"
                           labelPlacement="floating"
                           label="Email:"
                           type="email"
                           placeholder="username@email.com"
+                          {...register("email")}
                         ></IonInput>
                         <IonInput
                           className="ion-margin-top"
@@ -99,13 +119,15 @@ const Login: React.FC = () => {
                           labelPlacement="floating"
                           label="Password:"
                           type="password"
+                          {...register("password")}
                         ></IonInput>
                         <IonButton
                           type="submit"
                           expand="block"
                           className="ion-margin-top"
+                          disabled={isLoading}
                         >
-                          Login
+                          {isLoading ? "Loading" : "Login"}
                           <IonIcon icon={logInOutline} slot="end" />
                         </IonButton>
                         <IonButton
