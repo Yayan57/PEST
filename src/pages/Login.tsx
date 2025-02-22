@@ -55,18 +55,26 @@ const Login: React.FC = () => {
     checkStorage();
   }, []);
 
+  function logout() {
+    pb.authStore.clear();
+  }
+
   const doLogin = async (event: any) => {
-    event.preventDefault();
-    await present("Logging in...");
-    setTimeout(async () => {
-      dismiss();
-      router.push("/app", "root");
-    }, 1500);
+    try {
+      const authData = await pb
+        .collection("users")
+        .authWithPassword(event.email, event.password);
+      setTimeout(async () => {
+        dismiss();
+        router.push("/app", "root");
+      }, 1500);
+    } catch (e) {
+      alert(e);
+    }
     // TODO: some kind of backend integration looking for username/email and password.
   };
 
   const finishIntro = async () => {
-    console.log("FIN");
     setIntroSeen(true);
     Preferences.set({ key: INTRO_KEY, value: "true" });
   };
@@ -84,9 +92,7 @@ const Login: React.FC = () => {
         <IonPage>
           <IonHeader>
             <IonToolbar color={"tertiary"}>
-              <IonTitle>
-                Logged In: {isLoggedIn && pb.authStore.record?.collectionName}
-              </IonTitle>
+              <IonTitle></IonTitle>
             </IonToolbar>
           </IonHeader>
           <IonContent scrollY={false} className="ion-padding">
@@ -104,7 +110,7 @@ const Login: React.FC = () => {
                 <IonCol size="12" sizeMd="8" sizeLg="6" sizeXl="4">
                   <IonCard>
                     <IonCardContent>
-                      <form onSubmit={handleSubmit(login)}>
+                      <form onSubmit={handleSubmit(doLogin)}>
                         <IonInput
                           fill="outline"
                           labelPlacement="floating"
