@@ -30,21 +30,10 @@ const Login: React.FC = () => {
   const { register, handleSubmit } = useForm();
   const [isLoading, setLoading] = useState(false);
   const isLoggedIn = pb.authStore.isValid;
+  const [badLogin, setBadLogin] = useState(false);
   const router = useIonRouter();
   const [introSeen, setIntroSeen] = useState(true);
   const [present, dismiss] = useIonLoading();
-
-  async function login(data: any) {
-    try {
-      const authData = await pb
-        .collection("users")
-        .authWithPassword(data.email, data.password);
-    } catch (e) {
-      alert(e);
-    }
-
-    setLoading(false);
-  }
 
   useEffect(() => {
     const checkStorage = async () => {
@@ -64,14 +53,14 @@ const Login: React.FC = () => {
       const authData = await pb
         .collection("users")
         .authWithPassword(event.email, event.password);
+      setBadLogin(false);
       setTimeout(async () => {
         dismiss();
         router.push("/app", "root");
       }, 1500);
     } catch (e) {
-      alert(e);
+      setBadLogin(true);
     }
-    // TODO: some kind of backend integration looking for username/email and password.
   };
 
   const finishIntro = async () => {
@@ -127,6 +116,11 @@ const Login: React.FC = () => {
                           type="password"
                           {...register("password")}
                         ></IonInput>
+                        {badLogin && (
+                          <p className="bad-login">
+                            Incorrect username or password.
+                          </p>
+                        )}
                         <IonButton
                           type="submit"
                           expand="block"
