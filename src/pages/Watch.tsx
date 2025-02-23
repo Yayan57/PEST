@@ -41,6 +41,7 @@ interface RootInterface {
   "Counter-Strike": Stream[];
   "Marvel Rivals": Stream[];
   Fortnite: Stream[];
+  Valorant: Stream[];
 }
 
 const Watch: React.FC = () => {
@@ -113,6 +114,7 @@ const Watch: React.FC = () => {
     //TODO: find way to call twitch api less or faster
     const gameNames = [
       "League of Legends",
+      "Valorant",
       "Rocket League",
       "Counter-Strike",
       "Marvel Rivals",
@@ -213,6 +215,8 @@ const Watch: React.FC = () => {
         {loadingWatch
           ? renderSkeletonCards()
           : renderWatchCards("League of Legends")}
+        <IonTitle className="watch-title">Valorant</IonTitle>
+        {loadingWatch ? renderSkeletonCards() : renderWatchCards("Valorant")}
         <IonTitle className="watch-title">Rocket League</IonTitle>
         {loadingWatch
           ? renderSkeletonCards()
