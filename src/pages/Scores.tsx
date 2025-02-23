@@ -29,25 +29,18 @@ import data from "../assets/data/LOL.json";
 
 interface Game {
   id: string;
-  blockName: string;
   startTime: string;
   state: string;
   league: {
     name: string;
     image: string;
   };
-  tournament: string;
   teams: {
     name: string;
     image: string;
     code: string;
     gameWins: number;
   }[];
-  strategy: {
-    __typename: string;
-    type: string;
-    count: number;
-  };
 }
 
 //TODO: integrate with database
