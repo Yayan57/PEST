@@ -25,16 +25,14 @@ import {
 import { settingsOutline, searchOutline } from "ionicons/icons";
 import React, { useEffect, useState } from "react";
 import "./Scores.css";
-import data from "../assets/data/LOL.json";
+import pb from "../lib/pocketbase";
 
 interface Game {
   id: string;
   startTime: string;
   state: string;
-  league: {
-    name: string;
-    image: string;
-  };
+  league_name: string;
+  league_image: string;
   teams: {
     name: string;
     image: string;
@@ -43,33 +41,26 @@ interface Game {
   }[];
 }
 
-//TODO: integrate with database
 const Scores: React.FC = () => {
   const [completedGames, setCompletedGames] = useState<Game[]>([]);
   const [loadingScores, setLoadingScores] = useState(true);
 
   //takes score data from json file and filters to present to user
   useEffect(() => {
-    const now = new Date();
-    const uniqueGameIds = new Set<string>();
-    const filteredGames = data
-      .filter(
-        (game) => game.state === "completed" && new Date(game.startTime) < now
-      )
-      .filter((game) => {
-        if (uniqueGameIds.has(game.id)) {
-          return false;
-        } else {
-          uniqueGameIds.add(game.id);
-          return true;
-        }
-      })
-      .sort(
-        (a, b) =>
-          new Date(b.startTime).getTime() - new Date(a.startTime).getTime()
-      );
-    setCompletedGames(filteredGames);
-    setLoadingScores(false);
+    const fetchGames = async () => {
+      try {
+        const records = await pb.collection("games").getFullList<Game>({
+          filter: 'state="completed"',
+          sort: "-startTime",
+        });
+        setCompletedGames(records);
+      } catch (error) {
+        console.error("Error fetching games:", error);
+      } finally {
+        setLoadingScores(false);
+      }
+    };
+    fetchGames();
   }, []);
 
   const leagues = [
@@ -88,7 +79,7 @@ const Scores: React.FC = () => {
   const renderScoreCards = () => {
     return leagues.map((league) => {
       const leagueMatches = completedGames
-        .filter((match) => match.league.name === league)
+        .filter((match) => match.league_name === league)
         .slice(0, 3);
 
       if (leagueMatches.length === 0) {
@@ -200,7 +191,7 @@ const Scores: React.FC = () => {
         <IonGrid>
           <IonCol>
             <IonRow>
-              <IonTitle>Leauge of Legends</IonTitle>
+              <IonTitle>League of Legends</IonTitle>
               <IonSelect
                 aria-label="Choose a game"
                 interface="popover"
@@ -208,12 +199,12 @@ const Scores: React.FC = () => {
                 className="game-select-score"
               >
                 <IonSelectOption value="All">All</IonSelectOption>
-                <IonSelectOption value="Leauge of legends">
-                  Leauge of legends
+                <IonSelectOption value="League of legends">
+                  League of legends
                 </IonSelectOption>
                 <IonSelectOption value="CS2">CS2</IonSelectOption>
-                <IonSelectOption value="Call of duty">
-                  Call of duty
+                <IonSelectOption value="Call of Duty">
+                  Call of Duty
                 </IonSelectOption>
                 <IonSelectOption value="Fortnite">Fortnite</IonSelectOption>
                 <IonSelectOption value="Overwatch">Overwatch</IonSelectOption>
