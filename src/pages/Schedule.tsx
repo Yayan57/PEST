@@ -30,7 +30,7 @@ import {
 import { settingsOutline, searchOutline } from "ionicons/icons";
 import React, { useState, useEffect } from "react";
 import "./Schedule.css";
-import data from "../assets/data/LOL.json";
+import pb from "../lib/pocketbase";
 import { format } from "date-fns";
 import { render } from "@testing-library/react";
 
@@ -38,10 +38,8 @@ interface Game {
   id: string;
   startTime: string;
   state: string;
-  league: {
-    name: string;
-    image: string;
-  };
+  league_name: string;
+  league_image: string;
   teams: {
     name: string;
     image: string;
@@ -50,41 +48,27 @@ interface Game {
   }[];
 }
 
-//TODO: integrate with database
 const Schedule: React.FC = () => {
   const [upcomingGames, setUpcomingGames] = useState<Game[]>([]);
   const [loadingSchedule, setLoadingSchedule] = useState(true);
 
   //sorts games to find those that havent started yet
   useEffect(() => {
-    const now = new Date();
-    const uniqueGameIds = new Set<string>();
-    const filteredGames = data
-      .filter(
-        (game) => game.state === "unstarted" && new Date(game.startTime) > now
-      )
-      .filter((game) => {
-        if (uniqueGameIds.has(game.id)) {
-          return false;
-        } else {
-          uniqueGameIds.add(game.id);
-          return true;
-        }
-      })
-      .filter((game) => {
-        if (game.teams[0].name === "TBD" && game.teams[1].name === "TBD") {
-          return false;
-        } else {
-          return true;
-        }
-      })
-      .sort(
-        (a, b) =>
-          new Date(a.startTime).getTime() - new Date(b.startTime).getTime()
-      )
-      .slice(0, 10);
-    setUpcomingGames(filteredGames);
-    setLoadingSchedule(false);
+    const fetchGames = async () => {
+      try {
+        const records = await pb.collection("games").getFullList<Game>({
+          filter: 'state="unstarted"',
+          sort: "startTime",
+        });
+        console.log("Fetched games:", records);
+        setUpcomingGames(records);
+      } catch (error) {
+        console.error("Error fetching games:", error);
+      } finally {
+        setLoadingSchedule(false);
+      }
+    };
+    fetchGames();
   }, []);
 
   //Groups games by date
@@ -133,7 +117,7 @@ const Schedule: React.FC = () => {
                     <div>
                       <IonTitle className="schedule-subtitle">
                         {format(date, "h:mm a ")} &middot; LoL &middot;{" "}
-                        {game.league.name}
+                        {game.league_name}
                       </IonTitle>
                     </div>
                   </IonCardContent>
