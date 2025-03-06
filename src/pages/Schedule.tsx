@@ -83,7 +83,7 @@ const Schedule: React.FC = () => {
     }, {} as { [key: string]: Game[] });
   };
   // creates unstarted game cards
-  //TODO: add times and leauge name to indicate when and what leauge is playing
+  //TODO: add argument with dropdown to change between all and certain games
   const renderScheduleCards = () => {
     if (upcomingGames.length > 0) {
       const groupedGames = groupGamesByDate(upcomingGames);
