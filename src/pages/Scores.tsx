@@ -76,6 +76,7 @@ const Scores: React.FC = () => {
 
   //function that takes available scores and makes a list of cards for them
   //TODO: add date's to cards and loading before data is presented
+  //TODO: add argument with dropdown to change between all and certain games
   const renderScoreCards = () => {
     return leagues.map((league) => {
       const leagueMatches = completedGames
