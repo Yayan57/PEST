@@ -56,8 +56,9 @@ const Schedule: React.FC = () => {
   useEffect(() => {
     const fetchGames = async () => {
       try {
+        const nowTime = new Date().toISOString();
         const records = await pb.collection("games").getFullList<Game>({
-          filter: 'state="unstarted"',
+          filter: `state="unstarted" && startTime > "${nowTime}"`,
           sort: "startTime",
         });
         console.log("Fetched games:", records);
